@@ -1,0 +1,184 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+source_pan_data shape: (4914, 264, 264, 1)
+gt_data shape: (4914, 264, 264, 4)
+data shape: (4914, 264, 264, 5)
+Epoches: 10, Batch_size: 10
+Train images number 4914, Batches: 491.
+
+Train set has been trimmed 4 samples...
+
+2021-12-03 09:18:04.680551: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-03 09:18:05.172394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (10, 264, 264, 1)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1380, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1362, in _run_fn
+    self._extend_graph()
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1403, in _extend_graph
+    tf_session.ExtendSession(self._session)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Cannot assign a device for operation pP_ED/encoder/conv1/truncated_normal/TruncatedNormal: {{node pP_ED/encoder/conv1/truncated_normal/TruncatedNormal}} was explicitly assigned to /device:GPU:1 but available devices are [ /job:localhost/replica:0/task:0/device:CPU:0, /job:localhost/replica:0/task:0/device:GPU:0 ]. Make sure the device specification refers to a valid device.
+	 [[pP_ED/encoder/conv1/truncated_normal/TruncatedNormal]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "spat_main.py", line 182, in <module>
+    main()
+  File "spat_main.py", line 89, in main
+    sess.run(tf.global_variables_initializer())
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 970, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1193, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1373, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1399, in _do_call
+    raise type(e)(node_def, op, message)  # pylint: disable=no-value-for-parameter
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Cannot assign a device for operation pP_ED/encoder/conv1/truncated_normal/TruncatedNormal: node pP_ED/encoder/conv1/truncated_normal/TruncatedNormal
+ (defined at /home/nhsmt1123/rs/SDPNet-for-pansharpening/MS2Pnet.py:43)
+ was explicitly assigned to /device:GPU:1 but available devices are [ /job:localhost/replica:0/task:0/device:CPU:0, /job:localhost/replica:0/task:0/device:GPU:0 ]. Make sure the device specification refers to a valid device.
+	 [[pP_ED/encoder/conv1/truncated_normal/TruncatedNormal]]
+
+Errors may have originated from an input operation.
+Input Source operations connected to node pP_ED/encoder/conv1/truncated_normal/TruncatedNormal:
+In[0] pP_ED/encoder/conv1/truncated_normal/shape:
+
+Operation defined at: (most recent call last)
+>>>   File "spat_main.py", line 182, in <module>
+>>>     main()
+>>>
+>>>   File "spat_main.py", line 67, in main
+>>>     pP_NET = pP_ED('pP_ED')
+>>>
+>>>   File "/home/nhsmt1123/rs/SDPNet-for-pansharpening/MS2Pnet.py", line 13, in __init__
+>>>     self.encoder = Encoder(sco)
+>>>
+>>>   File "/home/nhsmt1123/rs/SDPNet-for-pansharpening/MS2Pnet.py", line 36, in __init__
+>>>     self.weight_vars.append(self._create_variables(4, 32, 3, scope = 'conv1'))
+>>>
+>>>   File "/home/nhsmt1123/rs/SDPNet-for-pansharpening/MS2Pnet.py", line 43, in _create_variables
+>>>     kernel = tf.Variable(tf.truncated_normal(shape, stddev = WEIGHT_INIT_STDDEV),
+>>>
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+source_pan_data shape: (4914, 264, 264, 1)
+gt_data shape: (4914, 264, 264, 4)
+data shape: (4914, 264, 264, 5)
+Epoches: 10, Batch_size: 10
+Train images number 4914, Batches: 491.
+
+Train set has been trimmed 4 samples...
+
+2021-12-03 09:19:41.444071: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-03 09:19:41.930744: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (10, 264, 264, 1)
+2021-12-03 09:19:46.589636: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch:1/10: step:100, lr:0.0019348845, loss:0.027714724, elapsed_time:0:00:20.516468
+
+Epoch:1/10: step:200, lr:0.001871889, loss:0.0011535226, elapsed_time:0:00:32.883145
+
+Epoch:1/10: step:300, lr:0.0018109444, loss:0.0031689685, elapsed_time:0:00:44.909683
+
+Epoch:1/10: step:400, lr:0.0017519841, loss:0.007138121, elapsed_time:0:00:56.754414
+
+Epoch:2/10: step:500, lr:0.0016949435, loss:0.0008067696, elapsed_time:0:01:11.521307
+
+Epoch:2/10: step:600, lr:0.0016397599, loss:0.00012994432, elapsed_time:0:01:23.915011
+
+Epoch:2/10: step:700, lr:0.001586373, loss:0.00010518977, elapsed_time:0:01:36.274412
+
+Epoch:2/10: step:800, lr:0.001534724, loss:0.00040637524, elapsed_time:0:01:48.452359
+
+Epoch:2/10: step:900, lr:0.0014847568, loss:0.0012744609, elapsed_time:0:02:00.633549
+
+Epoch:3/10: step:1000, lr:0.0014364165, loss:0.000709564, elapsed_time:0:02:15.334127
+
+Epoch:3/10: step:1100, lr:0.0013896499, loss:4.8379596e-05, elapsed_time:0:02:28.030586
+
+Epoch:3/10: step:1200, lr:0.001344406, loss:0.00014386693, elapsed_time:0:02:40.154024
+
+Epoch:3/10: step:1300, lr:0.0013006352, loss:4.4068383e-05, elapsed_time:0:02:52.334324
+
+Epoch:3/10: step:1400, lr:0.0012582893, loss:0.00014303184, elapsed_time:0:03:04.136856
+
+Epoch:4/10: step:1500, lr:0.0012173222, loss:0.006347295, elapsed_time:0:03:18.879294
+
+Epoch:4/10: step:1600, lr:0.0011776891, loss:0.0027104672, elapsed_time:0:03:30.960455
+
+Epoch:4/10: step:1700, lr:0.001139346, loss:0.00014762572, elapsed_time:0:03:43.037987
+
+Epoch:4/10: step:1800, lr:0.0011022515, loss:0.00010853605, elapsed_time:0:03:54.998140
+
+Epoch:4/10: step:1900, lr:0.0010663647, loss:0.0037658478, elapsed_time:0:04:07.183623
+
+Epoch:5/10: step:2000, lr:0.0010316462, loss:0.0002223309, elapsed_time:0:04:22.426470
+
+Epoch:5/10: step:2100, lr:0.000998058, loss:0.00017812649, elapsed_time:0:04:34.554496
+
+Epoch:5/10: step:2200, lr:0.00096556346, loss:0.00085330463, elapsed_time:0:04:46.570723
+
+Epoch:5/10: step:2300, lr:0.0009341269, loss:4.7911188e-05, elapsed_time:0:04:58.647277
+
+Epoch:5/10: step:2400, lr:0.00090371387, loss:0.0001301641, elapsed_time:0:05:10.699409
+
+Epoch:6/10: step:2500, lr:0.0008742909, loss:3.9493767e-05, elapsed_time:0:05:25.634958
+
+Epoch:6/10: step:2600, lr:0.00084582594, loss:5.1308845e-05, elapsed_time:0:05:37.668134
+
+Epoch:6/10: step:2700, lr:0.0008182877, loss:4.575107e-05, elapsed_time:0:05:49.636224
+
+Epoch:6/10: step:2800, lr:0.0007916461, loss:0.00032558903, elapsed_time:0:06:01.967556
+
+Epoch:6/10: step:2900, lr:0.00076587184, loss:0.00017581176, elapsed_time:0:06:13.954617
+
+Epoch:7/10: step:3000, lr:0.0007409367, loss:3.223865e-05, elapsed_time:0:06:28.942900
+
+Epoch:7/10: step:3100, lr:0.0007168135, loss:8.589247e-05, elapsed_time:0:06:41.195627
+
+Epoch:7/10: step:3200, lr:0.00069347565, loss:2.1804155e-05, elapsed_time:0:06:53.362947
+
+Epoch:7/10: step:3300, lr:0.0006708977, loss:1.727093e-05, elapsed_time:0:07:05.653758
+
+Epoch:7/10: step:3400, lr:0.00064905465, loss:1.17941545e-05, elapsed_time:0:07:17.858335
+
+Epoch:8/10: step:3500, lr:0.00062792294, loss:3.918354e-05, elapsed_time:0:07:32.775256
+
+Epoch:8/10: step:3600, lr:0.00060747913, loss:8.329772e-05, elapsed_time:0:07:45.136729
+
+Epoch:8/10: step:3700, lr:0.0005877009, loss:6.611146e-05, elapsed_time:0:07:57.231359
+
+Epoch:8/10: step:3800, lr:0.0005685668, loss:0.00020240435, elapsed_time:0:08:09.508464
+
+Epoch:8/10: step:3900, lr:0.0005500554, loss:2.5505888e-05, elapsed_time:0:08:21.376626
+
+Epoch:9/10: step:4000, lr:0.0005321469, loss:0.0003352017, elapsed_time:0:08:36.324339
+
+Epoch:9/10: step:4100, lr:0.0005148214, loss:5.9841594e-05, elapsed_time:0:08:48.430617
+
+Epoch:9/10: step:4200, lr:0.00049805985, loss:0.00019246292, elapsed_time:0:09:00.431390
+
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/training/saver.py:1056: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Epoch:9/10: step:4300, lr:0.00048184418, loss:0.0008872266, elapsed_time:0:09:12.491567
+
+Epoch:9/10: step:4400, lr:0.0004661564, loss:0.0005791219, elapsed_time:0:09:24.485310
+
+Epoch:10/10: step:4500, lr:0.00045097942, loss:4.156428e-05, elapsed_time:0:09:39.308487
+
+Epoch:10/10: step:4600, lr:0.00043629648, loss:4.735581e-05, elapsed_time:0:09:51.554389
+
+Epoch:10/10: step:4700, lr:0.0004220917, loss:3.0736872e-05, elapsed_time:0:10:03.797875
+
+Epoch:10/10: step:4800, lr:0.00040834935, loss:4.195241e-05, elapsed_time:0:10:16.194174
+
+Epoch:10/10: step:4900, lr:0.00039505432, loss:1.4657597e-05, elapsed_time:0:10:28.479064
+
+Epoch:10/10: step:4910, lr:0.00039374887, loss:4.6226e-05, elapsed_time:0:10:29.705510
+

@@ -1,0 +1,7 @@
+matplotlib
+numpy
+opencv-contrib-python
+scikit-image
+scipy==1.1.0
+tensorflow-gpu==1.15.2
+tqdm

@@ -1,0 +1,148 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-12-03 06:34:36.627173: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-03 06:34:41.157349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 740 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-03 06:34:41.158411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 678 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-03 06:34:41.159258: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 598 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-03 06:34:41.160244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 756 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+2021-12-03 06:34:46.202841: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_NOT_INITIALIZED
+2021-12-03 06:34:46.203032: E tensorflow/stream_executor/cuda/cuda_dnn.cc:379] Possibly insufficient driver version: 460.84.0
+2021-12-03 06:34:46.203154: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.241199: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_NOT_INITIALIZED
+2021-12-03 06:34:46.241313: E tensorflow/stream_executor/cuda/cuda_dnn.cc:379] Possibly insufficient driver version: 460.84.0
+2021-12-03 06:34:46.241352: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.248772: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR
+2021-12-03 06:34:46.248821: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.253819: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR
+2021-12-03 06:34:46.253834: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.257259: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR
+2021-12-03 06:34:46.257273: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.260698: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR
+2021-12-03 06:34:46.260718: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.264143: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR
+2021-12-03 06:34:46.264157: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.267576: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR
+2021-12-03 06:34:46.267590: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+2021-12-03 06:34:46.271009: E tensorflow/stream_executor/cuda/cuda_dnn.cc:371] Could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR
+2021-12-03 06:34:46.271023: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at conv_ops.cc:1120 : UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+source_pan_data shape: (4914, 264, 264, 1)
+gt_data shape: (4914, 264, 264, 4)
+data shape: (4914, 264, 264, 5)
+Epoches: 8, Batch_size: 8
+Train images number 4914, Batches: 614.
+
+Train set has been trimmed 2 samples...
+
+out shape: (8, 264, 264, 4)
+PAN_converted_MS shape: (8, 264, 264, 4)
+<tf.Variable 'pMS_ED/encoder/conv1/kernel:0' shape=(3, 3, 1, 32) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv3/kernel:0' shape=(3, 3, 64, 96) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv3/bias:0' shape=(96,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_1/kernel:0' shape=(3, 3, 96, 64) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_1/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_2/kernel:0' shape=(3, 3, 64, 32) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_2/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_3/kernel:0' shape=(3, 3, 32, 4) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_3/bias:0' shape=(4,) dtype=float32_ref>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1380, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1363, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1456, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.UnknownError: 2 root error(s) found.
+  (0) UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[{{node Conv2D_21}}]]
+	 [[Adam/update/_12]]
+  (1) UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[{{node Conv2D_21}}]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "P2MS_main.py", line 198, in <module>
+    main()
+  File "P2MS_main.py", line 106, in main
+    sess.run(solver, feed_dict = FEED_DICT)
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 970, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1193, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1373, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/client/session.py", line 1399, in _do_call
+    raise type(e)(node_def, op, message)  # pylint: disable=no-value-for-parameter
+tensorflow.python.framework.errors_impl.UnknownError: 2 root error(s) found.
+  (0) UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node Conv2D_21
+ (defined at P2MS_main.py:162)
+]]
+	 [[Adam/update/_12]]
+  (1) UNKNOWN: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node Conv2D_21
+ (defined at P2MS_main.py:162)
+]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node Conv2D_21:
+In[0] ExpandDims_6 (defined at P2MS_main.py:68)	
+In[1] truediv_11 (defined at P2MS_main.py:192)
+
+Operation defined at: (most recent call last)
+>>>   File "P2MS_main.py", line 198, in <module>
+>>>     main()
+>>> 
+>>>   File "P2MS_main.py", line 68, in main
+>>>     SSIM4 = 1 - tf.reduce_mean(SSIM_LOSS(tf.expand_dims(MS[:, :, :, 3], axis = -1),
+>>> 
+>>>   File "P2MS_main.py", line 162, in SSIM_LOSS
+>>>     mu1 = tf.nn.conv2d(img1, window, strides = [1, 1, 1, 1], padding = 'VALID')
+>>> 
+
+Input Source operations connected to node Conv2D_21:
+In[0] ExpandDims_6 (defined at P2MS_main.py:68)	
+In[1] truediv_11 (defined at P2MS_main.py:192)
+
+Operation defined at: (most recent call last)
+>>>   File "P2MS_main.py", line 198, in <module>
+>>>     main()
+>>> 
+>>>   File "P2MS_main.py", line 68, in main
+>>>     SSIM4 = 1 - tf.reduce_mean(SSIM_LOSS(tf.expand_dims(MS[:, :, :, 3], axis = -1),
+>>> 
+>>>   File "P2MS_main.py", line 162, in SSIM_LOSS
+>>>     mu1 = tf.nn.conv2d(img1, window, strides = [1, 1, 1, 1], padding = 'VALID')
+>>> 
+
+Original stack trace for 'Conv2D_21':
+  File "P2MS_main.py", line 198, in <module>
+    main()
+  File "P2MS_main.py", line 68, in main
+    SSIM4 = 1 - tf.reduce_mean(SSIM_LOSS(tf.expand_dims(MS[:, :, :, 3], axis = -1),
+  File "P2MS_main.py", line 162, in SSIM_LOSS
+    mu1 = tf.nn.conv2d(img1, window, strides = [1, 1, 1, 1], padding = 'VALID')
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py", line 1096, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/ops/nn_ops.py", line 2431, in conv2d
+    return gen_nn_ops.conv2d(
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/framework/op_def_library.py", line 744, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/framework/ops.py", line 3697, in _create_op_internal
+    ret = Operation(
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/framework/ops.py", line 2101, in __init__
+    self._traceback = tf_stack.extract_stack_for_node(self._c_op)
+

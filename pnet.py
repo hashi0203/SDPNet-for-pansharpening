@@ -33,15 +33,15 @@ class P_pan(object):
 		self.scope = scope_name
 		self.weight_vars = []
 
-		with tf.variable_scope(self.scope):
-			with tf.variable_scope('p_pan'):
+		with tf.compat.v1.variable_scope(self.scope):
+			with tf.compat.v1.variable_scope('p_pan'):
 				self.weight_vars.append(self._create_variables(1, 18, 3, scope = 'conv1'))
 				self.weight_vars.append(self._create_variables(18, 32, 3, scope = 'conv2'))
 
 	def _create_variables(self, input_filters, output_filters, kernel_size, scope):
 		shape = [kernel_size, kernel_size, input_filters, output_filters]
-		with tf.variable_scope(scope):
-			kernel = tf.Variable(tf.truncated_normal(shape, stddev = WEIGHT_INIT_STDDEV),
+		with tf.compat.v1.variable_scope(scope):
+			kernel = tf.Variable(tf.compat.v1.truncated_normal(shape, stddev = WEIGHT_INIT_STDDEV),
 			                     name = 'kernel')
 			bias = tf.Variable(tf.zeros([output_filters]), name = 'bias')
 		return (kernel, bias)
@@ -60,15 +60,15 @@ class P_ms(object):
 		self.scope = scope_name
 		self.weight_vars = []
 
-		with tf.variable_scope(self.scope):
-			with tf.variable_scope('p_ms'):
+		with tf.compat.v1.variable_scope(self.scope):
+			with tf.compat.v1.variable_scope('p_ms'):
 				self.weight_vars.append(self._create_variables(4, 18, 3, scope = 'conv1'))
 				self.weight_vars.append(self._create_variables(18, 48, 3, scope = 'conv2'))
 
 	def _create_variables(self, input_filters, output_filters, kernel_size, scope):
 		shape = [kernel_size, kernel_size, input_filters, output_filters]
-		with tf.variable_scope(scope):
-			kernel = tf.Variable(tf.truncated_normal(shape, stddev = WEIGHT_INIT_STDDEV),
+		with tf.compat.v1.variable_scope(scope):
+			kernel = tf.Variable(tf.compat.v1.truncated_normal(shape, stddev = WEIGHT_INIT_STDDEV),
 			                     name = 'kernel')
 			bias = tf.Variable(tf.zeros([output_filters]), name = 'bias')
 		return (kernel, bias)
@@ -89,8 +89,8 @@ class P_fuse(object):
 		self.scope = scope_name
 		self.weight_vars = []
 
-		with tf.variable_scope(self.scope):
-			with tf.variable_scope('p_fuse'):
+		with tf.compat.v1.variable_scope(self.scope):
+			with tf.compat.v1.variable_scope('p_fuse'):
 				self.weight_vars.append(self._create_variables(5, 48, 3, scope = 'conv1'))
 				self.weight_vars.append(self._create_variables(48, 48, 3, scope = 'conv2'))
 				self.weight_vars.append(self._create_variables(96, 48, 3, scope = 'conv3'))
@@ -105,8 +105,8 @@ class P_fuse(object):
 
 	def _create_variables(self, input_filters, output_filters, kernel_size, scope):
 		shape = [kernel_size, kernel_size, input_filters, output_filters]
-		with tf.variable_scope(scope):
-			kernel = tf.Variable(tf.truncated_normal(shape, stddev = WEIGHT_INIT_STDDEV),
+		with tf.compat.v1.variable_scope(scope):
+			kernel = tf.Variable(tf.compat.v1.truncated_normal(shape, stddev = WEIGHT_INIT_STDDEV),
 			                     name = 'kernel')
 			bias = tf.Variable(tf.zeros([output_filters]), name = 'bias')
 		return (kernel, bias)
@@ -136,10 +136,11 @@ def conv2d(x, kernel, bias, use_lrelu = True, dense = False, Scope = None, strid
 	else:
 		x_padded = tf.pad(x, [[0, 0], [1, 1], [1, 1], [0, 0]], mode = 'REFLECT')
 	# conv and add bias
-	out = tf.nn.conv2d(input = x_padded, filter = kernel, strides = [1, stride, stride, 1], padding = 'VALID')
+	# out = tf.nn.conv2d(input = x_padded, filter = kernel, strides = [1, stride, stride, 1], padding = 'VALID')
+	out = tf.nn.conv2d(input = x_padded, filters = kernel, strides = [1, stride, stride, 1], padding = 'VALID')
 	out = tf.nn.bias_add(out, bias)
 	# if BN:
-	# 	with tf.variable_scope(Scope):
+	# 	with tf.compat.v1.variable_scope(Scope):
 	# 		# print("Scope", Scope)
 	# 		# print("reuse", not is_training)
 	# 		# out = tf.contrib.layers.batch_norm(out, decay = 0.9, updates_collections = None, epsilon = 1e-5, scale = True, reuse = reuse)
@@ -156,4 +157,5 @@ def conv2d(x, kernel, bias, use_lrelu = True, dense = False, Scope = None, strid
 def up_sample(x, scale_factor = 2):
 	_, h, w, _ = x.get_shape().as_list()
 	new_size = [h * scale_factor, w * scale_factor]
-	return tf.image.resize_nearest_neighbor(x, size = new_size)
+	return tf.image.resize(x, size = new_size, method='nearest')
+	# return tf.image.resize_nearest_neighbor(x, size = new_size)

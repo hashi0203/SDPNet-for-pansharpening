@@ -4,7 +4,9 @@ import os
 import h5py
 import numpy as np
 import scipy.ndimage
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import matplotlib.pyplot as plt
 from PIL import Image
 from datetime import datetime
@@ -24,7 +26,7 @@ gt_path = 'GT.h5'
 EPOCHES = 10
 BATCH_SIZE = 4
 patch_size = 264
-logging_period = 10
+logging_period = 100
 LEARNING_RATE = 0.002
 DECAY_RATE = 0.8
 ratio = 20
@@ -33,10 +35,15 @@ ratio = 20
 
 # W0 = [0.3, 0.1, 0.3, 0.3]
 
-MODEL1_SAVE_PATH = './spat_models/2000/2000.ckpt'
-MODEL2_SAVE_PATH = './spec_models/2000/2000.ckpt'
-MS2P_MODEL_SAVEPATH = './MS2P_models/2000/2000.ckpt'
-P2MS_MODEL_SAVEPATH = './P2MS_models/2000/2000.ckpt'
+# MODEL1_SAVE_PATH = './spat_models/2000/2000.ckpt'
+# MODEL2_SAVE_PATH = './spec_models/2000/2000.ckpt'
+# MS2P_MODEL_SAVEPATH = './MS2P_models/2000/2000.ckpt'
+# P2MS_MODEL_SAVEPATH = './P2MS_models/2000/2000.ckpt'
+
+MS2P_MODEL_SAVEPATH = './MS2P_models/4800/4800.ckpt'
+P2MS_MODEL_SAVEPATH = './P2MS_models/4700/4700.ckpt'
+MODEL1_SAVE_PATH = './spat_models/4900/4900.ckpt'
+MODEL2_SAVE_PATH = './spec_models/4600/4600.ckpt'
 
 
 SPAT_INDEX = np.loadtxt("spat_diff.txt", dtype = np.int32)
@@ -46,15 +53,17 @@ SPEC_INDEX = np.loadtxt("spec_diff.txt", dtype = np.int32)
 
 FEA_NUM = 20
 
+dr = 1050.0
+
 def main():
 	with tf.device('/cpu:0'):
 		pan_data = h5py.File(pan_path, 'r')
 		pan_data = pan_data['data'][:]
-		pan_data = np.transpose(pan_data, (0, 3, 2, 1)) / 255.0
+		pan_data = np.transpose(pan_data, (0, 3, 2, 1)) / dr
 
 		gt_data = h5py.File(gt_path, 'r')
 		gt_data = gt_data['data'][:]
-		gt_data = np.transpose(gt_data, (0, 3, 2, 1)) / 255.0
+		gt_data = np.transpose(gt_data, (0, 3, 2, 1)) / dr
 
 		data = np.concatenate([gt_data, pan_data], axis = -1)
 		print("data shape:", data.shape)
@@ -76,7 +85,7 @@ def main():
 	# create the graph
 	with tf.Graph().as_default(), tf.Session() as sess:
 		PAN = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size, patch_size, 1), name = 'PAN')
-		ms = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size / 4, patch_size / 4, 4), name = 'ms')
+		ms = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size // 4, patch_size // 4, 4), name = 'ms')
 		GT = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size, patch_size, 4), name = 'GT')
 		with tf.device('/gpu:0'):
 			Pnet = PNet('pnet')
@@ -92,7 +101,7 @@ def main():
 
 		"feature loss"
 		"spatial"
-		with tf.device('/gpu:1'):
+		with tf.device('/gpu:0'):
 			NET1 = ED1('spatial_ED')
 			_ = NET1.transform(PAN, is_training = False, reuse = False)
 			SPAF1= NET1.features
@@ -112,7 +121,7 @@ def main():
 			LOSS_spat_fea = LOSS_spat_fea / FEA_NUM
 
 		"spectral"
-		with tf.device('/gpu:1'):
+		with tf.device('/gpu:0'):
 			NET2 = ED2('spectral_ED')
 			_ = NET2.transform(GT, is_training = False, reuse = False)
 			SPEF1 = NET2.features

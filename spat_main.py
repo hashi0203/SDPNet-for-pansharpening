@@ -4,7 +4,9 @@ import os
 import h5py
 import numpy as np
 import scipy.ndimage
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import matplotlib.pyplot as plt
 from PIL import Image
 from datetime import datetime
@@ -18,25 +20,27 @@ gt_path = 'GT.h5'
 EPOCHES = 10
 BATCH_SIZE = 10
 patch_size = 264
-logging_period = 10
+logging_period = 100
 LEARNING_RATE = 0.002
 DECAY_RATE = 0.85
 
 # W = [0.31, 0.05, 0.37, 0.27]
 # W = [0.35, 0.05, 0.35, 0.25]
 
-MS2P_MODEL_PATH = './MS2P_models/2000/2000.ckpt'
+MS2P_MODEL_PATH = './MS2P_models/4800/4800.ckpt'
+
+dr = 1050.0
 
 def main():
 	with tf.device('/cpu:0'):
 		source_pan_data = h5py.File(pan_path, 'r')
 		source_pan_data = source_pan_data['data'][:]
-		source_pan_data = np.transpose(source_pan_data, (0, 3, 2, 1)) / 255.0
+		source_pan_data = np.transpose(source_pan_data, (0, 3, 2, 1)) / dr
 		print("source_pan_data shape:", source_pan_data.shape)
 
 		gt_data = h5py.File(gt_path, 'r')
 		gt_data = gt_data['data'][:]
-		gt_data = np.transpose(gt_data, (0, 3, 2, 1)) / 255.0
+		gt_data = np.transpose(gt_data, (0, 3, 2, 1)) / dr
 		print("gt_data shape:", gt_data.shape)
 
 		data = np.concatenate([gt_data, source_pan_data], axis = -1)
@@ -59,7 +63,7 @@ def main():
 		# create the graph
 		with tf.Graph().as_default(), tf.Session() as sess:
 			MS = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size, patch_size, 4), name = 'MS')
-			with tf.device('/gpu:1'):
+			with tf.device('/gpu:0'):
 				pP_NET = pP_ED('pP_ED')
 				MS_converted_PAN = pP_NET.transform(I = MS, is_training = True, reuse = False)
 
@@ -80,7 +84,7 @@ def main():
 
 			theta = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope = 'spatial_ED')
 			solver = tf.train.AdamOptimizer(learning_rate).minimize(LOSS, global_step = current_iter, var_list = theta)
-			
+
 
 			sess.run(tf.global_variables_initializer())
 			saver0 = tf.train.Saver(var_list = pP_list)

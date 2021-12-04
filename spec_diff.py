@@ -4,7 +4,9 @@ import time
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import scipy.ndimage
 # from Net import Generator, WeightNet
 from scipy.misc import imread, imsave
@@ -13,6 +15,7 @@ from glob import glob
 import matplotlib.image as mpimg
 import scipy.io as scio
 import cv2
+import rasterio
 from pnet import PNet
 
 from spat_ED import ED1
@@ -22,25 +25,29 @@ from MS2Pnet import pP_ED
 
 from tensorflow.python import pywrap_tensorflow
 
-MS2P_MODEL_SAVEPATH = './MS2P_models/2000/2000.ckpt'
-P2MS_MODEL_SAVEPATH = './P2MS_models/2000/2000.ckpt'
-SPAT_MODEL_SAVEPATH = './spat_models/2000/2000.ckpt'
-SPEC_MODEL_SAVEPATH = './spec_models/2000/2000.ckpt'
+MS2P_MODEL_SAVEPATH = './MS2P_models/4800/4800.ckpt'
+P2MS_MODEL_SAVEPATH = './P2MS_models/4700/4700.ckpt'
+SPAT_MODEL_SAVEPATH = './spat_models/4900/4900.ckpt'
+SPEC_MODEL_SAVEPATH = './spec_models/4600/4600.ckpt'
 
 path1 = 'test_imgs/pan/'
 path2 = 'test_imgs/ms/'
 output_path = 'features/'
 
+dr = 1050.0
 
 def main():
 	# print('\nBegin to generate pictures ...\n')
 	"save features for examples"
 	for i in range(100):
-		file_name1 = path1 + str(i + 1) + '.png'
+		# file_name1 = path1 + str(i + 1) + '.png'
+		file_name1 = path1 + str(i + 1) + '.tif'
 		file_name2 = path2 + str(i + 1) + '.tif'
 
-		pan = imread(file_name1) / 255.0
-		ms = imread(file_name2) / 255.0
+		# pan = imread(file_name1) / dr
+		# ms = imread(file_name2) / dr
+		pan = rasterio.open(file_name1).read(1) / dr
+		ms = np.stack([rasterio.open(file_name2).read(c+1) for c in range(4)], axis=2) / dr
 		print('file1:', file_name1, 'shape:', pan.shape)
 		print('file2:', file_name2, 'shape:', ms.shape)
 		h1, w1 = pan.shape
@@ -54,7 +61,7 @@ def main():
 			spec_list = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope = 'spectral_ED')
 
 			PAN = tf.placeholder(tf.float32, shape = (1, h2, w2, 1), name = 'MS')
-			with tf.device('/gpu:1'):
+			with tf.device('/gpu:0'):
 				pMSnet = pMS_ED('pMS_ED')
 				PAN_converted_MS = pMSnet.transform(I = PAN, is_training = False, reuse = False)
 			pMS_list = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope = 'pMS_ED')

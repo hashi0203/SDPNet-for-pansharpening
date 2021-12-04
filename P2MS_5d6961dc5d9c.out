@@ -1,0 +1,1016 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+source_pan_data shape: (4914, 264, 264, 1)
+gt_data shape: (4914, 264, 264, 4)
+data shape: (4914, 264, 264, 5)
+Epoches: 8, Batch_size: 8
+Train images number 4914, Batches: 614.
+
+Train set has been trimmed 2 samples...
+
+2021-12-03 07:05:00.597948: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-03 07:05:01.095489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (8, 264, 264, 4)
+PAN_converted_MS shape: (8, 264, 264, 4)
+<tf.Variable 'pMS_ED/encoder/conv1/kernel:0' shape=(3, 3, 1, 32) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv3/kernel:0' shape=(3, 3, 64, 96) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv3/bias:0' shape=(96,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_1/kernel:0' shape=(3, 3, 96, 64) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_1/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_2/kernel:0' shape=(3, 3, 64, 32) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_2/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_3/kernel:0' shape=(3, 3, 32, 4) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_3/bias:0' shape=(4,) dtype=float32_ref>
+2021-12-03 07:05:07.594069: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch:1/8: step:10, lr:0.0019927449, loss:16.923424, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:10.937984
+
+Epoch:1/8: step:20, lr:0.0019855157, loss:19.338974, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:13.213225
+
+Epoch:1/8: step:30, lr:0.0019783129, loss:39.471134, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:15.559780
+
+Epoch:1/8: step:40, lr:0.001971136, loss:18.517006, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:18.018797
+
+Epoch:1/8: step:50, lr:0.0019639856, loss:11.690791, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:20.284126
+
+Epoch:1/8: step:60, lr:0.001956861, loss:9.516258, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:22.534234
+
+Epoch:1/8: step:70, lr:0.0019497622, loss:55.555553, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:24.743147
+
+Epoch:1/8: step:80, lr:0.0019426891, loss:15.350353, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:26.960552
+
+Epoch:1/8: step:90, lr:0.0019356417, loss:26.197258, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:29.225306
+
+Epoch:1/8: step:100, lr:0.0019286198, loss:15.366285, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:31.518327
+
+Epoch:1/8: step:110, lr:0.0019216236, loss:35.87726, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:33.698652
+
+Epoch:1/8: step:120, lr:0.0019146524, loss:12.16406, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:35.934288
+
+Epoch:1/8: step:130, lr:0.0019077066, loss:42.19068, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:38.207980
+
+Epoch:1/8: step:140, lr:0.0019007862, loss:30.985697, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:40.430822
+
+Epoch:1/8: step:150, lr:0.0018938907, loss:14.070228, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:42.669054
+
+Epoch:1/8: step:160, lr:0.0018870204, loss:30.48582, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:44.928734
+
+Epoch:1/8: step:170, lr:0.0018801749, loss:9.038784, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:47.146756
+
+Epoch:1/8: step:180, lr:0.0018733543, loss:29.424736, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:49.385031
+
+Epoch:1/8: step:190, lr:0.0018665583, loss:23.583357, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:51.676306
+
+Epoch:1/8: step:200, lr:0.0018597872, loss:9.502386, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:54.056349
+
+Epoch:1/8: step:210, lr:0.0018530404, loss:33.67012, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:56.330698
+
+Epoch:1/8: step:220, lr:0.0018463184, loss:16.219458, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:00:58.653584
+
+Epoch:1/8: step:230, lr:0.0018396204, loss:34.770184, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:00.964836
+
+Epoch:1/8: step:240, lr:0.0018329468, loss:28.999352, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:03.111335
+
+Epoch:1/8: step:250, lr:0.0018262976, loss:43.374226, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:05.370293
+
+Epoch:1/8: step:260, lr:0.0018196723, loss:13.209589, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:07.714381
+
+Epoch:1/8: step:270, lr:0.0018130712, loss:37.315308, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:10.056542
+
+Epoch:1/8: step:280, lr:0.001806494, loss:21.941584, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:12.423077
+
+Epoch:1/8: step:290, lr:0.0017999407, loss:5.8706822, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:14.784294
+
+Epoch:1/8: step:300, lr:0.0017934111, loss:18.565676, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:17.248344
+
+Epoch:1/8: step:310, lr:0.0017869052, loss:21.079382, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:19.628414
+
+Epoch:1/8: step:320, lr:0.0017804229, loss:12.468924, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:21.884950
+
+Epoch:1/8: step:330, lr:0.001773964, loss:3.0022414, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:24.163477
+
+Epoch:1/8: step:340, lr:0.0017675287, loss:10.945961, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:26.359559
+
+Epoch:1/8: step:350, lr:0.0017611167, loss:37.11018, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:28.628291
+
+Epoch:1/8: step:360, lr:0.001754728, loss:22.617966, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:30.855114
+
+Epoch:1/8: step:370, lr:0.0017483626, loss:47.407536, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:33.046929
+
+Epoch:1/8: step:380, lr:0.0017420201, loss:33.36136, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:35.338968
+
+Epoch:1/8: step:390, lr:0.0017357005, loss:44.205658, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:37.562957
+
+Epoch:1/8: step:400, lr:0.0017294041, loss:16.8402, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:39.837979
+
+Epoch:1/8: step:410, lr:0.0017231304, loss:24.264317, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:42.092471
+
+Epoch:1/8: step:420, lr:0.0017168794, loss:47.10509, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:44.272153
+
+Epoch:1/8: step:430, lr:0.0017106511, loss:5.3697467, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:46.437403
+
+Epoch:1/8: step:440, lr:0.0017044455, loss:50.798157, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:48.585979
+
+Epoch:1/8: step:450, lr:0.0016982623, loss:13.234184, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:50.837197
+
+Epoch:1/8: step:460, lr:0.0016921017, loss:21.96865, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:53.044054
+
+Epoch:1/8: step:470, lr:0.0016859632, loss:25.86734, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:55.207785
+
+Epoch:1/8: step:480, lr:0.0016798471, loss:38.91934, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:57.406991
+
+Epoch:1/8: step:490, lr:0.0016737533, loss:69.873695, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:01:59.639620
+
+Epoch:1/8: step:500, lr:0.0016676813, loss:8.958052, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:01.980517
+
+Epoch:1/8: step:510, lr:0.0016616316, loss:10.111781, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:04.216445
+
+Epoch:1/8: step:520, lr:0.0016556038, loss:21.525677, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:06.429129
+
+Epoch:1/8: step:530, lr:0.0016495977, loss:21.074686, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:08.631358
+
+Epoch:1/8: step:540, lr:0.0016436136, loss:17.731033, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:10.811549
+
+Epoch:1/8: step:550, lr:0.001637651, loss:40.236626, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:13.071642
+
+Epoch:1/8: step:560, lr:0.0016317102, loss:16.757812, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:15.305232
+
+Epoch:1/8: step:570, lr:0.001625791, loss:43.836796, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:17.513498
+
+Epoch:1/8: step:580, lr:0.0016198931, loss:15.264231, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:19.683174
+
+Epoch:1/8: step:590, lr:0.0016140166, loss:35.781754, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:21.807242
+
+Epoch:1/8: step:600, lr:0.0016081616, loss:26.613441, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:24.037034
+
+Epoch:1/8: step:610, lr:0.0016023277, loss:38.831467, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:26.226888
+
+Epoch:2/8: step:620, lr:0.0015965151, loss:42.417213, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:31.167321
+
+Epoch:2/8: step:630, lr:0.0015907234, loss:30.324732, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:33.337485
+
+Epoch:2/8: step:640, lr:0.0015849527, loss:50.80554, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:35.519548
+
+Epoch:2/8: step:650, lr:0.0015792031, loss:15.911004, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:37.656299
+
+Epoch:2/8: step:660, lr:0.0015734743, loss:6.7498164, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:39.896059
+
+Epoch:2/8: step:670, lr:0.0015677663, loss:27.556448, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:42.086864
+
+Epoch:2/8: step:680, lr:0.0015620788, loss:24.057453, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:44.365989
+
+Epoch:2/8: step:690, lr:0.0015564123, loss:34.616505, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:46.639479
+
+Epoch:2/8: step:700, lr:0.001550766, loss:6.839359, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:49.077582
+
+Epoch:2/8: step:710, lr:0.0015451404, loss:41.070305, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:51.272683
+
+Epoch:2/8: step:720, lr:0.0015395351, loss:21.379007, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:53.396240
+
+Epoch:2/8: step:730, lr:0.0015339503, loss:54.910007, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:55.572822
+
+Epoch:2/8: step:740, lr:0.0015283856, loss:33.772205, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:02:57.847891
+
+Epoch:2/8: step:750, lr:0.001522841, loss:8.058503, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:00.133777
+
+Epoch:2/8: step:760, lr:0.0015173168, loss:35.85798, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:02.460859
+
+Epoch:2/8: step:770, lr:0.0015118126, loss:13.988997, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:04.766252
+
+Epoch:2/8: step:780, lr:0.0015063282, loss:36.828648, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:07.097231
+
+Epoch:2/8: step:790, lr:0.0015008636, loss:24.380878, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:09.420304
+
+Epoch:2/8: step:800, lr:0.0014954191, loss:41.417812, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:11.862489
+
+Epoch:2/8: step:810, lr:0.0014899941, loss:44.81428, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:14.125894
+
+Epoch:2/8: step:820, lr:0.001484589, loss:32.311348, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:16.369665
+
+Epoch:2/8: step:830, lr:0.0014792033, loss:64.738014, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:18.633726
+
+Epoch:2/8: step:840, lr:0.0014738374, loss:16.879177, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:20.880461
+
+Epoch:2/8: step:850, lr:0.0014684908, loss:26.253466, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:23.062195
+
+Epoch:2/8: step:860, lr:0.0014631634, loss:28.563072, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:25.240751
+
+Epoch:2/8: step:870, lr:0.0014578557, loss:30.741264, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:27.504410
+
+Epoch:2/8: step:880, lr:0.0014525672, loss:35.687122, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:29.797290
+
+Epoch:2/8: step:890, lr:0.0014472976, loss:32.87732, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:32.038385
+
+Epoch:2/8: step:900, lr:0.0014420473, loss:16.068525, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:34.319742
+
+Epoch:2/8: step:910, lr:0.0014368162, loss:8.503711, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:36.496224
+
+Epoch:2/8: step:920, lr:0.0014316038, loss:8.07309, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:38.634453
+
+Epoch:2/8: step:930, lr:0.0014264104, loss:69.28491, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:40.831520
+
+Epoch:2/8: step:940, lr:0.0014212359, loss:64.67995, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:42.976558
+
+Epoch:2/8: step:950, lr:0.00141608, loss:19.854206, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:45.173000
+
+Epoch:2/8: step:960, lr:0.0014109431, loss:16.22054, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:47.393181
+
+Epoch:2/8: step:970, lr:0.0014058247, loss:10.126656, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:49.603169
+
+Epoch:2/8: step:980, lr:0.0014007248, loss:58.18567, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:51.780153
+
+Epoch:2/8: step:990, lr:0.0013956433, loss:39.915245, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:53.950947
+
+Epoch:2/8: step:1000, lr:0.0013905803, loss:31.13635, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:56.299113
+
+Epoch:2/8: step:1010, lr:0.0013855359, loss:35.08351, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:03:58.546241
+
+Epoch:2/8: step:1020, lr:0.0013805097, loss:13.943811, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:00.658532
+
+Epoch:2/8: step:1030, lr:0.0013755016, loss:19.05822, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:02.867337
+
+Epoch:2/8: step:1040, lr:0.0013705117, loss:28.009647, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:05.136737
+
+Epoch:2/8: step:1050, lr:0.0013655401, loss:28.730062, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:07.337551
+
+Epoch:2/8: step:1060, lr:0.0013605863, loss:10.816887, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:09.614047
+
+Epoch:2/8: step:1070, lr:0.0013556505, loss:45.26689, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:11.892789
+
+Epoch:2/8: step:1080, lr:0.0013507328, loss:25.803404, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:14.120963
+
+Epoch:2/8: step:1090, lr:0.0013458327, loss:59.271706, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:16.338141
+
+Epoch:2/8: step:1100, lr:0.0013409505, loss:14.141599, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:18.653110
+
+Epoch:2/8: step:1110, lr:0.001336086, loss:22.206036, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:20.866022
+
+Epoch:2/8: step:1120, lr:0.001331239, loss:26.525763, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:23.108425
+
+Epoch:2/8: step:1130, lr:0.0013264098, loss:39.959183, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:25.329533
+
+Epoch:2/8: step:1140, lr:0.001321598, loss:41.57811, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:27.656422
+
+Epoch:2/8: step:1150, lr:0.0013168036, loss:8.116831, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:29.913473
+
+Epoch:2/8: step:1160, lr:0.0013120268, loss:24.45521, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:32.075754
+
+Epoch:2/8: step:1170, lr:0.0013072671, loss:27.844704, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:34.252704
+
+Epoch:2/8: step:1180, lr:0.0013025248, loss:29.807825, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:36.498047
+
+Epoch:2/8: step:1190, lr:0.0012977996, loss:36.756565, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:38.732120
+
+Epoch:2/8: step:1200, lr:0.0012930918, loss:33.298428, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:41.121928
+
+Epoch:2/8: step:1210, lr:0.0012884008, loss:60.717472, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:43.379949
+
+Epoch:2/8: step:1220, lr:0.0012837269, loss:19.47699, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:45.633049
+
+Epoch:3/8: step:1230, lr:0.00127907, loss:21.200949, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:50.610870
+
+Epoch:3/8: step:1240, lr:0.0012744301, loss:48.206722, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:52.710345
+
+Epoch:3/8: step:1250, lr:0.0012698068, loss:24.821167, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:54.951870
+
+Epoch:3/8: step:1260, lr:0.0012652004, loss:30.039362, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:57.161445
+
+Epoch:3/8: step:1270, lr:0.0012606106, loss:33.512577, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:04:59.397135
+
+Epoch:3/8: step:1280, lr:0.0012560375, loss:28.035173, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:01.618755
+
+Epoch:3/8: step:1290, lr:0.0012514811, loss:21.201424, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:03.856455
+
+Epoch:3/8: step:1300, lr:0.0012469412, loss:31.642403, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:06.267283
+
+Epoch:3/8: step:1310, lr:0.0012424176, loss:11.481352, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:08.513467
+
+Epoch:3/8: step:1320, lr:0.0012379106, loss:11.291733, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:10.741439
+
+Epoch:3/8: step:1330, lr:0.0012334199, loss:36.066032, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:12.884735
+
+Epoch:3/8: step:1340, lr:0.0012289454, loss:22.28191, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:15.140040
+
+Epoch:3/8: step:1350, lr:0.0012244872, loss:10.324689, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:17.398741
+
+Epoch:3/8: step:1360, lr:0.0012200453, loss:16.519411, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:19.638346
+
+Epoch:3/8: step:1370, lr:0.0012156194, loss:15.897473, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:21.858058
+
+Epoch:3/8: step:1380, lr:0.0012112095, loss:10.516035, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:24.070157
+
+Epoch:3/8: step:1390, lr:0.0012068156, loss:7.629841, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:26.234863
+
+Epoch:3/8: step:1400, lr:0.0012024377, loss:7.532693, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:28.583606
+
+Epoch:3/8: step:1410, lr:0.0011980757, loss:15.764869, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:30.819297
+
+Epoch:3/8: step:1420, lr:0.0011937295, loss:37.917034, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:33.065512
+
+Epoch:3/8: step:1430, lr:0.0011893989, loss:12.038187, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:35.266588
+
+Epoch:3/8: step:1440, lr:0.0011850842, loss:24.220053, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:37.443902
+
+Epoch:3/8: step:1450, lr:0.0011807851, loss:20.7167, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:39.672489
+
+Epoch:3/8: step:1460, lr:0.0011765017, loss:27.46415, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:41.889576
+
+Epoch:3/8: step:1470, lr:0.0011722336, loss:62.12333, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:44.185853
+
+Epoch:3/8: step:1480, lr:0.0011679812, loss:21.530134, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:46.468491
+
+Epoch:3/8: step:1490, lr:0.0011637443, loss:19.611027, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:48.650020
+
+Epoch:3/8: step:1500, lr:0.0011595224, loss:68.222755, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:50.907583
+
+Epoch:3/8: step:1510, lr:0.0011553161, loss:23.468273, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:53.175716
+
+Epoch:3/8: step:1520, lr:0.0011511251, loss:29.131447, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:55.484308
+
+Epoch:3/8: step:1530, lr:0.0011469492, loss:32.19581, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:05:57.757172
+
+Epoch:3/8: step:1540, lr:0.0011427884, loss:47.78933, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:00.059257
+
+Epoch:3/8: step:1550, lr:0.0011386429, loss:9.973419, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:02.371066
+
+Epoch:3/8: step:1560, lr:0.0011345121, loss:36.214146, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:04.647846
+
+Epoch:3/8: step:1570, lr:0.0011303964, loss:67.60587, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:07.005453
+
+Epoch:3/8: step:1580, lr:0.0011262959, loss:48.52314, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:09.356377
+
+Epoch:3/8: step:1590, lr:0.0011222101, loss:28.869562, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:11.719971
+
+Epoch:3/8: step:1600, lr:0.001118139, loss:34.283195, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:14.278523
+
+Epoch:3/8: step:1610, lr:0.0011140828, loss:6.6355653, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:16.522065
+
+Epoch:3/8: step:1620, lr:0.0011100413, loss:66.363266, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:18.755955
+
+Epoch:3/8: step:1630, lr:0.0011060145, loss:26.410563, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:20.974108
+
+Epoch:3/8: step:1640, lr:0.0011020022, loss:44.083523, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:23.160611
+
+Epoch:3/8: step:1650, lr:0.0010980044, loss:36.0615, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:25.333206
+
+Epoch:3/8: step:1660, lr:0.0010940211, loss:3.60505, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:27.597851
+
+Epoch:3/8: step:1670, lr:0.0010900525, loss:76.39603, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:29.810286
+
+Epoch:3/8: step:1680, lr:0.0010860983, loss:32.717316, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:32.099791
+
+Epoch:3/8: step:1690, lr:0.0010821583, loss:12.97848, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:34.344436
+
+Epoch:3/8: step:1700, lr:0.0010782324, loss:10.737712, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:36.762406
+
+Epoch:3/8: step:1710, lr:0.001074321, loss:28.398428, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:39.033377
+
+Epoch:3/8: step:1720, lr:0.0010704236, loss:44.121727, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:41.271365
+
+Epoch:3/8: step:1730, lr:0.0010665406, loss:26.51883, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:43.509264
+
+Epoch:3/8: step:1740, lr:0.0010626715, loss:30.822006, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:45.729097
+
+Epoch:3/8: step:1750, lr:0.0010588166, loss:28.740362, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:47.969819
+
+Epoch:3/8: step:1760, lr:0.0010549756, loss:34.637554, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:50.252011
+
+Epoch:3/8: step:1770, lr:0.0010511485, loss:12.491782, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:52.500743
+
+Epoch:3/8: step:1780, lr:0.0010473352, loss:26.91414, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:54.788195
+
+Epoch:3/8: step:1790, lr:0.0010435358, loss:20.898863, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:57.044711
+
+Epoch:3/8: step:1800, lr:0.0010397503, loss:33.88054, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:06:59.446742
+
+Epoch:3/8: step:1810, lr:0.0010359783, loss:41.65035, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:01.737425
+
+Epoch:3/8: step:1820, lr:0.0010322202, loss:9.668869, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:03.889533
+
+Epoch:3/8: step:1830, lr:0.0010284757, loss:30.940094, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:06.037883
+
+Epoch:3/8: step:1840, lr:0.0010247448, loss:6.2021837, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:08.281879
+
+Epoch:4/8: step:1850, lr:0.0010210272, loss:29.95109, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:13.267089
+
+Epoch:4/8: step:1860, lr:0.0010173232, loss:27.80053, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:15.447628
+
+Epoch:4/8: step:1870, lr:0.0010136327, loss:49.246464, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:17.721016
+
+Epoch:4/8: step:1880, lr:0.0010099557, loss:34.136574, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:19.891847
+
+Epoch:4/8: step:1890, lr:0.0010062921, loss:24.92112, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:22.089406
+
+Epoch:4/8: step:1900, lr:0.0010026414, loss:8.336602, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:24.455990
+
+Epoch:4/8: step:1910, lr:0.0009990042, loss:17.957586, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:26.633554
+
+Epoch:4/8: step:1920, lr:0.0009953801, loss:58.185883, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:28.858320
+
+Epoch:4/8: step:1930, lr:0.0009917691, loss:11.44993, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:31.020779
+
+Epoch:4/8: step:1940, lr:0.0009881714, loss:34.874157, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:33.199667
+
+Epoch:4/8: step:1950, lr:0.0009845867, loss:14.961313, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:35.427887
+
+Epoch:4/8: step:1960, lr:0.0009810149, loss:60.90411, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:37.617073
+
+Epoch:4/8: step:1970, lr:0.0009774562, loss:28.579473, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:39.884243
+
+Epoch:4/8: step:1980, lr:0.00097391027, loss:13.08895, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:42.134962
+
+Epoch:4/8: step:1990, lr:0.0009703772, loss:26.178106, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:44.359096
+
+Epoch:4/8: step:2000, lr:0.000966857, loss:19.093275, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:46.801387
+
+Epoch:4/8: step:2010, lr:0.00096334965, loss:37.44886, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:48.933715
+
+Epoch:4/8: step:2020, lr:0.0009598549, loss:44.390347, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:51.157471
+
+Epoch:4/8: step:2030, lr:0.00095637277, loss:82.10672, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:53.345555
+
+Epoch:4/8: step:2040, lr:0.0009529034, loss:11.8726015, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:55.567766
+
+Epoch:4/8: step:2050, lr:0.0009494465, loss:15.000288, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:07:57.807591
+
+Epoch:4/8: step:2060, lr:0.0009460024, loss:21.149563, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:00.025256
+
+Epoch:4/8: step:2070, lr:0.0009425706, loss:7.5282307, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:02.284227
+
+Epoch:4/8: step:2080, lr:0.00093915116, loss:38.212692, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:04.512431
+
+Epoch:4/8: step:2090, lr:0.00093574426, loss:15.550328, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:06.747065
+
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/training/saver.py:1056: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Epoch:4/8: step:2100, lr:0.00093234977, loss:17.74817, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:09.126742
+
+Epoch:4/8: step:2110, lr:0.0009289675, loss:23.942728, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:11.386425
+
+Epoch:4/8: step:2120, lr:0.00092559756, loss:31.524261, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:13.650133
+
+Epoch:4/8: step:2130, lr:0.0009222397, loss:16.126879, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:15.870005
+
+Epoch:4/8: step:2140, lr:0.0009188942, loss:32.698357, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:18.036522
+
+Epoch:4/8: step:2150, lr:0.00091556075, loss:8.119636, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:20.290487
+
+Epoch:4/8: step:2160, lr:0.00091223937, loss:12.33257, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:22.582183
+
+Epoch:4/8: step:2170, lr:0.0009089301, loss:11.39751, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:24.815590
+
+Epoch:4/8: step:2180, lr:0.0009056328, loss:30.15694, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:27.063481
+
+Epoch:4/8: step:2190, lr:0.0009023475, loss:29.81005, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:29.319819
+
+Epoch:4/8: step:2200, lr:0.00089907413, loss:44.15115, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:31.679413
+
+Epoch:4/8: step:2210, lr:0.0008958125, loss:17.915464, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:33.945095
+
+Epoch:4/8: step:2220, lr:0.00089256285, loss:10.185683, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:36.157030
+
+Epoch:4/8: step:2230, lr:0.0008893249, loss:15.100854, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:38.384207
+
+Epoch:4/8: step:2240, lr:0.0008860987, loss:22.080194, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:40.642667
+
+Epoch:4/8: step:2250, lr:0.00088288425, loss:26.296686, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:42.864774
+
+Epoch:4/8: step:2260, lr:0.00087968144, loss:36.941788, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:45.197653
+
+Epoch:4/8: step:2270, lr:0.0008764903, loss:19.718071, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:47.433181
+
+Epoch:4/8: step:2280, lr:0.00087331067, loss:32.761642, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:49.671601
+
+Epoch:4/8: step:2290, lr:0.00087014254, loss:11.458988, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:51.913462
+
+Epoch:4/8: step:2300, lr:0.000866986, loss:16.859678, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:54.305528
+
+Epoch:4/8: step:2310, lr:0.00086384086, loss:36.886814, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:56.450069
+
+Epoch:4/8: step:2320, lr:0.00086070714, loss:42.77034, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:08:58.664656
+
+Epoch:4/8: step:2330, lr:0.00085758476, loss:13.97934, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:00.913197
+
+Epoch:4/8: step:2340, lr:0.00085447374, loss:35.034317, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:03.175433
+
+Epoch:4/8: step:2350, lr:0.00085137406, loss:25.214619, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:05.373970
+
+Epoch:4/8: step:2360, lr:0.0008482856, loss:21.23113, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:07.646627
+
+Epoch:4/8: step:2370, lr:0.0008452082, loss:47.898296, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:09.854862
+
+Epoch:4/8: step:2380, lr:0.00084214204, loss:46.120735, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:12.122773
+
+Epoch:4/8: step:2390, lr:0.00083908706, loss:49.13316, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:14.361293
+
+Epoch:4/8: step:2400, lr:0.00083604315, loss:31.071348, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:16.666764
+
+Epoch:4/8: step:2410, lr:0.00083301024, loss:13.931956, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:18.857673
+
+Epoch:4/8: step:2420, lr:0.00082998833, loss:43.033955, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:21.134425
+
+Epoch:4/8: step:2430, lr:0.0008269775, loss:56.3565, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:23.384960
+
+Epoch:4/8: step:2440, lr:0.00082397746, loss:8.545415, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:25.644593
+
+Epoch:4/8: step:2450, lr:0.0008209884, loss:45.86262, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:27.858424
+
+Epoch:5/8: step:2460, lr:0.00081801007, loss:16.840414, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:32.849797
+
+Epoch:5/8: step:2470, lr:0.0008150426, loss:21.815084, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:35.041501
+
+Epoch:5/8: step:2480, lr:0.000812086, loss:47.4406, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:37.298049
+
+Epoch:5/8: step:2490, lr:0.0008091399, loss:39.50999, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:39.560364
+
+Epoch:5/8: step:2500, lr:0.0008062047, loss:44.374687, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:41.893626
+
+Epoch:5/8: step:2510, lr:0.00080328004, loss:26.515419, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:44.087129
+
+Epoch:5/8: step:2520, lr:0.00080036605, loss:58.445633, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:46.303437
+
+Epoch:5/8: step:2530, lr:0.0007974625, loss:12.796867, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:48.546100
+
+Epoch:5/8: step:2540, lr:0.00079456967, loss:50.12043, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:50.711339
+
+Epoch:5/8: step:2550, lr:0.00079168717, loss:41.21063, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:52.862018
+
+Epoch:5/8: step:2560, lr:0.0007888152, loss:20.795246, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:55.033154
+
+Epoch:5/8: step:2570, lr:0.00078595366, loss:30.030313, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:57.282086
+
+Epoch:5/8: step:2580, lr:0.00078310247, loss:42.893894, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:09:59.527940
+
+Epoch:5/8: step:2590, lr:0.00078026165, loss:36.26294, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:01.754777
+
+Epoch:5/8: step:2600, lr:0.0007774311, loss:17.193188, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:04.097728
+
+Epoch:5/8: step:2610, lr:0.0007746109, loss:42.189743, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:06.222517
+
+Epoch:5/8: step:2620, lr:0.0007718009, loss:41.274895, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:08.461408
+
+Epoch:5/8: step:2630, lr:0.00076900097, loss:54.57744, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:10.712066
+
+Epoch:5/8: step:2640, lr:0.00076621136, loss:24.978422, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:12.892336
+
+Epoch:5/8: step:2650, lr:0.0007634317, loss:17.769012, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:15.069053
+
+Epoch:5/8: step:2660, lr:0.00076066237, loss:24.166609, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:17.231010
+
+Epoch:5/8: step:2670, lr:0.0007579028, loss:56.223087, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:19.516652
+
+Epoch:5/8: step:2680, lr:0.0007551535, loss:54.613125, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:21.714097
+
+Epoch:5/8: step:2690, lr:0.00075241405, loss:26.477573, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:24.012904
+
+Epoch:5/8: step:2700, lr:0.0007496844, loss:19.968513, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:26.377598
+
+Epoch:5/8: step:2710, lr:0.0007469648, loss:51.81412, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:28.584478
+
+Epoch:5/8: step:2720, lr:0.00074425514, loss:12.773002, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:30.855178
+
+Epoch:5/8: step:2730, lr:0.0007415553, loss:6.807142, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:33.150296
+
+Epoch:5/8: step:2740, lr:0.0007388651, loss:44.91435, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:35.406771
+
+Epoch:5/8: step:2750, lr:0.0007361849, loss:15.132522, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:37.588476
+
+Epoch:5/8: step:2760, lr:0.00073351414, loss:67.05466, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:39.912679
+
+Epoch:5/8: step:2770, lr:0.0007308532, loss:9.848855, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:42.165590
+
+Epoch:5/8: step:2780, lr:0.000728202, loss:30.383232, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:44.449015
+
+Epoch:5/8: step:2790, lr:0.0007255602, loss:12.362669, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:46.703685
+
+Epoch:5/8: step:2800, lr:0.00072292815, loss:35.213394, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:49.105193
+
+Epoch:5/8: step:2810, lr:0.0007203056, loss:27.330486, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:51.339179
+
+Epoch:5/8: step:2820, lr:0.00071769266, loss:32.99082, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:53.587083
+
+Epoch:5/8: step:2830, lr:0.00071508903, loss:51.680553, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:55.808803
+
+Epoch:5/8: step:2840, lr:0.000712495, loss:11.740629, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:10:58.048599
+
+Epoch:5/8: step:2850, lr:0.0007099102, loss:31.029356, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:00.291850
+
+Epoch:5/8: step:2860, lr:0.00070733484, loss:21.22922, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:02.526992
+
+Epoch:5/8: step:2870, lr:0.000704769, loss:42.774136, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:04.807518
+
+Epoch:5/8: step:2880, lr:0.00070221233, loss:91.668594, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:07.042136
+
+Epoch:5/8: step:2890, lr:0.00069966493, loss:26.75873, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:09.300872
+
+Epoch:5/8: step:2900, lr:0.00069712667, loss:12.1800165, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:11.671510
+
+Epoch:5/8: step:2910, lr:0.0006945977, loss:40.815224, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:13.901088
+
+Epoch:5/8: step:2920, lr:0.0006920781, loss:53.877163, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:16.130415
+
+Epoch:5/8: step:2930, lr:0.0006895674, loss:37.544632, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:18.480779
+
+Epoch:5/8: step:2940, lr:0.000687066, loss:24.362469, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:20.717692
+
+Epoch:5/8: step:2950, lr:0.0006845734, loss:19.132788, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:22.977170
+
+Epoch:5/8: step:2960, lr:0.00068209, loss:21.174389, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:25.224680
+
+Epoch:5/8: step:2970, lr:0.00067961565, loss:62.337315, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:27.513833
+
+Epoch:5/8: step:2980, lr:0.0006771502, loss:39.840054, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:29.771801
+
+Epoch:5/8: step:2990, lr:0.00067469385, loss:6.574396, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:31.972334
+
+Epoch:5/8: step:3000, lr:0.0006722462, loss:43.893337, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:34.395850
+
+Epoch:5/8: step:3010, lr:0.00066980754, loss:14.119812, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:36.624897
+
+Epoch:5/8: step:3020, lr:0.0006673777, loss:15.724676, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:38.894846
+
+Epoch:5/8: step:3030, lr:0.0006649567, loss:14.8429165, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:41.127177
+
+Epoch:5/8: step:3040, lr:0.00066254445, loss:6.6570964, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:43.358055
+
+Epoch:5/8: step:3050, lr:0.00066014106, loss:18.564257, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:45.606045
+
+Epoch:5/8: step:3060, lr:0.00065774616, loss:70.7205, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:47.958259
+
+Epoch:5/8: step:3070, lr:0.00065536, loss:15.567966, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:50.237078
+
+Epoch:6/8: step:3080, lr:0.0006529827, loss:11.711437, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:55.680459
+
+Epoch:6/8: step:3090, lr:0.0006506138, loss:46.05141, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:11:57.863183
+
+Epoch:6/8: step:3100, lr:0.0006482537, loss:30.061552, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:00.279377
+
+Epoch:6/8: step:3110, lr:0.000645902, loss:47.410603, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:02.428097
+
+Epoch:6/8: step:3120, lr:0.0006435589, loss:21.701, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:04.641139
+
+Epoch:6/8: step:3130, lr:0.0006412243, loss:29.863876, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:06.858166
+
+Epoch:6/8: step:3140, lr:0.0006388981, loss:74.43893, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:09.137994
+
+Epoch:6/8: step:3150, lr:0.00063658046, loss:17.174107, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:11.343312
+
+Epoch:6/8: step:3160, lr:0.0006342711, loss:37.027866, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:13.601783
+
+Epoch:6/8: step:3170, lr:0.0006319702, loss:48.770943, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:15.800921
+
+Epoch:6/8: step:3180, lr:0.0006296776, loss:12.964973, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:18.034956
+
+Epoch:6/8: step:3190, lr:0.0006273934, loss:35.89423, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:20.268727
+
+Epoch:6/8: step:3200, lr:0.00062511745, loss:45.408863, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:22.606881
+
+Epoch:6/8: step:3210, lr:0.0006228496, loss:12.786316, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:24.853734
+
+Epoch:6/8: step:3220, lr:0.0006205902, loss:27.617697, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:27.142872
+
+Epoch:6/8: step:3230, lr:0.00061833893, loss:24.590347, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:29.392994
+
+Epoch:6/8: step:3240, lr:0.0006160958, loss:13.741742, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:31.581198
+
+Epoch:6/8: step:3250, lr:0.0006138609, loss:79.56518, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:33.880042
+
+Epoch:6/8: step:3260, lr:0.000611634, loss:24.031485, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:36.184398
+
+Epoch:6/8: step:3270, lr:0.00060941506, loss:40.740665, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:38.502009
+
+Epoch:6/8: step:3280, lr:0.00060720433, loss:45.40155, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:40.714720
+
+Epoch:6/8: step:3290, lr:0.0006050016, loss:19.219957, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:42.888816
+
+Epoch:6/8: step:3300, lr:0.00060280686, loss:19.60303, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:45.281125
+
+Epoch:6/8: step:3310, lr:0.0006006202, loss:27.17978, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:47.525982
+
+Epoch:6/8: step:3320, lr:0.0005984412, loss:14.55673, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:49.795595
+
+Epoch:6/8: step:3330, lr:0.0005962703, loss:25.831425, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:52.057083
+
+Epoch:6/8: step:3340, lr:0.00059410726, loss:7.7273655, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:54.255912
+
+Epoch:6/8: step:3350, lr:0.000591952, loss:44.488876, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:56.468082
+
+Epoch:6/8: step:3360, lr:0.00058980467, loss:68.037506, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:12:58.647882
+
+Epoch:6/8: step:3370, lr:0.00058766495, loss:15.534264, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:00.852109
+
+Epoch:6/8: step:3380, lr:0.0005855331, loss:21.307434, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:03.088709
+
+Epoch:6/8: step:3390, lr:0.00058340904, loss:4.688101, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:05.357750
+
+Epoch:6/8: step:3400, lr:0.0005812926, loss:27.150318, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:07.767334
+
+Epoch:6/8: step:3410, lr:0.0005791839, loss:27.29444, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:09.949482
+
+Epoch:6/8: step:3420, lr:0.00057708274, loss:15.581266, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:12.204309
+
+Epoch:6/8: step:3430, lr:0.0005749893, loss:51.537605, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:14.434651
+
+Epoch:6/8: step:3440, lr:0.0005729035, loss:35.796062, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:16.631927
+
+Epoch:6/8: step:3450, lr:0.0005708252, loss:13.293111, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:18.852871
+
+Epoch:6/8: step:3460, lr:0.00056875445, loss:8.836071, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:21.104310
+
+Epoch:6/8: step:3470, lr:0.00056669116, loss:10.106424, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:23.356087
+
+Epoch:6/8: step:3480, lr:0.0005646354, loss:37.113613, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:25.555318
+
+Epoch:6/8: step:3490, lr:0.0005625871, loss:29.44215, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:27.827999
+
+Epoch:6/8: step:3500, lr:0.00056054624, loss:51.643127, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:30.223895
+
+Epoch:6/8: step:3510, lr:0.0005585127, loss:14.460953, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:32.370379
+
+Epoch:6/8: step:3520, lr:0.0005564868, loss:31.999708, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:34.547065
+
+Epoch:6/8: step:3530, lr:0.0005544679, loss:11.8082905, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:36.885048
+
+Epoch:6/8: step:3540, lr:0.0005524565, loss:24.962261, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:39.187777
+
+Epoch:6/8: step:3550, lr:0.0005504524, loss:17.26155, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:41.517055
+
+Epoch:6/8: step:3560, lr:0.00054845546, loss:44.17655, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:43.878336
+
+Epoch:6/8: step:3570, lr:0.000546466, loss:20.093752, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:46.094879
+
+Epoch:6/8: step:3580, lr:0.0005444834, loss:22.2805, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:48.361400
+
+Epoch:6/8: step:3590, lr:0.00054250826, loss:40.566093, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:50.589567
+
+Epoch:6/8: step:3600, lr:0.00054054026, loss:67.49271, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:53.053181
+
+Epoch:6/8: step:3610, lr:0.00053857936, loss:17.3363, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:55.332505
+
+Epoch:6/8: step:3620, lr:0.0005366256, loss:45.702995, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:57.623439
+
+Epoch:6/8: step:3630, lr:0.00053467887, loss:5.508632, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:13:59.921910
+
+Epoch:6/8: step:3640, lr:0.0005327393, loss:45.780544, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:02.094047
+
+Epoch:6/8: step:3650, lr:0.0005308066, loss:40.510864, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:04.368467
+
+Epoch:6/8: step:3660, lr:0.0005288811, loss:11.881162, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:06.603052
+
+Epoch:6/8: step:3670, lr:0.0005269625, loss:41.851734, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:08.810106
+
+Epoch:6/8: step:3680, lr:0.00052505085, loss:9.893005, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:11.034431
+
+Epoch:7/8: step:3690, lr:0.00052314607, loss:27.294796, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:16.305676
+
+Epoch:7/8: step:3700, lr:0.0005212483, loss:51.12939, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:18.746220
+
+Epoch:7/8: step:3710, lr:0.0005193574, loss:36.60932, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:21.054643
+
+Epoch:7/8: step:3720, lr:0.0005174734, loss:12.484284, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:23.365327
+
+Epoch:7/8: step:3730, lr:0.0005155962, loss:25.88794, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:25.658310
+
+Epoch:7/8: step:3740, lr:0.0005137257, loss:17.701326, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:27.925624
+
+Epoch:7/8: step:3750, lr:0.0005118621, loss:33.469814, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:30.191310
+
+Epoch:7/8: step:3760, lr:0.0005100052, loss:38.007587, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:32.429801
+
+Epoch:7/8: step:3770, lr:0.0005081551, loss:40.595814, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:34.532171
+
+Epoch:7/8: step:3780, lr:0.00050631166, loss:13.663994, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:36.798896
+
+Epoch:7/8: step:3790, lr:0.0005044749, loss:41.931244, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:39.056576
+
+Epoch:7/8: step:3800, lr:0.00050264486, loss:36.96884, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:41.480456
+
+Epoch:7/8: step:3810, lr:0.00050082145, loss:48.720497, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:43.682948
+
+Epoch:7/8: step:3820, lr:0.0004990047, loss:17.482481, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:45.942365
+
+Epoch:7/8: step:3830, lr:0.0004971944, loss:19.073399, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:48.169150
+
+Epoch:7/8: step:3840, lr:0.0004953908, loss:35.208164, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:50.395567
+
+Epoch:7/8: step:3850, lr:0.00049359363, loss:12.388904, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:52.583195
+
+Epoch:7/8: step:3860, lr:0.000491803, loss:11.809312, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:54.815382
+
+Epoch:7/8: step:3870, lr:0.000490019, loss:23.615791, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:57.038319
+
+Epoch:7/8: step:3880, lr:0.00048824132, loss:34.41831, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:14:59.136469
+
+Epoch:7/8: step:3890, lr:0.00048647015, loss:14.572181, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:01.431012
+
+Epoch:7/8: step:3900, lr:0.0004847054, loss:22.132946, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:03.830093
+
+Epoch:7/8: step:3910, lr:0.00048294707, loss:19.392994, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:06.082911
+
+Epoch:7/8: step:3920, lr:0.0004811951, loss:74.7912, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:08.231211
+
+Epoch:7/8: step:3930, lr:0.00047944952, loss:55.630714, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:10.383644
+
+Epoch:7/8: step:3940, lr:0.00047771027, loss:53.69439, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:12.673138
+
+Epoch:7/8: step:3950, lr:0.00047597723, loss:27.83624, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:14.952683
+
+Epoch:7/8: step:3960, lr:0.00047425056, loss:30.926405, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:17.208496
+
+Epoch:7/8: step:3970, lr:0.00047253014, loss:23.535511, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:19.411861
+
+Epoch:7/8: step:3980, lr:0.000470816, loss:22.170654, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:21.660517
+
+Epoch:7/8: step:3990, lr:0.00046910802, loss:53.536785, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:23.858370
+
+Epoch:7/8: step:4000, lr:0.00046740618, loss:57.578754, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:26.395697
+
+Epoch:7/8: step:4010, lr:0.00046571062, loss:28.026585, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:28.645436
+
+Epoch:7/8: step:4020, lr:0.00046402117, loss:41.649197, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:30.809528
+
+Epoch:7/8: step:4030, lr:0.0004623379, loss:23.775976, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:33.024466
+
+Epoch:7/8: step:4040, lr:0.00046066067, loss:36.171688, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:35.315183
+
+Epoch:7/8: step:4050, lr:0.00045898953, loss:19.803778, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:37.537668
+
+Epoch:7/8: step:4060, lr:0.0004573245, loss:28.866707, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:39.809235
+
+Epoch:7/8: step:4070, lr:0.00045566546, loss:28.981876, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:42.029104
+
+Epoch:7/8: step:4080, lr:0.00045401248, loss:50.486496, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:44.287639
+
+Epoch:7/8: step:4090, lr:0.00045236544, loss:47.851383, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:46.491572
+
+Epoch:7/8: step:4100, lr:0.00045072442, loss:47.715786, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:48.835030
+
+Epoch:7/8: step:4110, lr:0.00044908933, loss:10.270842, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:51.083715
+
+Epoch:7/8: step:4120, lr:0.0004474602, loss:28.61565, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:53.340167
+
+Epoch:7/8: step:4130, lr:0.00044583698, loss:18.712843, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:55.561403
+
+Epoch:7/8: step:4140, lr:0.00044421962, loss:18.264694, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:15:57.782987
+
+Epoch:7/8: step:4150, lr:0.0004426081, loss:27.10929, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:00.064664
+
+Epoch:7/8: step:4160, lr:0.00044100248, loss:14.70868, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:02.371226
+
+Epoch:7/8: step:4170, lr:0.00043940273, loss:46.00449, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:04.722847
+
+Epoch:7/8: step:4180, lr:0.0004378087, loss:39.098892, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:06.941660
+
+Epoch:7/8: step:4190, lr:0.00043622052, loss:10.466193, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:09.166899
+
+Epoch:7/8: step:4200, lr:0.000434638, loss:12.1507225, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:11.581289
+
+Epoch:7/8: step:4210, lr:0.00043306133, loss:18.139143, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:13.830916
+
+Epoch:7/8: step:4220, lr:0.0004314903, loss:33.16008, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:16.079216
+
+Epoch:7/8: step:4230, lr:0.00042992496, loss:27.297853, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:18.298460
+
+Epoch:7/8: step:4240, lr:0.00042836537, loss:16.486639, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:20.530606
+
+Epoch:7/8: step:4250, lr:0.00042681143, loss:48.555916, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:22.758258
+
+Epoch:7/8: step:4260, lr:0.00042526308, loss:22.273836, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:24.981122
+
+Epoch:7/8: step:4270, lr:0.00042372034, loss:33.258884, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:27.222420
+
+Epoch:7/8: step:4280, lr:0.0004221833, loss:46.655476, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:29.434391
+
+Epoch:7/8: step:4290, lr:0.0004206517, loss:34.994316, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:31.649108
+
+Epoch:8/8: step:4300, lr:0.0004191257, loss:18.35991, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:36.880857
+
+Epoch:8/8: step:4310, lr:0.00041760528, loss:4.567112, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:39.093263
+
+Epoch:8/8: step:4320, lr:0.00041609033, loss:25.740473, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:41.370031
+
+Epoch:8/8: step:4330, lr:0.00041458092, loss:43.924294, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:43.570998
+
+Epoch:8/8: step:4340, lr:0.00041307692, loss:21.748753, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:45.785687
+
+Epoch:8/8: step:4350, lr:0.00041157845, loss:41.099705, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:48.019354
+
+Epoch:8/8: step:4360, lr:0.00041008537, loss:18.284527, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:50.328242
+
+Epoch:8/8: step:4370, lr:0.00040859773, loss:35.14661, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:52.548030
+
+Epoch:8/8: step:4380, lr:0.00040711544, loss:43.409245, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:54.710494
+
+Epoch:8/8: step:4390, lr:0.00040563862, loss:14.594622, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:56.995717
+
+Epoch:8/8: step:4400, lr:0.00040416713, loss:14.325198, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:16:59.463463
+
+Epoch:8/8: step:4410, lr:0.00040270085, loss:12.403839, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:01.649317
+
+Epoch:8/8: step:4420, lr:0.00040124005, loss:15.48798, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:03.870261
+
+Epoch:8/8: step:4430, lr:0.00039978448, loss:46.31174, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:06.076691
+
+Epoch:8/8: step:4440, lr:0.0003983342, loss:41.265434, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:08.374125
+
+Epoch:8/8: step:4450, lr:0.0003968892, loss:35.901264, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:10.614038
+
+Epoch:8/8: step:4460, lr:0.00039544937, loss:34.558563, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:12.920771
+
+Epoch:8/8: step:4470, lr:0.00039401482, loss:14.7080555, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:15.175224
+
+Epoch:8/8: step:4480, lr:0.00039258544, loss:24.64683, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:17.422036
+
+Epoch:8/8: step:4490, lr:0.0003911613, loss:33.31342, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:19.693023
+
+Epoch:8/8: step:4500, lr:0.00038974232, loss:9.553676, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:22.126480
+
+Epoch:8/8: step:4510, lr:0.00038832848, loss:38.59758, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:24.446588
+
+Epoch:8/8: step:4520, lr:0.0003869197, loss:35.774925, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:26.738089
+
+Epoch:8/8: step:4530, lr:0.0003855161, loss:36.81779, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:28.986175
+
+Epoch:8/8: step:4540, lr:0.0003841176, loss:15.640184, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:31.202976
+
+Epoch:8/8: step:4550, lr:0.00038272413, loss:20.031443, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:33.485523
+
+Epoch:8/8: step:4560, lr:0.0003813358, loss:18.102257, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:35.722870
+
+Epoch:8/8: step:4570, lr:0.00037995237, loss:18.381044, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:38.012754
+
+Epoch:8/8: step:4580, lr:0.00037857404, loss:23.765497, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:40.255201
+
+Epoch:8/8: step:4590, lr:0.00037720072, loss:24.9524, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:42.491267
+
+Epoch:8/8: step:4600, lr:0.00037583234, loss:13.763107, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:44.910231
+
+Epoch:8/8: step:4610, lr:0.00037446897, loss:11.62019, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:47.176676
+
+Epoch:8/8: step:4620, lr:0.0003731105, loss:36.362175, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:49.458869
+
+Epoch:8/8: step:4630, lr:0.000371757, loss:19.527895, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:51.693432
+
+Epoch:8/8: step:4640, lr:0.00037040838, loss:12.599836, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:53.902807
+
+Epoch:8/8: step:4650, lr:0.00036906466, loss:28.553013, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:56.137177
+
+Epoch:8/8: step:4660, lr:0.00036772588, loss:24.628386, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:17:58.402598
+
+Epoch:8/8: step:4670, lr:0.00036639182, loss:48.39773, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:00.739061
+
+Epoch:8/8: step:4680, lr:0.00036506267, loss:10.124938, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:03.018671
+
+Epoch:8/8: step:4690, lr:0.00036373833, loss:28.86178, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:05.262064
+
+Epoch:8/8: step:4700, lr:0.00036241888, loss:75.25015, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:07.699328
+
+Epoch:8/8: step:4710, lr:0.0003611041, loss:35.13534, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:09.960275
+
+Epoch:8/8: step:4720, lr:0.00035979418, loss:22.344393, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:12.197259
+
+Epoch:8/8: step:4730, lr:0.00035848893, loss:46.78104, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:14.492227
+
+Epoch:8/8: step:4740, lr:0.00035718846, loss:20.933743, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:16.619307
+
+Epoch:8/8: step:4750, lr:0.00035589273, loss:31.243288, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:18.853594
+
+Epoch:8/8: step:4760, lr:0.0003546016, loss:51.452526, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:20.949837
+
+Epoch:8/8: step:4770, lr:0.0003533153, loss:53.05779, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:23.214335
+
+Epoch:8/8: step:4780, lr:0.00035203353, loss:16.893187, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:25.425180
+
+Epoch:8/8: step:4790, lr:0.00035075648, loss:35.793335, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:27.601938
+
+Epoch:8/8: step:4800, lr:0.00034948406, loss:27.04318, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:30.012567
+
+Epoch:8/8: step:4810, lr:0.0003482162, loss:31.825928, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:32.227122
+
+Epoch:8/8: step:4820, lr:0.00034695305, loss:69.7854, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:34.437469
+
+Epoch:8/8: step:4830, lr:0.0003456944, loss:34.362076, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:36.689606
+
+Epoch:8/8: step:4840, lr:0.00034444037, loss:25.361057, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:38.887828
+
+Epoch:8/8: step:4850, lr:0.00034319083, loss:54.204006, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:41.172996
+
+Epoch:8/8: step:4860, lr:0.00034194588, loss:29.718622, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:43.398714
+
+Epoch:8/8: step:4870, lr:0.00034070542, loss:34.07015, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:45.598457
+
+Epoch:8/8: step:4880, lr:0.00033946938, loss:50.243088, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:47.778538
+
+Epoch:8/8: step:4890, lr:0.00033823794, loss:16.607004, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:50.014482
+
+Epoch:8/8: step:4900, lr:0.00033701095, loss:12.848838, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:52.429856
+
+Epoch:8/8: step:4910, lr:0.00033578838, loss:44.1472, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:54.657334
+
+Epoch:8/8: step:4912, lr:0.0003355444, loss:46.71003, pMS_max:1.0, pMS_min:1.0, elapsed_time:0:18:55.233730
+

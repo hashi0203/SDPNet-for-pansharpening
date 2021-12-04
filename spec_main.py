@@ -4,7 +4,9 @@ import os
 import h5py
 import numpy as np
 import scipy.ndimage
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import matplotlib.pyplot as plt
 from PIL import Image
 from datetime import datetime
@@ -18,22 +20,24 @@ gt_path = 'GT.h5'
 EPOCHES = 10
 BATCH_SIZE = 10
 patch_size = 264
-logging_period = 10
+logging_period = 100
 LEARNING_RATE = 0.002
 DECAY_RATE = 0.85
 
-P2MS_MODEL_PATH = './P2MS_models/2000/2000.ckpt'
+P2MS_MODEL_PATH = './P2MS_models/4700/4700.ckpt'
+
+dr = 1050.0
 
 def main():
 	with tf.device('/cpu:0'):
 		source_pan_data = h5py.File(pan_path, 'r')
 		source_pan_data = source_pan_data['data'][:]
-		source_pan_data = np.transpose(source_pan_data, (0, 3, 2, 1)) / 255.0
+		source_pan_data = np.transpose(source_pan_data, (0, 3, 2, 1)) / dr
 		print("source_pan_data shape:", source_pan_data.shape)
 
 		gt_data = h5py.File(gt_path, 'r')
 		gt_data = gt_data['data'][:]
-		gt_data = np.transpose(gt_data, (0, 3, 2, 1)) / 255.0
+		gt_data = np.transpose(gt_data, (0, 3, 2, 1)) / dr
 		print("gt_data shape:", gt_data.shape)
 
 		data = np.concatenate([gt_data, source_pan_data], axis = -1)
@@ -53,14 +57,14 @@ def main():
 
 		# create the graph
 		with tf.Graph().as_default(), tf.Session() as sess:
-			PAN = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size/4, patch_size/4, 1), name = 'MS')
+			PAN = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size//4, patch_size//4, 1), name = 'MS')
 			with tf.device('/gpu:0'):
 				pMS_NET = pMS_ED('pMS_ED')
 				PAN_converted_MS = pMS_NET.transform(I = PAN, is_training = False, reuse = True)
 
 			pMS_list = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope = 'pMS_ED')
 
-			INPUT = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size/4, patch_size/4, 4), name = 'INPUT')
+			INPUT = tf.placeholder(tf.float32, shape = (BATCH_SIZE, patch_size//4, patch_size//4, 4), name = 'INPUT')
 			NET=ED2('spectral_ED')
 			OUTPUT = NET.transform(INPUT, is_training=True, reuse=False)
 
