@@ -1,0 +1,93 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+data shape: (4914, 264, 264, 5)
+Epoches: 10, Batch_size: 4
+Train images number 4914, Batches: 1228.
+
+Train set has been trimmed 2 samples...
+
+2021-12-05 03:29:27.250972: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-05 03:29:27.737292: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (4, 264, 264, 1)
+41
+127
+33
+70
+111
+5
+17
+105
+40
+94
+44
+67
+21
+103
+15
+123
+125
+31
+117
+90
+93
+60
+107
+81
+4
+114
+86
+122
+113
+123
+119
+31
+59
+34
+27
+72
+89
+98
+106
+76
+2021-12-05 03:29:35.911944: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch: 1/10, Step: 100/1228, Loss: 0.045093417, Lr: 0.0019639856, Time: 0:00:41.595473
+
+Epoch: 1/10, Step: 200/1228, Loss: 0.04652106, Lr: 0.0019286198, Time: 0:01:11.366289
+
+Epoch: 1/10, Step: 300/1228, Loss: 0.054250874, Lr: 0.0018938907, Time: 0:01:41.370926
+
+Epoch: 1/10, Step: 400/1228, Loss: 0.06713469, Lr: 0.0018597872, Time: 0:02:11.372930
+
+Epoch: 1/10, Step: 500/1228, Loss: 0.04503169, Lr: 0.0018262976, Time: 0:02:41.017732
+
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/training/saver.py:1056: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Epoch: 1/10, Step: 600/1228, Loss: 0.0075181564, Lr: 0.0017934111, Time: 0:03:11.288218
+
+Epoch: 1/10, Step: 700/1228, Loss: 0.025304139, Lr: 0.0017611167, Time: 0:03:41.229737
+
+Epoch: 1/10, Step: 800/1228, Loss: 0.024811529, Lr: 0.0017294041, Time: 0:04:10.428079
+
+Epoch: 1/10, Step: 900/1228, Loss: 0.010758825, Lr: 0.0016982623, Time: 0:04:39.652227
+
+Epoch: 1/10, Step: 1000/1228, Loss: 0.022264097, Lr: 0.0016676813, Time: 0:05:08.789007
+
+Epoch: 1/10, Step: 1100/1228, Loss: 0.019937983, Lr: 0.001637651, Time: 0:05:38.431129
+
+Epoch: 1/10, Step: 1200/1228, Loss: 0.010314865, Lr: 0.0016081616, Time: 0:06:07.638164
+
+Epoch: 2/10, Step: 72/1228, Loss: 0.014207034, Lr: 0.0015792031, Time: 0:06:41.027656
+
+Epoch: 2/10, Step: 172/1228, Loss: 0.027080653, Lr: 0.001550766, Time: 0:07:10.152153
+
+Epoch: 2/10, Step: 272/1228, Loss: 0.020364515, Lr: 0.001522841, Time: 0:07:39.505855
+
+Epoch: 2/10, Step: 372/1228, Loss: 0.020525137, Lr: 0.0014954191, Time: 0:08:07.885574
+
+Epoch: 2/10, Step: 472/1228, Loss: 0.015264937, Lr: 0.0014684908, Time: 0:08:35.808386
+
+Epoch: 2/10, Step: 572/1228, Loss: 0.013139072, Lr: 0.0014420473, Time: 0:09:04.304606
+

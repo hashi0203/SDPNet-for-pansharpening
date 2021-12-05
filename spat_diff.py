@@ -25,16 +25,17 @@ from MS2Pnet import pP_ED
 
 from tensorflow.python import pywrap_tensorflow
 
-MS2P_MODEL_SAVEPATH = './MS2P_models/4800/4800.ckpt'
-P2MS_MODEL_SAVEPATH = './P2MS_models/4700/4700.ckpt'
-SPAT_MODEL_SAVEPATH = './spat_models/4900/4900.ckpt'
-SPEC_MODEL_SAVEPATH = './spec_models/4600/4600.ckpt'
+import config
+MS2P_MODEL_SAVEPATH = config.MS2P_MODEL_SAVEPATH
+P2MS_MODEL_SAVEPATH = config.P2MS_MODEL_SAVEPATH
+SPAT_MODEL_SAVEPATH = config.SPAT_MODEL_SAVEPATH
+SPEC_MODEL_SAVEPATH = config.SPEC_MODEL_SAVEPATH
 
 path1 = 'test_imgs/pan/'
 path2 = 'test_imgs/ms/'
-output_path = 'features/'
+# output_path = 'features/'
 
-dr = 1050.0
+dr = config.dr
 
 def main():
 	# print('\nBegin to generate pictures ...\n')
@@ -96,7 +97,7 @@ def main():
 	channel_sort = np.flip(np.argsort(Diff), axis=0)
 	sorted_Diff = sorted(Diff, reverse=True)
 
-	f = "spat_diff.txt"
+	f = config.SPAT_DIFF_SAVEPATH
 	for i in range(len(channel_sort)):
 		if i==0:
 			with open(f, "w") as file:

@@ -21,25 +21,27 @@ import rasterio
 from tensorflow.python import pywrap_tensorflow
 from tqdm import tqdm
 
-MODEL_SAVE_PATH = './models/5130.ckpt'
-# MODEL_SAVE_PATH = './models/12280/12280.ckpt'
+import config
+
+# MODEL_SAVE_PATH = './models/5130.ckpt'
+MODEL_SAVE_PATH = config.MODEL_SAVE_PATH
 path1 = 'test_imgs/pan_org/'
 path2 = 'test_imgs/ms_org/'
-output_path = 'results/'
+output_path = config.OUTPUT_PATH
 
 def main():
 	print('\nBegin to generate pictures ...\n')
 	t=[]
-	for i, p in tqdm(enumerate([255.0, 23600.0])):
+	for i, p in tqdm(enumerate([255.0, config.dr])):
 		file_name1 = path1 + str(i + 1) + '.png'
 		file_name2 = path2 + str(i + 1) + '.tif'
 
 		if i == 1:
-			pan = imread(file_name1) / p
-			print(np.max(imread(file_name1)))
-			ms = np.stack([rasterio.open(file_name2).read(c+1) for c in range(4)], axis=2) / p
-			print(np.max(np.stack([rasterio.open(file_name2).read(c+1) for c in range(4)], axis=2)))
+			off_test = config.off_test
+			pan = (imread(file_name1) + off_test) / p
+			ms = (np.stack([rasterio.open(file_name2).read(c+1) for c in range(4)], axis=2) + off_test) / p
 		else:
+			off_test = 0
 			pan = imread(file_name1) / p
 			ms = imread(file_name2) / p
 		print('file1:', file_name1, 'shape:', pan.shape)
@@ -75,7 +77,7 @@ def main():
 			scio.savemat(output_path + str(i + 1) + '.mat', {'i': output[0, :, :, :]})
 			for j, c in enumerate(["red", "green", "blue", "nir"]):
 				print(type(output[0, :, :, j]), output[0, :, :, j].dtype)
-				cv2.imwrite(output_path + str(i + 1) + '-' + c + '.tif', (output[0, :, :, j] * p).astype('uint' + str(8 * (i+1))))
+				cv2.imwrite(output_path + str(i + 1) + '-' + c + '.tif', ((output[0, :, :, j] + off_test) * p).astype('uint' + str(8 * (i+1))))
 			end=time.time()
 			t.append(end-begin)
 	print("Time: mean: %s,, std: %s" % (np.mean(t), np.std(t)))

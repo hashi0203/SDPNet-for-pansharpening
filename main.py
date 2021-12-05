@@ -18,6 +18,9 @@ from spec_ED import ED2
 from P2MSnet import pMS_ED
 from MS2Pnet import pP_ED
 
+import config
+model_date = config.model_date
+
 # from tensorflow.python import pywrap_tensorflow
 
 pan_path = 'PAN.h5'
@@ -40,20 +43,20 @@ ratio = 20
 # MS2P_MODEL_SAVEPATH = './MS2P_models/2000/2000.ckpt'
 # P2MS_MODEL_SAVEPATH = './P2MS_models/2000/2000.ckpt'
 
-MS2P_MODEL_SAVEPATH = './MS2P_models/4800/4800.ckpt'
-P2MS_MODEL_SAVEPATH = './P2MS_models/4700/4700.ckpt'
-MODEL1_SAVE_PATH = './spat_models/4900/4900.ckpt'
-MODEL2_SAVE_PATH = './spec_models/4600/4600.ckpt'
+MS2P_MODEL_SAVEPATH = config.MS2P_MODEL_SAVEPATH
+P2MS_MODEL_SAVEPATH = config.P2MS_MODEL_SAVEPATH
+MODEL1_SAVE_PATH = config.SPAT_MODEL_SAVEPATH
+MODEL2_SAVE_PATH = config.SPEC_MODEL_SAVEPATH
 
 
-SPAT_INDEX = np.loadtxt("spat_diff.txt", dtype = np.int32)
+SPAT_INDEX = np.loadtxt(config.SPAT_DIFF_SAVEPATH, dtype = np.int32)
 # print("SPAT_INDEX:", SPAT_INDEX)
-SPEC_INDEX = np.loadtxt("spec_diff.txt", dtype = np.int32)
+SPEC_INDEX = np.loadtxt(config.SPEC_DIFF_SAVEPATH, dtype = np.int32)
 # print("SPEC_INDEX:", SPEC_INDEX)
 
 FEA_NUM = 20
 
-dr = 1050.0
+dr = config.dr
 
 def main():
 	with tf.device('/cpu:0'):
@@ -210,7 +213,7 @@ def main():
 				result = sess.run(merged, feed_dict = FEED_DICT)
 				writer.add_summary(result, step)
 				if step % 100 == 0:
-					saver.save(sess, 'models/' + str(step) + '/' + str(step) + '.ckpt')
+					saver.save(sess, 'models/' + model_date + '/' + str(step) + '/' + str(step) + '.ckpt')
 
 				is_last_step = (epoch == EPOCHES - 1) and (batch == n_batches - 1)
 				if is_last_step or step % logging_period == 0:
@@ -220,7 +223,7 @@ def main():
 					print('Epoch: %d/%d, Step: %d/%d, Loss: %s, Lr: %s, Time: %s\n' % (
 						epoch + 1, EPOCHES, step % n_batches, n_batches, loss, lr, elapsed_time))
 
-			saver.save(sess, 'models/' + str(step) + '/' + str(step) + '.ckpt')
+			saver.save(sess, 'models/' + model_date + '/' + str(step) + '/' + str(step) + '.ckpt')
 
 
 

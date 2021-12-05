@@ -1,0 +1,406 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+file1: test_imgs/pan/1.tif shape: (264, 264)
+file2: test_imgs/ms/1.tif shape: (66, 66, 4)
+2021-12-05 03:22:19.199770: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-05 03:22:19.694831: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+2021-12-05 03:22:21.267085: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+file1: test_imgs/pan/2.tif shape: (264, 264)
+file2: test_imgs/ms/2.tif shape: (66, 66, 4)
+2021-12-05 03:22:22.267335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/3.tif shape: (264, 264)
+file2: test_imgs/ms/3.tif shape: (66, 66, 4)
+2021-12-05 03:22:22.467265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/4.tif shape: (264, 264)
+file2: test_imgs/ms/4.tif shape: (66, 66, 4)
+2021-12-05 03:22:22.668925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/5.tif shape: (264, 264)
+file2: test_imgs/ms/5.tif shape: (66, 66, 4)
+2021-12-05 03:22:22.886085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/6.tif shape: (264, 264)
+file2: test_imgs/ms/6.tif shape: (66, 66, 4)
+2021-12-05 03:22:23.084439: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/7.tif shape: (264, 264)
+file2: test_imgs/ms/7.tif shape: (66, 66, 4)
+2021-12-05 03:22:23.294820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/8.tif shape: (264, 264)
+file2: test_imgs/ms/8.tif shape: (66, 66, 4)
+2021-12-05 03:22:23.494178: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/9.tif shape: (264, 264)
+file2: test_imgs/ms/9.tif shape: (66, 66, 4)
+2021-12-05 03:22:23.692481: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/10.tif shape: (264, 264)
+file2: test_imgs/ms/10.tif shape: (66, 66, 4)
+2021-12-05 03:22:23.910719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/11.tif shape: (264, 264)
+file2: test_imgs/ms/11.tif shape: (66, 66, 4)
+2021-12-05 03:22:24.109667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/12.tif shape: (264, 264)
+file2: test_imgs/ms/12.tif shape: (66, 66, 4)
+2021-12-05 03:22:24.313758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/13.tif shape: (264, 264)
+file2: test_imgs/ms/13.tif shape: (66, 66, 4)
+2021-12-05 03:22:24.521672: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/14.tif shape: (264, 264)
+file2: test_imgs/ms/14.tif shape: (66, 66, 4)
+2021-12-05 03:22:24.723085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/15.tif shape: (264, 264)
+file2: test_imgs/ms/15.tif shape: (66, 66, 4)
+2021-12-05 03:22:24.932688: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/16.tif shape: (264, 264)
+file2: test_imgs/ms/16.tif shape: (66, 66, 4)
+2021-12-05 03:22:25.132516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/17.tif shape: (264, 264)
+file2: test_imgs/ms/17.tif shape: (66, 66, 4)
+2021-12-05 03:22:25.342511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/18.tif shape: (264, 264)
+file2: test_imgs/ms/18.tif shape: (66, 66, 4)
+2021-12-05 03:22:25.547588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/19.tif shape: (264, 264)
+file2: test_imgs/ms/19.tif shape: (66, 66, 4)
+2021-12-05 03:22:25.759970: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/20.tif shape: (264, 264)
+file2: test_imgs/ms/20.tif shape: (66, 66, 4)
+2021-12-05 03:22:25.962054: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/21.tif shape: (264, 264)
+file2: test_imgs/ms/21.tif shape: (66, 66, 4)
+2021-12-05 03:22:26.162316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/22.tif shape: (264, 264)
+file2: test_imgs/ms/22.tif shape: (66, 66, 4)
+2021-12-05 03:22:26.364199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/23.tif shape: (264, 264)
+file2: test_imgs/ms/23.tif shape: (66, 66, 4)
+2021-12-05 03:22:26.566202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/24.tif shape: (264, 264)
+file2: test_imgs/ms/24.tif shape: (66, 66, 4)
+2021-12-05 03:22:26.776407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/25.tif shape: (264, 264)
+file2: test_imgs/ms/25.tif shape: (66, 66, 4)
+2021-12-05 03:22:26.978906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/26.tif shape: (264, 264)
+file2: test_imgs/ms/26.tif shape: (66, 66, 4)
+2021-12-05 03:22:27.324423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/27.tif shape: (264, 264)
+file2: test_imgs/ms/27.tif shape: (66, 66, 4)
+2021-12-05 03:22:27.523663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/28.tif shape: (264, 264)
+file2: test_imgs/ms/28.tif shape: (66, 66, 4)
+2021-12-05 03:22:27.733082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/29.tif shape: (264, 264)
+file2: test_imgs/ms/29.tif shape: (66, 66, 4)
+2021-12-05 03:22:27.938669: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/30.tif shape: (264, 264)
+file2: test_imgs/ms/30.tif shape: (66, 66, 4)
+2021-12-05 03:22:28.139624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/31.tif shape: (264, 264)
+file2: test_imgs/ms/31.tif shape: (66, 66, 4)
+2021-12-05 03:22:28.342012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/32.tif shape: (264, 264)
+file2: test_imgs/ms/32.tif shape: (66, 66, 4)
+2021-12-05 03:22:28.543476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/33.tif shape: (264, 264)
+file2: test_imgs/ms/33.tif shape: (66, 66, 4)
+2021-12-05 03:22:28.751583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/34.tif shape: (264, 264)
+file2: test_imgs/ms/34.tif shape: (66, 66, 4)
+2021-12-05 03:22:28.964618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/35.tif shape: (264, 264)
+file2: test_imgs/ms/35.tif shape: (66, 66, 4)
+2021-12-05 03:22:29.168018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/36.tif shape: (264, 264)
+file2: test_imgs/ms/36.tif shape: (66, 66, 4)
+2021-12-05 03:22:29.376830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/37.tif shape: (264, 264)
+file2: test_imgs/ms/37.tif shape: (66, 66, 4)
+2021-12-05 03:22:29.580729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/38.tif shape: (264, 264)
+file2: test_imgs/ms/38.tif shape: (66, 66, 4)
+2021-12-05 03:22:29.786024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/39.tif shape: (264, 264)
+file2: test_imgs/ms/39.tif shape: (66, 66, 4)
+2021-12-05 03:22:30.011290: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/40.tif shape: (264, 264)
+file2: test_imgs/ms/40.tif shape: (66, 66, 4)
+2021-12-05 03:22:30.214280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/41.tif shape: (264, 264)
+file2: test_imgs/ms/41.tif shape: (66, 66, 4)
+2021-12-05 03:22:30.428364: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/42.tif shape: (264, 264)
+file2: test_imgs/ms/42.tif shape: (66, 66, 4)
+2021-12-05 03:22:30.639446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/43.tif shape: (264, 264)
+file2: test_imgs/ms/43.tif shape: (66, 66, 4)
+2021-12-05 03:22:30.848419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/44.tif shape: (264, 264)
+file2: test_imgs/ms/44.tif shape: (66, 66, 4)
+2021-12-05 03:22:31.047921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/45.tif shape: (264, 264)
+file2: test_imgs/ms/45.tif shape: (66, 66, 4)
+2021-12-05 03:22:31.260264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/46.tif shape: (264, 264)
+file2: test_imgs/ms/46.tif shape: (66, 66, 4)
+2021-12-05 03:22:31.462367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/47.tif shape: (264, 264)
+file2: test_imgs/ms/47.tif shape: (66, 66, 4)
+2021-12-05 03:22:31.672371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/48.tif shape: (264, 264)
+file2: test_imgs/ms/48.tif shape: (66, 66, 4)
+2021-12-05 03:22:31.880241: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/49.tif shape: (264, 264)
+file2: test_imgs/ms/49.tif shape: (66, 66, 4)
+2021-12-05 03:22:32.078690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/50.tif shape: (264, 264)
+file2: test_imgs/ms/50.tif shape: (66, 66, 4)
+2021-12-05 03:22:32.283293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/51.tif shape: (264, 264)
+file2: test_imgs/ms/51.tif shape: (66, 66, 4)
+2021-12-05 03:22:32.486605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/52.tif shape: (264, 264)
+file2: test_imgs/ms/52.tif shape: (66, 66, 4)
+2021-12-05 03:22:32.833868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/53.tif shape: (264, 264)
+file2: test_imgs/ms/53.tif shape: (66, 66, 4)
+2021-12-05 03:22:33.043793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/54.tif shape: (264, 264)
+file2: test_imgs/ms/54.tif shape: (66, 66, 4)
+2021-12-05 03:22:33.259411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/55.tif shape: (264, 264)
+file2: test_imgs/ms/55.tif shape: (66, 66, 4)
+2021-12-05 03:22:33.462807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/56.tif shape: (264, 264)
+file2: test_imgs/ms/56.tif shape: (66, 66, 4)
+2021-12-05 03:22:33.674783: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/57.tif shape: (264, 264)
+file2: test_imgs/ms/57.tif shape: (66, 66, 4)
+2021-12-05 03:22:33.882734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/58.tif shape: (264, 264)
+file2: test_imgs/ms/58.tif shape: (66, 66, 4)
+2021-12-05 03:22:34.095548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/59.tif shape: (264, 264)
+file2: test_imgs/ms/59.tif shape: (66, 66, 4)
+2021-12-05 03:22:34.295213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/60.tif shape: (264, 264)
+file2: test_imgs/ms/60.tif shape: (66, 66, 4)
+2021-12-05 03:22:34.501737: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/61.tif shape: (264, 264)
+file2: test_imgs/ms/61.tif shape: (66, 66, 4)
+2021-12-05 03:22:34.711952: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/62.tif shape: (264, 264)
+file2: test_imgs/ms/62.tif shape: (66, 66, 4)
+2021-12-05 03:22:34.912487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/63.tif shape: (264, 264)
+file2: test_imgs/ms/63.tif shape: (66, 66, 4)
+2021-12-05 03:22:35.125370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/64.tif shape: (264, 264)
+file2: test_imgs/ms/64.tif shape: (66, 66, 4)
+2021-12-05 03:22:35.337818: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/65.tif shape: (264, 264)
+file2: test_imgs/ms/65.tif shape: (66, 66, 4)
+2021-12-05 03:22:35.555587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/66.tif shape: (264, 264)
+file2: test_imgs/ms/66.tif shape: (66, 66, 4)
+2021-12-05 03:22:35.762049: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/67.tif shape: (264, 264)
+file2: test_imgs/ms/67.tif shape: (66, 66, 4)
+2021-12-05 03:22:35.971565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/68.tif shape: (264, 264)
+file2: test_imgs/ms/68.tif shape: (66, 66, 4)
+2021-12-05 03:22:36.186893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/69.tif shape: (264, 264)
+file2: test_imgs/ms/69.tif shape: (66, 66, 4)
+2021-12-05 03:22:36.392180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/70.tif shape: (264, 264)
+file2: test_imgs/ms/70.tif shape: (66, 66, 4)
+2021-12-05 03:22:36.599175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/71.tif shape: (264, 264)
+file2: test_imgs/ms/71.tif shape: (66, 66, 4)
+2021-12-05 03:22:36.807922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/72.tif shape: (264, 264)
+file2: test_imgs/ms/72.tif shape: (66, 66, 4)
+2021-12-05 03:22:37.017138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/73.tif shape: (264, 264)
+file2: test_imgs/ms/73.tif shape: (66, 66, 4)
+2021-12-05 03:22:37.223757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/74.tif shape: (264, 264)
+file2: test_imgs/ms/74.tif shape: (66, 66, 4)
+2021-12-05 03:22:37.428143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/75.tif shape: (264, 264)
+file2: test_imgs/ms/75.tif shape: (66, 66, 4)
+2021-12-05 03:22:37.645250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/76.tif shape: (264, 264)
+file2: test_imgs/ms/76.tif shape: (66, 66, 4)
+2021-12-05 03:22:37.854400: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/77.tif shape: (264, 264)
+file2: test_imgs/ms/77.tif shape: (66, 66, 4)
+2021-12-05 03:22:38.202378: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/78.tif shape: (264, 264)
+file2: test_imgs/ms/78.tif shape: (66, 66, 4)
+2021-12-05 03:22:38.409910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/79.tif shape: (264, 264)
+file2: test_imgs/ms/79.tif shape: (66, 66, 4)
+2021-12-05 03:22:38.618136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/80.tif shape: (264, 264)
+file2: test_imgs/ms/80.tif shape: (66, 66, 4)
+2021-12-05 03:22:38.829406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/81.tif shape: (264, 264)
+file2: test_imgs/ms/81.tif shape: (66, 66, 4)
+2021-12-05 03:22:39.037077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/82.tif shape: (264, 264)
+file2: test_imgs/ms/82.tif shape: (66, 66, 4)
+2021-12-05 03:22:39.247368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/83.tif shape: (264, 264)
+file2: test_imgs/ms/83.tif shape: (66, 66, 4)
+2021-12-05 03:22:39.455565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/84.tif shape: (264, 264)
+file2: test_imgs/ms/84.tif shape: (66, 66, 4)
+2021-12-05 03:22:39.674627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/85.tif shape: (264, 264)
+file2: test_imgs/ms/85.tif shape: (66, 66, 4)
+2021-12-05 03:22:39.880222: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/86.tif shape: (264, 264)
+file2: test_imgs/ms/86.tif shape: (66, 66, 4)
+2021-12-05 03:22:40.082963: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/87.tif shape: (264, 264)
+file2: test_imgs/ms/87.tif shape: (66, 66, 4)
+2021-12-05 03:22:40.294795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/88.tif shape: (264, 264)
+file2: test_imgs/ms/88.tif shape: (66, 66, 4)
+2021-12-05 03:22:40.495789: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/89.tif shape: (264, 264)
+file2: test_imgs/ms/89.tif shape: (66, 66, 4)
+2021-12-05 03:22:40.705254: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/90.tif shape: (264, 264)
+file2: test_imgs/ms/90.tif shape: (66, 66, 4)
+2021-12-05 03:22:40.908627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/91.tif shape: (264, 264)
+file2: test_imgs/ms/91.tif shape: (66, 66, 4)
+2021-12-05 03:22:41.119362: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/92.tif shape: (264, 264)
+file2: test_imgs/ms/92.tif shape: (66, 66, 4)
+2021-12-05 03:22:41.327480: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/93.tif shape: (264, 264)
+file2: test_imgs/ms/93.tif shape: (66, 66, 4)
+2021-12-05 03:22:41.527465: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/94.tif shape: (264, 264)
+file2: test_imgs/ms/94.tif shape: (66, 66, 4)
+2021-12-05 03:22:41.734741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/95.tif shape: (264, 264)
+file2: test_imgs/ms/95.tif shape: (66, 66, 4)
+2021-12-05 03:22:41.929809: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/96.tif shape: (264, 264)
+file2: test_imgs/ms/96.tif shape: (66, 66, 4)
+2021-12-05 03:22:42.145861: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/97.tif shape: (264, 264)
+file2: test_imgs/ms/97.tif shape: (66, 66, 4)
+2021-12-05 03:22:42.350252: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/98.tif shape: (264, 264)
+file2: test_imgs/ms/98.tif shape: (66, 66, 4)
+2021-12-05 03:22:42.563571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/99.tif shape: (264, 264)
+file2: test_imgs/ms/99.tif shape: (66, 66, 4)
+2021-12-05 03:22:42.771377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)
+file1: test_imgs/pan/100.tif shape: (264, 264)
+file2: test_imgs/ms/100.tif shape: (66, 66, 4)
+2021-12-05 03:22:42.970968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (1, 66, 66, 4)

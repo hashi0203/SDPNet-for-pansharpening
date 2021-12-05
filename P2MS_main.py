@@ -14,17 +14,19 @@ from P2MSnet import pMS_ED
 import cv2
 import scipy.io as scio
 from scipy.misc import imsave, imread
+import config
+model_date = config.model_date
 pan_path = 'PAN.h5'
 gt_path = 'GT.h5'
 
-EPOCHES = 8
+EPOCHES = 16
 BATCH_SIZE = 8
 patch_size = 264
 logging_period = 100
 LEARNING_RATE = 0.002
 DECAY_RATE = 0.8
 
-dr = 1050.0
+dr = config.dr
 
 def main():
 	with tf.device('/cpu:0'):
@@ -82,7 +84,7 @@ def main():
 			solver = tf.train.AdamOptimizer(learning_rate).minimize(LOSS, global_step = current_iter, var_list = theta)
 
 			sess.run(tf.global_variables_initializer())
-			saver = tf.train.Saver(max_to_keep = 20)
+			saver = tf.train.Saver(max_to_keep = None)
 			tf.summary.scalar('Loss', LOSS)
 			tf.summary.scalar('Learning rate', learning_rate)
 			tf.summary.image('PAN', PAN, max_outputs = 3)
@@ -110,7 +112,7 @@ def main():
 					writer.add_summary(result, step)
 
 					if step % 100 == 0:
-						saver.save(sess, 'P2MS_models/' + str(step) + '/' + str(step) + '.ckpt')
+						saver.save(sess, 'P2MS_models/' + model_date + '/' + str(step) + '/' + str(step) + '.ckpt')
 
 					is_last_step = (epoch == EPOCHES - 1) and (batch == n_batches - 1)
 					if is_last_step or step % logging_period == 0:

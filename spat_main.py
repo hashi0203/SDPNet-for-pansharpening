@@ -13,11 +13,12 @@ from datetime import datetime
 import cv2
 from spat_ED import ED1
 from MS2Pnet import pP_ED
-
+import config
+model_date = config.model_date
 pan_path = 'PAN.h5'
 gt_path = 'GT.h5'
 
-EPOCHES = 10
+EPOCHES = 20
 BATCH_SIZE = 10
 patch_size = 264
 logging_period = 100
@@ -27,9 +28,9 @@ DECAY_RATE = 0.85
 # W = [0.31, 0.05, 0.37, 0.27]
 # W = [0.35, 0.05, 0.35, 0.25]
 
-MS2P_MODEL_PATH = './MS2P_models/4800/4800.ckpt'
+MS2P_MODEL_PATH = config.MS2P_MODEL_SAVEPATH
 
-dr = 1050.0
+dr = config.dr
 
 def main():
 	with tf.device('/cpu:0'):
@@ -89,7 +90,7 @@ def main():
 			sess.run(tf.global_variables_initializer())
 			saver0 = tf.train.Saver(var_list = pP_list)
 			saver0.restore(sess, MS2P_MODEL_PATH)
-			saver = tf.train.Saver(max_to_keep = 50)
+			saver = tf.train.Saver(max_to_keep = None)
 			tf.summary.scalar('Loss', LOSS)
 			tf.summary.scalar('Learning rate', learning_rate)
 			tf.summary.image('input', INPUT, max_outputs = 3)
@@ -123,7 +124,7 @@ def main():
 					result = sess.run(merged, feed_dict = FEED_DICT)
 					writer.add_summary(result, step)
 					if step % 100 == 0:
-						saver.save(sess, 'spat_models/' + str(step) + '/' + str(step) + '.ckpt')
+						saver.save(sess, 'spat_models/' + model_date + '/' + str(step) + '/' + str(step) + '.ckpt')
 
 					is_last_step = (epoch == EPOCHES - 1) and (batch == n_batches - 1)
 					if is_last_step or step % logging_period == 0:
@@ -132,7 +133,7 @@ def main():
 						lr = sess.run(learning_rate)
 						print('Epoch:%d/%d: step:%d, lr:%s, loss:%s, elapsed_time:%s\n' % (
 							epoch + 1, EPOCHES, step, lr, loss, elapsed_time))
-				saver.save(sess, 'spat_models/' + str(step) + '/' + str(step) + '.ckpt')
+				saver.save(sess, 'spat_models/' + model_date + '/' + str(step) + '/' + str(step) + '.ckpt')
 
 		writer.close()
 

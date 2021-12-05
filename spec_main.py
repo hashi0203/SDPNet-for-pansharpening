@@ -13,20 +13,21 @@ from datetime import datetime
 import cv2
 from spec_ED import ED2
 from P2MSnet import pMS_ED
-
+import config
+model_date = config.model_date
 pan_path = 'PAN.h5'
 gt_path = 'GT.h5'
 
-EPOCHES = 10
+EPOCHES = 20
 BATCH_SIZE = 10
 patch_size = 264
 logging_period = 100
 LEARNING_RATE = 0.002
 DECAY_RATE = 0.85
 
-P2MS_MODEL_PATH = './P2MS_models/4700/4700.ckpt'
+P2MS_MODEL_PATH = config.P2MS_MODEL_SAVEPATH
 
-dr = 1050.0
+dr = config.dr
 
 def main():
 	with tf.device('/cpu:0'):
@@ -90,7 +91,7 @@ def main():
 			saver0 = tf.train.Saver(var_list = pMS_list)
 			saver0.restore(sess, P2MS_MODEL_PATH)
 
-			saver = tf.train.Saver(max_to_keep = 50)
+			saver = tf.train.Saver(max_to_keep = None)
 			tf.summary.scalar('Loss', LOSS)
 			tf.summary.scalar('Loss_mse', MSE_LOSS)
 			tf.summary.scalar('Loss_ssim', S_LOSS)
@@ -131,7 +132,7 @@ def main():
 					result = sess.run(merged, feed_dict = FEED_DICT)
 					writer.add_summary(result, step)
 					if step % 100 == 0:
-						saver.save(sess, 'spec_models/' + str(step) + '/' + str(step) + '.ckpt')
+						saver.save(sess, 'spec_models/' + model_date + '/' + str(step) + '/' + str(step) + '.ckpt')
 
 					is_last_step = (epoch == EPOCHES - 1) and (batch == n_batches - 1)
 					if is_last_step or step % logging_period == 0:
@@ -141,7 +142,7 @@ def main():
 						print('Epoch:%d/%d: step:%d, lr:%s, loss:%s, elapsed_time:%s\n' % (
 							epoch + 1, EPOCHES, step, lr, loss, elapsed_time))
 
-				saver.save(sess, 'spec_models/' + str(step) + '/' + str(step) + '.ckpt')
+				saver.save(sess, 'spec_models/' + model_date + '/' + str(step) + '/' + str(step) + '.ckpt')
 
 
 
