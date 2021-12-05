@@ -39,11 +39,18 @@ gt_path = 'GT-test.h5'
 pan_test_imgs_path = 'test_imgs/pan_test/'
 ms_test_imgs_path = 'test_imgs/ms_test/'
 
-model_date = "1205-3"
-MS2P = "4500"
-P2MS = "4300"
-SPAT = "3500"
-SPEC = "5500"
+# model_date = "1205-3"
+# MS2P = "4500"
+# P2MS = "4300"
+# SPAT = "3500"
+# SPEC = "5500"
+# MODEL = "7600"
+
+model_date = "1205-4"
+MS2P = "8100"
+P2MS = "7700"
+SPAT = "7700"
+SPEC = "7600"
 MODEL = "0"
 
 MS2P_MODEL_SAVEPATH = './MS2P_models/%s/%s/%s.ckpt' % (model_date, MS2P, MS2P)
