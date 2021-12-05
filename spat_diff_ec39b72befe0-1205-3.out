@@ -1,0 +1,706 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+file1: test_imgs/pan_test/1.tif shape: (264, 264)
+file2: test_imgs/ms_test/1.tif shape: (66, 66, 4)
+2021-12-05 10:49:57.379339: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-05 10:49:59.078510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:49:59.080426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:49:59.082216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:49:59.083997: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+2021-12-05 10:50:00.388091: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+file1: test_imgs/pan_test/2.tif shape: (264, 264)
+file2: test_imgs/ms_test/2.tif shape: (66, 66, 4)
+2021-12-05 10:50:01.587761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:01.589303: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:01.590827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:01.592351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/3.tif shape: (264, 264)
+file2: test_imgs/ms_test/3.tif shape: (66, 66, 4)
+2021-12-05 10:50:01.923974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:01.925514: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:01.927042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:01.928564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/4.tif shape: (264, 264)
+file2: test_imgs/ms_test/4.tif shape: (66, 66, 4)
+2021-12-05 10:50:02.210903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:02.212441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:02.213967: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:02.215487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/5.tif shape: (264, 264)
+file2: test_imgs/ms_test/5.tif shape: (66, 66, 4)
+2021-12-05 10:50:02.492918: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:02.494474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:02.495999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:02.497515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/6.tif shape: (264, 264)
+file2: test_imgs/ms_test/6.tif shape: (66, 66, 4)
+2021-12-05 10:50:02.781155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:02.782718: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:02.784252: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:02.785783: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/7.tif shape: (264, 264)
+file2: test_imgs/ms_test/7.tif shape: (66, 66, 4)
+2021-12-05 10:50:03.072663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:03.074209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:03.075732: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:03.077252: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/8.tif shape: (264, 264)
+file2: test_imgs/ms_test/8.tif shape: (66, 66, 4)
+2021-12-05 10:50:03.372371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:03.373915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:03.375443: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:03.376967: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/9.tif shape: (264, 264)
+file2: test_imgs/ms_test/9.tif shape: (66, 66, 4)
+2021-12-05 10:50:03.666668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:03.668209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:03.669736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:03.671265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/10.tif shape: (264, 264)
+file2: test_imgs/ms_test/10.tif shape: (66, 66, 4)
+2021-12-05 10:50:03.964466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:03.966016: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:03.967539: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:03.969069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/11.tif shape: (264, 264)
+file2: test_imgs/ms_test/11.tif shape: (66, 66, 4)
+2021-12-05 10:50:04.254770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:04.256312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:04.257839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:04.259373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/12.tif shape: (264, 264)
+file2: test_imgs/ms_test/12.tif shape: (66, 66, 4)
+2021-12-05 10:50:04.538042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:04.539583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:04.541108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:04.542634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/13.tif shape: (264, 264)
+file2: test_imgs/ms_test/13.tif shape: (66, 66, 4)
+2021-12-05 10:50:04.826884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:04.828427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:04.829965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:04.831489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/14.tif shape: (264, 264)
+file2: test_imgs/ms_test/14.tif shape: (66, 66, 4)
+2021-12-05 10:50:05.108472: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:05.110027: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:05.111558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:05.113091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/15.tif shape: (264, 264)
+file2: test_imgs/ms_test/15.tif shape: (66, 66, 4)
+2021-12-05 10:50:05.393155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:05.394710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:05.396238: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:05.397757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/16.tif shape: (264, 264)
+file2: test_imgs/ms_test/16.tif shape: (66, 66, 4)
+2021-12-05 10:50:05.685845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:05.687395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:05.688916: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:05.690450: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/17.tif shape: (264, 264)
+file2: test_imgs/ms_test/17.tif shape: (66, 66, 4)
+2021-12-05 10:50:05.980272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:05.981812: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:05.983346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:05.984870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/18.tif shape: (264, 264)
+file2: test_imgs/ms_test/18.tif shape: (66, 66, 4)
+2021-12-05 10:50:06.271453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:06.273001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:06.274531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:06.276051: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/19.tif shape: (264, 264)
+file2: test_imgs/ms_test/19.tif shape: (66, 66, 4)
+2021-12-05 10:50:06.561238: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:06.562788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:06.564316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:06.565838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/20.tif shape: (264, 264)
+file2: test_imgs/ms_test/20.tif shape: (66, 66, 4)
+2021-12-05 10:50:06.852552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:06.854097: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:06.855627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:06.857145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/21.tif shape: (264, 264)
+file2: test_imgs/ms_test/21.tif shape: (66, 66, 4)
+2021-12-05 10:50:07.134656: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:07.136198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:07.137719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:07.139265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/22.tif shape: (264, 264)
+file2: test_imgs/ms_test/22.tif shape: (66, 66, 4)
+2021-12-05 10:50:07.417369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:07.418925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:07.420454: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:07.421977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/23.tif shape: (264, 264)
+file2: test_imgs/ms_test/23.tif shape: (66, 66, 4)
+2021-12-05 10:50:07.702910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:07.704453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:07.705979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:07.707501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/24.tif shape: (264, 264)
+file2: test_imgs/ms_test/24.tif shape: (66, 66, 4)
+2021-12-05 10:50:07.983808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:07.985352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:07.986886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:07.988413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/25.tif shape: (264, 264)
+file2: test_imgs/ms_test/25.tif shape: (66, 66, 4)
+2021-12-05 10:50:08.269479: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:08.271031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:08.272561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:08.274096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/26.tif shape: (264, 264)
+file2: test_imgs/ms_test/26.tif shape: (66, 66, 4)
+2021-12-05 10:50:08.685474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:08.687033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:08.688564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:08.690089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/27.tif shape: (264, 264)
+file2: test_imgs/ms_test/27.tif shape: (66, 66, 4)
+2021-12-05 10:50:08.967782: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:08.969331: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:08.970874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:08.972399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/28.tif shape: (264, 264)
+file2: test_imgs/ms_test/28.tif shape: (66, 66, 4)
+2021-12-05 10:50:09.252430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:09.253977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:09.255500: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:09.257018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/29.tif shape: (264, 264)
+file2: test_imgs/ms_test/29.tif shape: (66, 66, 4)
+2021-12-05 10:50:09.543725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:09.545272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:09.546826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:09.548350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/30.tif shape: (264, 264)
+file2: test_imgs/ms_test/30.tif shape: (66, 66, 4)
+2021-12-05 10:50:09.829843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:09.831390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:09.832912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:09.834451: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/31.tif shape: (264, 264)
+file2: test_imgs/ms_test/31.tif shape: (66, 66, 4)
+2021-12-05 10:50:10.122376: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:10.123918: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:10.125446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:10.126983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/32.tif shape: (264, 264)
+file2: test_imgs/ms_test/32.tif shape: (66, 66, 4)
+2021-12-05 10:50:10.404826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:10.406381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:10.407915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:10.409437: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/33.tif shape: (264, 264)
+file2: test_imgs/ms_test/33.tif shape: (66, 66, 4)
+2021-12-05 10:50:10.694179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:10.695728: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:10.697249: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:10.698793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/34.tif shape: (264, 264)
+file2: test_imgs/ms_test/34.tif shape: (66, 66, 4)
+2021-12-05 10:50:10.978094: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:10.979645: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:10.981167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:10.982700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/35.tif shape: (264, 264)
+file2: test_imgs/ms_test/35.tif shape: (66, 66, 4)
+2021-12-05 10:50:11.265184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:11.266744: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:11.268272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:11.269797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/36.tif shape: (264, 264)
+file2: test_imgs/ms_test/36.tif shape: (66, 66, 4)
+2021-12-05 10:50:11.555700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:11.557248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:11.558804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:11.560357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/37.tif shape: (264, 264)
+file2: test_imgs/ms_test/37.tif shape: (66, 66, 4)
+2021-12-05 10:50:11.845151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:11.846701: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:11.848227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:11.849749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/38.tif shape: (264, 264)
+file2: test_imgs/ms_test/38.tif shape: (66, 66, 4)
+2021-12-05 10:50:12.134213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:12.135756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:12.137280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:12.138812: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/39.tif shape: (264, 264)
+file2: test_imgs/ms_test/39.tif shape: (66, 66, 4)
+2021-12-05 10:50:12.420573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:12.422122: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:12.423643: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:12.425174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/40.tif shape: (264, 264)
+file2: test_imgs/ms_test/40.tif shape: (66, 66, 4)
+2021-12-05 10:50:12.714784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:12.716333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:12.717854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:12.719387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/41.tif shape: (264, 264)
+file2: test_imgs/ms_test/41.tif shape: (66, 66, 4)
+2021-12-05 10:50:12.993850: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:12.995400: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:12.996922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:12.998455: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/42.tif shape: (264, 264)
+file2: test_imgs/ms_test/42.tif shape: (66, 66, 4)
+2021-12-05 10:50:13.280513: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:13.282063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:13.283588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:13.285112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/43.tif shape: (264, 264)
+file2: test_imgs/ms_test/43.tif shape: (66, 66, 4)
+2021-12-05 10:50:13.563503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:13.565057: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:13.566618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:13.568145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/44.tif shape: (264, 264)
+file2: test_imgs/ms_test/44.tif shape: (66, 66, 4)
+2021-12-05 10:50:13.853597: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:13.855168: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:13.856693: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:13.858224: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/45.tif shape: (264, 264)
+file2: test_imgs/ms_test/45.tif shape: (66, 66, 4)
+2021-12-05 10:50:14.148820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:14.150370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:14.151890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:14.153409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/46.tif shape: (264, 264)
+file2: test_imgs/ms_test/46.tif shape: (66, 66, 4)
+2021-12-05 10:50:14.438866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:14.440408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:14.441938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:14.443460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/47.tif shape: (264, 264)
+file2: test_imgs/ms_test/47.tif shape: (66, 66, 4)
+2021-12-05 10:50:14.732266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:14.733815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:14.735349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:14.736871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/48.tif shape: (264, 264)
+file2: test_imgs/ms_test/48.tif shape: (66, 66, 4)
+2021-12-05 10:50:15.021702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:15.023251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:15.024779: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:15.026316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/49.tif shape: (264, 264)
+file2: test_imgs/ms_test/49.tif shape: (66, 66, 4)
+2021-12-05 10:50:15.312298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:15.313840: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:15.315369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:15.316898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/50.tif shape: (264, 264)
+file2: test_imgs/ms_test/50.tif shape: (66, 66, 4)
+2021-12-05 10:50:15.592675: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:15.594227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:15.595765: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:15.597291: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/51.tif shape: (264, 264)
+file2: test_imgs/ms_test/51.tif shape: (66, 66, 4)
+2021-12-05 10:50:15.877471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:15.879066: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:15.880615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:15.882143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/52.tif shape: (264, 264)
+file2: test_imgs/ms_test/52.tif shape: (66, 66, 4)
+2021-12-05 10:50:16.302155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:16.303700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:16.305237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:16.306778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/53.tif shape: (264, 264)
+file2: test_imgs/ms_test/53.tif shape: (66, 66, 4)
+2021-12-05 10:50:16.583344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:16.584886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:16.586423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:16.587950: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/54.tif shape: (264, 264)
+file2: test_imgs/ms_test/54.tif shape: (66, 66, 4)
+2021-12-05 10:50:16.873242: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:16.874799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:16.876322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:16.877844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/55.tif shape: (264, 264)
+file2: test_imgs/ms_test/55.tif shape: (66, 66, 4)
+2021-12-05 10:50:17.159515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:17.161058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:17.162597: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:17.164118: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/56.tif shape: (264, 264)
+file2: test_imgs/ms_test/56.tif shape: (66, 66, 4)
+2021-12-05 10:50:17.442578: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:17.444118: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:17.445642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:17.447188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/57.tif shape: (264, 264)
+file2: test_imgs/ms_test/57.tif shape: (66, 66, 4)
+2021-12-05 10:50:17.741067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:17.742619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:17.744144: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:17.745673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/58.tif shape: (264, 264)
+file2: test_imgs/ms_test/58.tif shape: (66, 66, 4)
+2021-12-05 10:50:18.031298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:18.032841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:18.034385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:18.035911: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/59.tif shape: (264, 264)
+file2: test_imgs/ms_test/59.tif shape: (66, 66, 4)
+2021-12-05 10:50:18.318331: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:18.319880: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:18.321407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:18.322935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/60.tif shape: (264, 264)
+file2: test_imgs/ms_test/60.tif shape: (66, 66, 4)
+2021-12-05 10:50:18.607761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:18.609305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:18.610844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:18.612374: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/61.tif shape: (264, 264)
+file2: test_imgs/ms_test/61.tif shape: (66, 66, 4)
+2021-12-05 10:50:18.902845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:18.904394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:18.905932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:18.907455: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/62.tif shape: (264, 264)
+file2: test_imgs/ms_test/62.tif shape: (66, 66, 4)
+2021-12-05 10:50:19.184925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:19.186479: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:19.188006: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:19.189528: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/63.tif shape: (264, 264)
+file2: test_imgs/ms_test/63.tif shape: (66, 66, 4)
+2021-12-05 10:50:19.477219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:19.478787: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:19.480321: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:19.481842: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/64.tif shape: (264, 264)
+file2: test_imgs/ms_test/64.tif shape: (66, 66, 4)
+2021-12-05 10:50:19.770446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:19.771990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:19.773511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:19.775050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/65.tif shape: (264, 264)
+file2: test_imgs/ms_test/65.tif shape: (66, 66, 4)
+2021-12-05 10:50:20.054225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:20.055770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:20.057292: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:20.058824: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/66.tif shape: (264, 264)
+file2: test_imgs/ms_test/66.tif shape: (66, 66, 4)
+2021-12-05 10:50:20.340871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:20.342429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:20.343961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:20.345483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/67.tif shape: (264, 264)
+file2: test_imgs/ms_test/67.tif shape: (66, 66, 4)
+2021-12-05 10:50:20.634797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:20.636342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:20.637870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:20.639399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/68.tif shape: (264, 264)
+file2: test_imgs/ms_test/68.tif shape: (66, 66, 4)
+2021-12-05 10:50:20.920069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:20.921625: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:20.923162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:20.924688: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/69.tif shape: (264, 264)
+file2: test_imgs/ms_test/69.tif shape: (66, 66, 4)
+2021-12-05 10:50:21.213556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:21.215114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:21.216639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:21.218167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/70.tif shape: (264, 264)
+file2: test_imgs/ms_test/70.tif shape: (66, 66, 4)
+2021-12-05 10:50:21.490663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:21.492207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:21.493730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:21.495264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/71.tif shape: (264, 264)
+file2: test_imgs/ms_test/71.tif shape: (66, 66, 4)
+2021-12-05 10:50:21.769461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:21.771030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:21.772563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:21.774093: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/72.tif shape: (264, 264)
+file2: test_imgs/ms_test/72.tif shape: (66, 66, 4)
+2021-12-05 10:50:22.053203: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:22.054772: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:22.056303: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:22.057825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/73.tif shape: (264, 264)
+file2: test_imgs/ms_test/73.tif shape: (66, 66, 4)
+2021-12-05 10:50:22.343148: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:22.344691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:22.346234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:22.347757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/74.tif shape: (264, 264)
+file2: test_imgs/ms_test/74.tif shape: (66, 66, 4)
+2021-12-05 10:50:22.631969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:22.633757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:22.635298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:22.636825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/75.tif shape: (264, 264)
+file2: test_imgs/ms_test/75.tif shape: (66, 66, 4)
+2021-12-05 10:50:22.928336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:22.929881: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:22.931416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:22.932938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/76.tif shape: (264, 264)
+file2: test_imgs/ms_test/76.tif shape: (66, 66, 4)
+2021-12-05 10:50:23.218408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:23.219954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:23.221482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:23.223024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/77.tif shape: (264, 264)
+file2: test_imgs/ms_test/77.tif shape: (66, 66, 4)
+2021-12-05 10:50:23.634172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:23.635721: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:23.637248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:23.638787: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/78.tif shape: (264, 264)
+file2: test_imgs/ms_test/78.tif shape: (66, 66, 4)
+2021-12-05 10:50:23.919113: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:23.920655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:23.922185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:23.923709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/79.tif shape: (264, 264)
+file2: test_imgs/ms_test/79.tif shape: (66, 66, 4)
+2021-12-05 10:50:24.205559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:24.207117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:24.208639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:24.210167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/80.tif shape: (264, 264)
+file2: test_imgs/ms_test/80.tif shape: (66, 66, 4)
+2021-12-05 10:50:24.492023: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:24.493565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:24.495100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:24.496623: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/81.tif shape: (264, 264)
+file2: test_imgs/ms_test/81.tif shape: (66, 66, 4)
+2021-12-05 10:50:24.779342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:24.780884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:24.782412: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:24.783933: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/82.tif shape: (264, 264)
+file2: test_imgs/ms_test/82.tif shape: (66, 66, 4)
+2021-12-05 10:50:25.073689: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:25.075245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:25.076768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:25.078307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/83.tif shape: (264, 264)
+file2: test_imgs/ms_test/83.tif shape: (66, 66, 4)
+2021-12-05 10:50:25.360832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:25.362387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:25.363910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:25.365435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/84.tif shape: (264, 264)
+file2: test_imgs/ms_test/84.tif shape: (66, 66, 4)
+2021-12-05 10:50:25.649308: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:25.650867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:25.652391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:25.653910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/85.tif shape: (264, 264)
+file2: test_imgs/ms_test/85.tif shape: (66, 66, 4)
+2021-12-05 10:50:25.929804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:25.931355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:25.932875: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:25.934411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/86.tif shape: (264, 264)
+file2: test_imgs/ms_test/86.tif shape: (66, 66, 4)
+2021-12-05 10:50:26.208635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:26.210185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:26.211712: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:26.213233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/87.tif shape: (264, 264)
+file2: test_imgs/ms_test/87.tif shape: (66, 66, 4)
+2021-12-05 10:50:26.493105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:26.494661: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:26.496185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:26.497706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/88.tif shape: (264, 264)
+file2: test_imgs/ms_test/88.tif shape: (66, 66, 4)
+2021-12-05 10:50:26.774240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:26.775782: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:26.777304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:26.778843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/89.tif shape: (264, 264)
+file2: test_imgs/ms_test/89.tif shape: (66, 66, 4)
+2021-12-05 10:50:27.058354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:27.059903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:27.061433: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:27.062967: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/90.tif shape: (264, 264)
+file2: test_imgs/ms_test/90.tif shape: (66, 66, 4)
+2021-12-05 10:50:27.347077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:27.348620: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:27.350151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:27.351673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/91.tif shape: (264, 264)
+file2: test_imgs/ms_test/91.tif shape: (66, 66, 4)
+2021-12-05 10:50:27.639684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:27.641240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:27.642777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:27.644305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/92.tif shape: (264, 264)
+file2: test_imgs/ms_test/92.tif shape: (66, 66, 4)
+2021-12-05 10:50:27.922758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:27.924299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:27.925822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:27.927348: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/93.tif shape: (264, 264)
+file2: test_imgs/ms_test/93.tif shape: (66, 66, 4)
+2021-12-05 10:50:28.210621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:28.212169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:28.213697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:28.215229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/94.tif shape: (264, 264)
+file2: test_imgs/ms_test/94.tif shape: (66, 66, 4)
+2021-12-05 10:50:28.489505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:28.491063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:28.492588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:28.494135: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/95.tif shape: (264, 264)
+file2: test_imgs/ms_test/95.tif shape: (66, 66, 4)
+2021-12-05 10:50:28.778658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:28.780207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:28.781728: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:28.783253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/96.tif shape: (264, 264)
+file2: test_imgs/ms_test/96.tif shape: (66, 66, 4)
+2021-12-05 10:50:29.071841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:29.073386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:29.074927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:29.076452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/97.tif shape: (264, 264)
+file2: test_imgs/ms_test/97.tif shape: (66, 66, 4)
+2021-12-05 10:50:29.360117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:29.361666: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:29.363205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:29.364730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/98.tif shape: (264, 264)
+file2: test_imgs/ms_test/98.tif shape: (66, 66, 4)
+2021-12-05 10:50:29.643460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:29.645006: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:29.646537: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:29.648063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/99.tif shape: (264, 264)
+file2: test_imgs/ms_test/99.tif shape: (66, 66, 4)
+2021-12-05 10:50:29.935124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:29.936668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:29.938204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:29.939730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)
+file1: test_imgs/pan_test/100.tif shape: (264, 264)
+file2: test_imgs/ms_test/100.tif shape: (66, 66, 4)
+2021-12-05 10:50:30.227605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38414 MB memory:  -> device: 0, name: A100-PCIE-40GB, pci bus id: 0000:81:00.0, compute capability: 8.0
+2021-12-05 10:50:30.229151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 38414 MB memory:  -> device: 1, name: A100-PCIE-40GB, pci bus id: 0000:82:00.0, compute capability: 8.0
+2021-12-05 10:50:30.230687: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 38414 MB memory:  -> device: 2, name: A100-PCIE-40GB, pci bus id: 0000:c1:00.0, compute capability: 8.0
+2021-12-05 10:50:30.232208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 38414 MB memory:  -> device: 3, name: A100-PCIE-40GB, pci bus id: 0000:c2:00.0, compute capability: 8.0
+out shape: (1, 264, 264, 1)

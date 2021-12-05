@@ -18,7 +18,7 @@ model_date = config.model_date
 pan_path = config.pan_path
 gt_path = config.gt_path
 
-EPOCHES = 20
+EPOCHES = 30
 BATCH_SIZE = 8
 patch_size = 264
 logging_period = 100
@@ -53,6 +53,8 @@ def main():
 		if mod > 0:
 			print('Train set has been trimmed %d samples...\n' % mod)
 			source_imgs = data[:-mod]
+		else:
+			source_imgs = data
 
 		# create the graph
 		with tf.Graph().as_default(), tf.Session() as sess:

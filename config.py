@@ -1,13 +1,13 @@
-dr = 1050.0
-dr_test = 23600.0
-off_test = 0
-# dr_test = 20000.0
-# off_test = 500
+# dr = 1050.0
+# dr_test = 23600.0
+# off_test = 0
+# # dr_test = 20000.0
+# # off_test = 500
 
-pan_path = 'PAN.h5'
-gt_path = 'GT.h5'
-pan_test_imgs_path = 'test_imgs/pan/'
-ms_test_imgs_path = 'test_imgs/ms/'
+# pan_path = 'PAN.h5'
+# gt_path = 'GT.h5'
+# pan_test_imgs_path = 'test_imgs/pan/'
+# ms_test_imgs_path = 'test_imgs/ms/'
 
 # model_date = "1203"
 # MS2P = "4800"
@@ -23,11 +23,27 @@ ms_test_imgs_path = 'test_imgs/ms/'
 # SPEC = "8700"
 # MODEL = "13200"
 
-model_date = "1205-2"
-MS2P = "4000"
-P2MS = "9200"
-SPAT = "9300"
-SPEC = "12275"
+# model_date = "1205-2"
+# MS2P = "4000"
+# P2MS = "9200"
+# SPAT = "9300"
+# SPEC = "12275"
+# MODEL = "28300"
+
+dr = 23600.0
+dr_test = 23600.0
+off_test = 0
+
+pan_path = 'PAN-test.h5'
+gt_path = 'GT-test.h5'
+pan_test_imgs_path = 'test_imgs/pan_test/'
+ms_test_imgs_path = 'test_imgs/ms_test/'
+
+model_date = "1205-3"
+MS2P = "4500"
+P2MS = "4300"
+SPAT = "3500"
+SPEC = "5500"
 MODEL = "0"
 
 MS2P_MODEL_SAVEPATH = './MS2P_models/%s/%s/%s.ckpt' % (model_date, MS2P, MS2P)
