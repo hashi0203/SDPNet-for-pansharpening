@@ -31,8 +31,8 @@ P2MS_MODEL_SAVEPATH = config.P2MS_MODEL_SAVEPATH
 SPAT_MODEL_SAVEPATH = config.SPAT_MODEL_SAVEPATH
 SPEC_MODEL_SAVEPATH = config.SPEC_MODEL_SAVEPATH
 
-path1 = 'test_imgs/pan/'
-path2 = 'test_imgs/ms/'
+path1 = config.pan_test_imgs_path
+path2 = config.ms_test_imgs_path
 # output_path = 'features/'
 
 dr = config.dr

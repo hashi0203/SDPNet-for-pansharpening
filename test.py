@@ -29,6 +29,8 @@ path1 = 'test_imgs/pan_org/'
 path2 = 'test_imgs/ms_org/'
 output_path = config.OUTPUT_PATH
 
+os.mkdir(output_path)
+
 def main():
 	print('\nBegin to generate pictures ...\n')
 	t=[]
@@ -71,13 +73,14 @@ def main():
 
 			output = sess.run(X, feed_dict = {PAN: pan, MS: ms})
 			print(output.shape)
+			output = np.where(output < 0, 0, output)
 
 			if not os.path.exists(output_path):
 				os.makedirs(output_path)
 			scio.savemat(output_path + str(i + 1) + '.mat', {'i': output[0, :, :, :]})
 			for j, c in enumerate(["red", "green", "blue", "nir"]):
-				print(type(output[0, :, :, j]), output[0, :, :, j].dtype)
 				cv2.imwrite(output_path + str(i + 1) + '-' + c + '.tif', ((output[0, :, :, j] + off_test) * p).astype('uint' + str(8 * (i+1))))
+				cv2.imwrite(output_path + c + '.tif', ((output[0, :, :, j] + off_test) * p).astype('uint' + str(8 * (i+1))))
 			end=time.time()
 			t.append(end-begin)
 	print("Time: mean: %s,, std: %s" % (np.mean(t), np.std(t)))

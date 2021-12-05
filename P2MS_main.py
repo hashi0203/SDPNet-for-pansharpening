@@ -16,10 +16,10 @@ import scipy.io as scio
 from scipy.misc import imsave, imread
 import config
 model_date = config.model_date
-pan_path = 'PAN.h5'
-gt_path = 'GT.h5'
+pan_path = config.pan_path
+gt_path = config.gt_path
 
-EPOCHES = 16
+EPOCHES = 20
 BATCH_SIZE = 8
 patch_size = 264
 logging_period = 100

@@ -23,10 +23,10 @@ model_date = config.model_date
 
 # from tensorflow.python import pywrap_tensorflow
 
-pan_path = 'PAN.h5'
-gt_path = 'GT.h5'
+pan_path = config.pan_path
+gt_path = config.gt_path
 
-EPOCHES = 10
+EPOCHES = 25
 BATCH_SIZE = 4
 patch_size = 264
 logging_period = 100
@@ -176,7 +176,7 @@ def main():
 		saver0.restore(sess, MS2P_MODEL_SAVEPATH)
 		saver1.restore(sess, MODEL1_SAVE_PATH)
 		saver2.restore(sess, MODEL2_SAVE_PATH)
-		saver = tf.train.Saver(max_to_keep = 5)
+		saver = tf.train.Saver(max_to_keep = None)
 
 		tf.summary.scalar('Loss_fea', LOSS_fea)
 		tf.summary.scalar('Loss_x_GT', LOSS_X_GT)

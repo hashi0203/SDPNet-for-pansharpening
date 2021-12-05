@@ -15,10 +15,10 @@ from spec_ED import ED2
 from P2MSnet import pMS_ED
 import config
 model_date = config.model_date
-pan_path = 'PAN.h5'
-gt_path = 'GT.h5'
+pan_path = config.pan_path
+gt_path = config.gt_path
 
-EPOCHES = 20
+EPOCHES = 25
 BATCH_SIZE = 10
 patch_size = 264
 logging_period = 100

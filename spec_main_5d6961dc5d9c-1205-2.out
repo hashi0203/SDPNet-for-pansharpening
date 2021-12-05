@@ -1,0 +1,262 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+source_pan_data shape: (4914, 264, 264, 1)
+gt_data shape: (4914, 264, 264, 4)
+data shape: (4914, 264, 264, 5)
+Epoches: 25, Batch_size: 10
+Train images number 4914, Batches: 491.
+
+Train set has been trimmed 4 samples...
+
+2021-12-05 07:22:52.362882: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-05 07:22:52.870947: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (10, 66, 66, 4)
+2021-12-05 07:22:57.836652: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch:1/25: step:100, lr:0.0019348845, loss:0.14353266, elapsed_time:0:00:10.286399
+
+Epoch:1/25: step:200, lr:0.001871889, loss:0.054213107, elapsed_time:0:00:13.449936
+
+Epoch:1/25: step:300, lr:0.0018109444, loss:0.033805046, elapsed_time:0:00:16.893175
+
+Epoch:1/25: step:400, lr:0.0017519841, loss:0.030211525, elapsed_time:0:00:21.152952
+
+Epoch:2/25: step:500, lr:0.0016949435, loss:0.03260467, elapsed_time:0:00:27.948552
+
+Epoch:2/25: step:600, lr:0.0016397599, loss:0.024819525, elapsed_time:0:00:30.973105
+
+Epoch:2/25: step:700, lr:0.001586373, loss:0.016732652, elapsed_time:0:00:34.212602
+
+Epoch:2/25: step:800, lr:0.001534724, loss:0.016183054, elapsed_time:0:00:37.528971
+
+Epoch:2/25: step:900, lr:0.0014847568, loss:0.012643405, elapsed_time:0:00:40.795284
+
+Epoch:3/25: step:1000, lr:0.0014364165, loss:0.009948999, elapsed_time:0:00:46.694374
+
+Epoch:3/25: step:1100, lr:0.0013896499, loss:0.007893251, elapsed_time:0:00:49.753601
+
+Epoch:3/25: step:1200, lr:0.001344406, loss:0.013397697, elapsed_time:0:00:52.875011
+
+Epoch:3/25: step:1300, lr:0.0013006352, loss:0.008930704, elapsed_time:0:00:56.139964
+
+Epoch:3/25: step:1400, lr:0.0012582893, loss:0.0156671, elapsed_time:0:00:59.159844
+
+Epoch:4/25: step:1500, lr:0.0012173222, loss:0.0052863546, elapsed_time:0:01:05.332280
+
+Epoch:4/25: step:1600, lr:0.0011776891, loss:0.0067945733, elapsed_time:0:01:08.913610
+
+Epoch:4/25: step:1700, lr:0.001139346, loss:0.0038851928, elapsed_time:0:01:11.821462
+
+Epoch:4/25: step:1800, lr:0.0011022515, loss:0.0045198156, elapsed_time:0:01:14.913773
+
+Epoch:4/25: step:1900, lr:0.0010663647, loss:0.0036466192, elapsed_time:0:01:17.969580
+
+Epoch:5/25: step:2000, lr:0.0010316462, loss:0.003700934, elapsed_time:0:01:23.965496
+
+Epoch:5/25: step:2100, lr:0.000998058, loss:0.0044748336, elapsed_time:0:01:26.987856
+
+Epoch:5/25: step:2200, lr:0.00096556346, loss:0.005139335, elapsed_time:0:01:30.235091
+
+Epoch:5/25: step:2300, lr:0.0009341269, loss:0.0051512495, elapsed_time:0:01:33.456647
+
+Epoch:5/25: step:2400, lr:0.00090371387, loss:0.0036259664, elapsed_time:0:01:36.682673
+
+Epoch:6/25: step:2500, lr:0.0008742909, loss:0.0021474452, elapsed_time:0:01:42.496119
+
+Epoch:6/25: step:2600, lr:0.00084582594, loss:0.033103067, elapsed_time:0:01:45.459029
+
+Epoch:6/25: step:2700, lr:0.0008182877, loss:0.007042989, elapsed_time:0:01:48.374057
+
+Epoch:6/25: step:2800, lr:0.0007916461, loss:0.00248759, elapsed_time:0:01:51.272009
+
+Epoch:6/25: step:2900, lr:0.00076587184, loss:0.0024263016, elapsed_time:0:01:54.217217
+
+Epoch:7/25: step:3000, lr:0.0007409367, loss:0.0038296278, elapsed_time:0:02:00.116491
+
+Epoch:7/25: step:3100, lr:0.0007168135, loss:0.004876481, elapsed_time:0:02:03.181480
+
+Epoch:7/25: step:3200, lr:0.00069347565, loss:0.001351974, elapsed_time:0:02:06.333086
+
+Epoch:7/25: step:3300, lr:0.0006708977, loss:0.0026316224, elapsed_time:0:02:09.493375
+
+Epoch:7/25: step:3400, lr:0.00064905465, loss:0.0020509476, elapsed_time:0:02:14.183782
+
+Epoch:8/25: step:3500, lr:0.00062792294, loss:0.0047129802, elapsed_time:0:02:24.010477
+
+Epoch:8/25: step:3600, lr:0.00060747913, loss:0.0027174125, elapsed_time:0:02:27.256257
+
+Epoch:8/25: step:3700, lr:0.0005877009, loss:0.0015118573, elapsed_time:0:02:30.519244
+
+Epoch:8/25: step:3800, lr:0.0005685668, loss:0.0014366775, elapsed_time:0:02:33.605545
+
+Epoch:8/25: step:3900, lr:0.0005500554, loss:0.0010600676, elapsed_time:0:02:36.544465
+
+Epoch:9/25: step:4000, lr:0.0005321469, loss:0.0018018067, elapsed_time:0:02:42.192625
+
+Epoch:9/25: step:4100, lr:0.0005148214, loss:0.0021435446, elapsed_time:0:02:45.176220
+
+Epoch:9/25: step:4200, lr:0.00049805985, loss:0.0017880392, elapsed_time:0:02:48.154209
+
+Epoch:9/25: step:4300, lr:0.00048184418, loss:0.0025602363, elapsed_time:0:02:51.266254
+
+Epoch:9/25: step:4400, lr:0.0004661564, loss:0.0022025104, elapsed_time:0:02:54.437029
+
+Epoch:10/25: step:4500, lr:0.00045097942, loss:0.0032111434, elapsed_time:0:03:00.394420
+
+Epoch:10/25: step:4600, lr:0.00043629648, loss:0.002308904, elapsed_time:0:03:03.283647
+
+Epoch:10/25: step:4700, lr:0.0004220917, loss:0.0016729168, elapsed_time:0:03:06.304999
+
+Epoch:10/25: step:4800, lr:0.00040834935, loss:0.0017498331, elapsed_time:0:03:09.298119
+
+Epoch:10/25: step:4900, lr:0.00039505432, loss:0.0017135444, elapsed_time:0:03:12.293129
+
+Epoch:11/25: step:5000, lr:0.00038219223, loss:0.0017421036, elapsed_time:0:03:18.043670
+
+Epoch:11/25: step:5100, lr:0.00036974892, loss:0.00261627, elapsed_time:0:03:20.934228
+
+Epoch:11/25: step:5200, lr:0.00035771076, loss:0.00215255, elapsed_time:0:03:23.744152
+
+Epoch:11/25: step:5300, lr:0.00034606442, loss:0.0040246984, elapsed_time:0:03:26.648581
+
+Epoch:11/25: step:5400, lr:0.00033479734, loss:0.0018173507, elapsed_time:0:03:29.942928
+
+Epoch:12/25: step:5500, lr:0.0003238971, loss:0.0010727025, elapsed_time:0:03:35.903617
+
+Epoch:12/25: step:5600, lr:0.00031335175, loss:0.0010491787, elapsed_time:0:03:38.841445
+
+Epoch:12/25: step:5700, lr:0.00030314972, loss:0.0018221034, elapsed_time:0:03:41.867465
+
+Epoch:12/25: step:5800, lr:0.00029327985, loss:0.0010244626, elapsed_time:0:03:44.991734
+
+Epoch:13/25: step:5900, lr:0.0002837313, loss:0.0018660943, elapsed_time:0:03:50.862380
+
+Epoch:13/25: step:6000, lr:0.00027449362, loss:0.0010914567, elapsed_time:0:03:53.769390
+
+Epoch:13/25: step:6100, lr:0.0002655567, loss:0.001790151, elapsed_time:0:03:56.743632
+
+Epoch:13/25: step:6200, lr:0.0002569108, loss:0.001095023, elapsed_time:0:03:59.667035
+
+Epoch:13/25: step:6300, lr:0.00024854633, loss:0.0010342349, elapsed_time:0:04:02.623738
+
+Epoch:14/25: step:6400, lr:0.00024045425, loss:0.0014577863, elapsed_time:0:04:08.681960
+
+Epoch:14/25: step:6500, lr:0.00023262555, loss:0.0012613473, elapsed_time:0:04:11.778183
+
+Epoch:14/25: step:6600, lr:0.00022505183, loss:0.0013353003, elapsed_time:0:04:14.949576
+
+Epoch:14/25: step:6700, lr:0.00021772462, loss:0.002086761, elapsed_time:0:04:18.063749
+
+Epoch:14/25: step:6800, lr:0.00021063598, loss:0.0012450853, elapsed_time:0:04:21.108366
+
+Epoch:15/25: step:6900, lr:0.00020377815, loss:0.0012845348, elapsed_time:0:04:27.057204
+
+Epoch:15/25: step:7000, lr:0.00019714358, loss:0.0016979019, elapsed_time:0:04:30.070959
+
+Epoch:15/25: step:7100, lr:0.000190725, loss:0.00091362145, elapsed_time:0:04:33.083345
+
+Epoch:15/25: step:7200, lr:0.00018451545, loss:0.0017948474, elapsed_time:0:04:36.129316
+
+Epoch:15/25: step:7300, lr:0.00017850802, loss:0.0013853736, elapsed_time:0:04:39.345458
+
+Epoch:16/25: step:7400, lr:0.0001726962, loss:0.0011485294, elapsed_time:0:04:45.219118
+
+Epoch:16/25: step:7500, lr:0.00016707358, loss:0.0009832213, elapsed_time:0:04:48.238097
+
+Epoch:16/25: step:7600, lr:0.00016163407, loss:0.00077277416, elapsed_time:0:04:51.211417
+
+Epoch:16/25: step:7700, lr:0.00015637162, loss:0.0012600217, elapsed_time:0:04:54.367351
+
+Epoch:16/25: step:7800, lr:0.00015128049, loss:0.0018335402, elapsed_time:0:04:57.417211
+
+Epoch:17/25: step:7900, lr:0.00014635516, loss:0.0014585903, elapsed_time:0:05:03.483134
+
+Epoch:17/25: step:8000, lr:0.00014159014, loss:0.0008474997, elapsed_time:0:05:06.521742
+
+Epoch:17/25: step:8100, lr:0.00013698026, loss:0.0009426292, elapsed_time:0:05:09.510243
+
+Epoch:17/25: step:8200, lr:0.00013252054, loss:0.000652967, elapsed_time:0:05:12.427136
+
+Epoch:17/25: step:8300, lr:0.00012820594, loss:0.000925668, elapsed_time:0:05:15.902848
+
+Epoch:18/25: step:8400, lr:0.00012403181, loss:0.0012782388, elapsed_time:0:05:22.152233
+
+Epoch:18/25: step:8500, lr:0.00011999363, loss:0.0013844499, elapsed_time:0:05:25.255252
+
+Epoch:18/25: step:8600, lr:0.00011608689, loss:0.0022953597, elapsed_time:0:05:28.338640
+
+Epoch:18/25: step:8700, lr:0.000112307374, loss:0.0011969008, elapsed_time:0:05:31.448882
+
+Epoch:18/25: step:8800, lr:0.00010865089, loss:0.0011701749, elapsed_time:0:05:34.451754
+
+Epoch:19/25: step:8900, lr:0.00010511347, loss:0.0011498508, elapsed_time:0:05:42.222367
+
+Epoch:19/25: step:9000, lr:0.000101691214, loss:0.00081952964, elapsed_time:0:05:45.375991
+
+Epoch:19/25: step:9100, lr:9.838038e-05, loss:0.0011611001, elapsed_time:0:05:48.312055
+
+Epoch:19/25: step:9200, lr:9.517731e-05, loss:0.0015342473, elapsed_time:0:05:51.455245
+
+Epoch:19/25: step:9300, lr:9.2078575e-05, loss:0.001094376, elapsed_time:0:05:54.970588
+
+Epoch:20/25: step:9400, lr:8.90807e-05, loss:0.0008745926, elapsed_time:0:06:01.351318
+
+Epoch:20/25: step:9500, lr:8.618041e-05, loss:0.0015042613, elapsed_time:0:06:06.016412
+
+Epoch:20/25: step:9600, lr:8.337459e-05, loss:0.0009853006, elapsed_time:0:06:09.493489
+
+Epoch:20/25: step:9700, lr:8.066008e-05, loss:0.00085384585, elapsed_time:0:06:12.574519
+
+Epoch:20/25: step:9800, lr:7.8033954e-05, loss:0.0008627011, elapsed_time:0:06:15.628307
+
+Epoch:21/25: step:9900, lr:7.5493364e-05, loss:0.000979422, elapsed_time:0:06:21.741187
+
+Epoch:21/25: step:10000, lr:7.303545e-05, loss:0.0021592567, elapsed_time:0:06:25.226778
+
+Epoch:21/25: step:10100, lr:7.0657574e-05, loss:0.0007538575, elapsed_time:0:06:28.514821
+
+Epoch:21/25: step:10200, lr:6.8357134e-05, loss:0.0005317815, elapsed_time:0:06:31.522472
+
+Epoch:21/25: step:10300, lr:6.613157e-05, loss:0.0013117854, elapsed_time:0:06:34.385170
+
+Epoch:22/25: step:10400, lr:6.397849e-05, loss:0.00076483056, elapsed_time:0:06:40.485294
+
+Epoch:22/25: step:10500, lr:6.189549e-05, loss:0.00082170183, elapsed_time:0:06:43.842178
+
+Epoch:22/25: step:10600, lr:5.9880294e-05, loss:0.00080397597, elapsed_time:0:06:46.927086
+
+Epoch:22/25: step:10700, lr:5.793074e-05, loss:0.000760994, elapsed_time:0:06:50.917542
+
+Epoch:22/25: step:10800, lr:5.6044635e-05, loss:0.0010644275, elapsed_time:0:06:54.274734
+
+Epoch:23/25: step:10900, lr:5.4219938e-05, loss:0.0010442331, elapsed_time:0:07:00.360629
+
+Epoch:23/25: step:11000, lr:5.245467e-05, loss:0.0007456476, elapsed_time:0:07:03.267545
+
+Epoch:23/25: step:11100, lr:5.0746854e-05, loss:0.000792149, elapsed_time:0:07:06.438797
+
+Epoch:23/25: step:11200, lr:4.9094648e-05, loss:0.0009513389, elapsed_time:0:07:09.291219
+
+Epoch:24/25: step:11300, lr:4.7496243e-05, loss:0.00096579717, elapsed_time:0:07:15.340161
+
+Epoch:24/25: step:11400, lr:4.5949873e-05, loss:0.0009615683, elapsed_time:0:07:18.271433
+
+Epoch:24/25: step:11500, lr:4.4453845e-05, loss:0.0010041399, elapsed_time:0:07:21.176289
+
+Epoch:24/25: step:11600, lr:4.300653e-05, loss:0.00068740343, elapsed_time:0:07:24.070718
+
+Epoch:24/25: step:11700, lr:4.1606327e-05, loss:0.00076035724, elapsed_time:0:07:27.302883
+
+Epoch:25/25: step:11800, lr:4.025173e-05, loss:0.00047579542, elapsed_time:0:07:33.176212
+
+Epoch:25/25: step:11900, lr:3.8941213e-05, loss:0.00067775336, elapsed_time:0:07:36.075992
+
+Epoch:25/25: step:12000, lr:3.7673366e-05, loss:0.00084085995, elapsed_time:0:07:39.160531
+
+Epoch:25/25: step:12100, lr:3.644681e-05, loss:0.00047162827, elapsed_time:0:07:42.204522
+
+Epoch:25/25: step:12200, lr:3.5260175e-05, loss:0.00072766753, elapsed_time:0:07:45.182082
+
+Epoch:25/25: step:12275, lr:3.4395638e-05, loss:0.00038930902, elapsed_time:0:07:47.386176
+
