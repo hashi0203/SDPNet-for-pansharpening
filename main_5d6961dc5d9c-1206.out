@@ -1,0 +1,64 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+data shape: (1296, 264, 264, 5)
+Epoches: 100, Batch_size: 4
+Train images number 1296, Batches: 324.
+
+2021-12-06 02:13:44.799134: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-06 02:13:45.306246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+out shape: (4, 264, 264, 1)
+6
+101
+11
+87
+23
+88
+74
+100
+8
+52
+45
+55
+17
+10
+29
+4
+127
+81
+85
+61
+50
+45
+86
+11
+36
+19
+92
+29
+5
+101
+114
+110
+56
+82
+104
+35
+112
+118
+46
+31
+2021-12-06 02:13:52.171001: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch: 1/100, Step: 100/324, Loss: 0.07594386, Lr: 0.0019360088, Time: 0:00:39.619320
+
+Epoch: 1/100, Step: 200/324, Loss: 0.0631933, Lr: 0.0018740649, Time: 0:01:08.829604
+
+Epoch: 1/100, Step: 300/324, Loss: 0.0565988, Lr: 0.001814103, Time: 0:01:37.672357
+
+Epoch: 2/100, Step: 76/324, Loss: 0.050692037, Lr: 0.0017560596, Time: 0:02:07.490093
+
+Epoch: 2/100, Step: 176/324, Loss: 0.048209865, Lr: 0.0016998735, Time: 0:02:36.678398
+
+Epoch: 2/100, Step: 276/324, Loss: 0.045589745, Lr: 0.0016454849, Time: 0:03:05.387231
+

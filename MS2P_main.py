@@ -18,7 +18,7 @@ model_date = config.model_date
 pan_path = config.pan_path
 gt_path = config.gt_path
 
-EPOCHES = 50
+EPOCHES = 80
 BATCH_SIZE = 8
 patch_size = 264
 logging_period = 100
