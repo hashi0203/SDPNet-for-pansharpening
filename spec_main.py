@@ -18,12 +18,12 @@ model_date = config.model_date
 pan_path = config.pan_path
 gt_path = config.gt_path
 
-EPOCHES = 100
+EPOCHES = 50
 BATCH_SIZE = 10
 patch_size = 264
 logging_period = 100
 LEARNING_RATE = 0.002
-DECAY_RATE = 0.9
+DECAY_RATE = 0.85
 
 P2MS_MODEL_PATH = config.P2MS_MODEL_SAVEPATH
 

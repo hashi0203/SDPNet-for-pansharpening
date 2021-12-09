@@ -18,12 +18,12 @@ model_date = config.model_date
 pan_path = config.pan_path
 gt_path = config.gt_path
 
-EPOCHES = 80
+EPOCHES = 30
 BATCH_SIZE = 8
 patch_size = 264
 logging_period = 100
 LEARNING_RATE = 0.002
-DECAY_RATE = 0.9
+DECAY_RATE = 0.8
 
 dr = config.dr
 

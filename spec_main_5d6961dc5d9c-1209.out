@@ -1,0 +1,149 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+source_pan_data shape: (1296, 264, 264, 1)
+gt_data shape: (1296, 264, 264, 4)
+data shape: (1296, 264, 264, 5)
+Epoches: 50, Batch_size: 10
+Train images number 1296, Batches: 129.
+
+Train set has been trimmed 6 samples...
+
+2021-12-09 03:42:05.284863: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-09 03:42:07.157132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+2021-12-09 03:42:07.160275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 78874 MB memory:  -> device: 1, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:28:00.0, compute capability: 8.0
+2021-12-09 03:42:07.163247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 78874 MB memory:  -> device: 2, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:43:00.0, compute capability: 8.0
+2021-12-09 03:42:07.166202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 78874 MB memory:  -> device: 3, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:44:00.0, compute capability: 8.0
+out shape: (10, 66, 66, 4)
+2021-12-09 03:42:10.273018: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch:1/50: step:100, lr:0.0017632586, loss:0.20924713, elapsed_time:0:00:10.923788
+
+Epoch:2/50: step:200, lr:0.0015545404, loss:0.07552345, elapsed_time:0:00:15.313198
+
+Epoch:3/50: step:300, lr:0.0013705282, loss:0.04860949, elapsed_time:0:00:19.168398
+
+Epoch:4/50: step:400, lr:0.0012082979, loss:0.03281504, elapsed_time:0:00:22.912233
+
+Epoch:4/50: step:500, lr:0.0010652709, loss:0.02428962, elapsed_time:0:00:26.567302
+
+Epoch:5/50: step:600, lr:0.0009391739, loss:0.019413322, elapsed_time:0:00:30.913892
+
+Epoch:6/50: step:700, lr:0.00082800316, loss:0.0172352, elapsed_time:0:00:34.827609
+
+Epoch:7/50: step:800, lr:0.0007299919, loss:0.014949272, elapsed_time:0:00:38.848878
+
+Epoch:7/50: step:900, lr:0.00064358214, loss:0.014688728, elapsed_time:0:00:41.868329
+
+Epoch:8/50: step:1000, lr:0.0005674008, loss:0.0130175045, elapsed_time:0:00:45.824563
+
+Epoch:9/50: step:1100, lr:0.00050023716, loss:0.012583589, elapsed_time:0:00:49.774571
+
+Epoch:10/50: step:1200, lr:0.00044102382, loss:0.011663601, elapsed_time:0:00:53.927647
+
+Epoch:11/50: step:1300, lr:0.00038881946, loss:0.011256119, elapsed_time:0:00:57.794046
+
+Epoch:11/50: step:1400, lr:0.00034279455, loss:0.010908116, elapsed_time:0:01:00.948891
+
+Epoch:12/50: step:1500, lr:0.00030221776, loss:0.010473681, elapsed_time:0:01:04.773218
+
+Epoch:13/50: step:1600, lr:0.00026644408, loss:0.010329971, elapsed_time:0:01:08.610935
+
+Epoch:14/50: step:1700, lr:0.00023490489, loss:0.010005806, elapsed_time:0:01:13.207865
+
+Epoch:14/50: step:1800, lr:0.00020709902, loss:0.009936731, elapsed_time:0:01:16.262818
+
+Epoch:15/50: step:1900, lr:0.00018258454, loss:0.010192738, elapsed_time:0:01:20.030250
+
+Epoch:16/50: step:2000, lr:0.00016097186, loss:0.009755999, elapsed_time:0:01:23.936883
+
+Epoch:17/50: step:2100, lr:0.00014191751, loss:0.009560743, elapsed_time:0:01:27.876921
+
+Epoch:18/50: step:2200, lr:0.0001251186, loss:0.009056601, elapsed_time:0:01:31.808394
+
+Epoch:18/50: step:2300, lr:0.000110308225, loss:0.009301119, elapsed_time:0:01:34.860553
+
+Epoch:19/50: step:2400, lr:9.7250995e-05, loss:0.008919174, elapsed_time:0:01:38.450024
+
+Epoch:20/50: step:2500, lr:8.573932e-05, loss:0.008920813, elapsed_time:0:01:42.357151
+
+Epoch:21/50: step:2600, lr:7.559029e-05, loss:0.008895204, elapsed_time:0:01:46.240289
+
+Epoch:21/50: step:2700, lr:6.6642606e-05, loss:0.008608629, elapsed_time:0:01:49.105151
+
+Epoch:22/50: step:2800, lr:5.8754056e-05, loss:0.008907246, elapsed_time:0:01:52.724966
+
+Epoch:23/50: step:2900, lr:5.179931e-05, loss:0.008510873, elapsed_time:0:01:56.455967
+
+Epoch:24/50: step:3000, lr:4.5667788e-05, loss:0.008442137, elapsed_time:0:02:00.084202
+
+Epoch:25/50: step:3100, lr:4.0262054e-05, loss:0.00814819, elapsed_time:0:02:03.647789
+
+Epoch:25/50: step:3200, lr:3.5496214e-05, loss:0.008383747, elapsed_time:0:02:06.486730
+
+Epoch:26/50: step:3300, lr:3.129449e-05, loss:0.008740401, elapsed_time:0:02:10.216493
+
+Epoch:27/50: step:3400, lr:2.7590148e-05, loss:0.008208399, elapsed_time:0:02:13.909073
+
+Epoch:28/50: step:3500, lr:2.4324283e-05, loss:0.008796979, elapsed_time:0:02:17.623630
+
+Epoch:28/50: step:3600, lr:2.1444997e-05, loss:0.008298835, elapsed_time:0:02:20.403192
+
+Epoch:29/50: step:3700, lr:1.8906536e-05, loss:0.008104298, elapsed_time:0:02:25.201492
+
+Epoch:30/50: step:3800, lr:1.6668555e-05, loss:0.00829126, elapsed_time:0:02:29.382911
+
+Epoch:31/50: step:3900, lr:1.4695488e-05, loss:0.0088042375, elapsed_time:0:02:33.463880
+
+Epoch:32/50: step:4000, lr:1.295597e-05, loss:0.008445173, elapsed_time:0:02:37.430680
+
+Epoch:32/50: step:4100, lr:1.1422362e-05, loss:0.008362267, elapsed_time:0:02:40.368620
+
+Epoch:33/50: step:4200, lr:1.0070288e-05, loss:0.008291403, elapsed_time:0:02:44.121223
+
+Epoch:34/50: step:4300, lr:8.878263e-06, loss:0.007951607, elapsed_time:0:02:48.396323
+
+Epoch:35/50: step:4400, lr:7.827334e-06, loss:0.007907964, elapsed_time:0:02:52.187028
+
+Epoch:35/50: step:4500, lr:6.900808e-06, loss:0.008272379, elapsed_time:0:02:55.024038
+
+Epoch:36/50: step:4600, lr:6.0839525e-06, loss:0.008106083, elapsed_time:0:02:58.865464
+
+Epoch:37/50: step:4700, lr:5.363791e-06, loss:0.008016864, elapsed_time:0:03:02.567419
+
+Epoch:38/50: step:4800, lr:4.728878e-06, loss:0.00792741, elapsed_time:0:03:06.279100
+
+Epoch:38/50: step:4900, lr:4.1691146e-06, loss:0.0084416745, elapsed_time:0:03:09.002456
+
+Epoch:39/50: step:5000, lr:3.6756153e-06, loss:0.008200532, elapsed_time:0:03:12.693374
+
+Epoch:40/50: step:5100, lr:3.240528e-06, loss:0.008135652, elapsed_time:0:03:16.406714
+
+Epoch:41/50: step:5200, lr:2.856946e-06, loss:0.008304778, elapsed_time:0:03:20.492702
+
+Epoch:42/50: step:5300, lr:2.5187671e-06, loss:0.007794145, elapsed_time:0:03:24.279883
+
+Epoch:42/50: step:5400, lr:2.2206186e-06, loss:0.008069111, elapsed_time:0:03:27.388084
+
+Epoch:43/50: step:5500, lr:1.9577624e-06, loss:0.008000578, elapsed_time:0:03:30.995470
+
+Epoch:44/50: step:5600, lr:1.7260195e-06, loss:0.0077411463, elapsed_time:0:03:34.592933
+
+Epoch:45/50: step:5700, lr:1.5217103e-06, loss:0.0077573555, elapsed_time:0:03:38.345700
+
+Epoch:45/50: step:5800, lr:1.3415843e-06, loss:0.0076419115, elapsed_time:0:03:41.236906
+
+Epoch:46/50: step:5900, lr:1.1827797e-06, loss:0.008063947, elapsed_time:0:03:44.861133
+
+Epoch:47/50: step:6000, lr:1.0427734e-06, loss:0.00832783, elapsed_time:0:03:48.330423
+
+Epoch:48/50: step:6100, lr:9.1933936e-07, loss:0.008489024, elapsed_time:0:03:51.761364
+
+Epoch:49/50: step:6200, lr:8.105166e-07, loss:0.008030201, elapsed_time:0:03:55.325326
+
+Epoch:49/50: step:6300, lr:7.145752e-07, loss:0.007958664, elapsed_time:0:03:58.041022
+
+Epoch:50/50: step:6400, lr:6.2999055e-07, loss:0.007952384, elapsed_time:0:04:01.610483
+
+Epoch:50/50: step:6450, lr:5.9153007e-07, loss:0.0077908346, elapsed_time:0:04:02.915102
+

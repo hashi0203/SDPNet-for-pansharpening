@@ -17,6 +17,7 @@ import cv2
 from pnet import PNet #_tradition
 import time
 import rasterio
+import zipfile
 
 from tensorflow.python import pywrap_tensorflow
 from tqdm import tqdm
@@ -28,6 +29,7 @@ MODEL_SAVE_PATH = config.MODEL_SAVE_PATH
 path1 = 'test_imgs/pan_org/'
 path2 = 'test_imgs/ms_org/'
 output_path = config.OUTPUT_PATH
+zip_path = config.ZIP_PATH
 
 os.mkdir(output_path)
 
@@ -71,16 +73,21 @@ def main():
 			sess.run(tf.global_variables_initializer())
 			saver.restore(sess, MODEL_SAVE_PATH)
 
-			output = sess.run(X, feed_dict = {PAN: pan, MS: ms})
+			output = sess.run(X, feed_dict = {PAN: pan, MS: ms})[0]
 			print(output.shape)
 			output = np.where(output < 0, 0, output)
 
 			if not os.path.exists(output_path):
 				os.makedirs(output_path)
-			scio.savemat(output_path + str(i + 1) + '.mat', {'i': output[0, :, :, :]})
+			scio.savemat(output_path + str(i + 1) + '.mat', {'i': output})
+			output = np.round((((output + off_test) * p) * 2 + 1) // 2).astype('uint' + str(8 * (i+1)))
 			for j, c in enumerate(["red", "green", "blue", "nir"]):
-				cv2.imwrite(output_path + str(i + 1) + '-' + c + '.tif', ((output[0, :, :, j] + off_test) * p).astype('uint' + str(8 * (i+1))))
-				cv2.imwrite(output_path + c + '.tif', ((output[0, :, :, j] + off_test) * p).astype('uint' + str(8 * (i+1))))
+				cv2.imwrite(output_path + str(i + 1) + '-' + c + '.tif', output[:, :, j])
+				cv2.imwrite(output_path + c + '.tif', output[:, :, j])
+			if i == 1:
+				with zipfile.ZipFile(zip_path, 'w', compression=zipfile.ZIP_DEFLATED) as new_zip:
+					for c in ["red", "green", "blue", "nir"]:
+						new_zip.write(output_path + c + '.tif',arcname=c+'.tif')
 			end=time.time()
 			t.append(end-begin)
 	print("Time: mean: %s,, std: %s" % (np.mean(t), np.std(t)))

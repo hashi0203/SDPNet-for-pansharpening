@@ -1,0 +1,128 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+source_pan_data shape: (1296, 264, 264, 1)
+gt_data shape: (1296, 264, 264, 4)
+data shape: (1296, 264, 264, 5)
+Epoches: 30, Batch_size: 8
+Train images number 1296, Batches: 162.
+
+2021-12-09 03:21:43.591296: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-09 03:21:45.466345: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+2021-12-09 03:21:45.469461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 78874 MB memory:  -> device: 1, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:28:00.0, compute capability: 8.0
+2021-12-09 03:21:45.472419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 78874 MB memory:  -> device: 2, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:43:00.0, compute capability: 8.0
+2021-12-09 03:21:45.475370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 78874 MB memory:  -> device: 3, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:44:00.0, compute capability: 8.0
+out shape: (8, 264, 264, 4)
+PAN_converted_MS shape: (8, 264, 264, 4)
+<tf.Variable 'pMS_ED/encoder/conv1/kernel:0' shape=(3, 3, 1, 32) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv3/kernel:0' shape=(3, 3, 64, 96) dtype=float32_ref>
+<tf.Variable 'pMS_ED/encoder/conv3/bias:0' shape=(96,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_1/kernel:0' shape=(3, 3, 96, 64) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_1/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_2/kernel:0' shape=(3, 3, 64, 32) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_2/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_3/kernel:0' shape=(3, 3, 32, 4) dtype=float32_ref>
+<tf.Variable 'pMS_ED_1/decoder/conv2_3/bias:0' shape=(4,) dtype=float32_ref>
+2021-12-09 03:21:50.359448: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch:1/30: step:100, lr:0.0017426455, loss:0.21703275, pMS_max:0.8904487, pMS_min:0.019392878, elapsed_time:0:00:29.458008
+
+Epoch:2/30: step:200, lr:0.0015184064, loss:0.1661205, pMS_max:0.89799285, pMS_min:0.018976092, elapsed_time:0:00:51.081700
+
+Epoch:2/30: step:300, lr:0.001323022, loss:0.14168979, pMS_max:0.9022849, pMS_min:0.023065656, elapsed_time:0:01:11.136629
+
+Epoch:3/30: step:400, lr:0.0011527791, loss:0.12901664, pMS_max:0.89994967, pMS_min:0.022312105, elapsed_time:0:01:31.467584
+
+Epoch:4/30: step:500, lr:0.0010044425, loss:0.12429494, pMS_max:0.9086598, pMS_min:0.02284062, elapsed_time:0:01:52.189901
+
+Epoch:4/30: step:600, lr:0.00087519345, loss:0.12018412, pMS_max:0.9050143, pMS_min:0.021673888, elapsed_time:0:02:13.547087
+
+Epoch:5/30: step:700, lr:0.00076257583, loss:0.118664324, pMS_max:0.91003644, pMS_min:0.020978093, elapsed_time:0:02:34.412084
+
+Epoch:5/30: step:800, lr:0.00066444965, loss:0.112194344, pMS_max:0.91322607, pMS_min:0.022325546, elapsed_time:0:02:54.375797
+
+Epoch:6/30: step:900, lr:0.00057895004, loss:0.11008153, pMS_max:0.9205901, pMS_min:0.022207439, elapsed_time:0:03:15.161702
+
+Epoch:7/30: step:1000, lr:0.0005044523, loss:0.11009495, pMS_max:0.9192284, pMS_min:0.024036616, elapsed_time:0:03:35.878716
+
+Epoch:7/30: step:1100, lr:0.00043954072, loss:0.10655597, pMS_max:0.9184301, pMS_min:0.02406931, elapsed_time:0:03:56.047788
+
+Epoch:8/30: step:1200, lr:0.00038298176, loss:0.10461054, pMS_max:0.9234668, pMS_min:0.023198277, elapsed_time:0:04:16.648085
+
+Epoch:9/30: step:1300, lr:0.00033370068, loss:0.103160016, pMS_max:0.9202046, pMS_min:0.022551388, elapsed_time:0:04:37.916335
+
+Epoch:9/30: step:1400, lr:0.00029076095, loss:0.10159691, pMS_max:0.92496884, pMS_min:0.019565016, elapsed_time:0:04:59.083210
+
+Epoch:10/30: step:1500, lr:0.0002533466, loss:0.101717986, pMS_max:0.92237025, pMS_min:0.019083202, elapsed_time:0:05:19.860707
+
+Epoch:10/30: step:1600, lr:0.00022074668, loss:0.100618295, pMS_max:0.926093, pMS_min:0.01751107, elapsed_time:0:05:39.809127
+
+Epoch:11/30: step:1700, lr:0.00019234157, loss:0.10249381, pMS_max:0.9235183, pMS_min:0.017415583, elapsed_time:0:06:00.502813
+
+Epoch:12/30: step:1800, lr:0.00016759156, loss:0.10001681, pMS_max:0.92490286, pMS_min:0.016691506, elapsed_time:0:06:21.331495
+
+Epoch:12/30: step:1900, lr:0.0001460263, loss:0.098342344, pMS_max:0.9261191, pMS_min:0.015093297, elapsed_time:0:06:41.270076
+
+Epoch:13/30: step:2000, lr:0.00012723604, loss:0.09908424, pMS_max:0.92428195, pMS_min:0.015490651, elapsed_time:0:07:02.266518
+
+Epoch:13/30: step:2100, lr:0.00011086366, loss:0.09930589, pMS_max:0.9255352, pMS_min:0.014457911, elapsed_time:0:07:22.233228
+
+Epoch:14/30: step:2200, lr:9.6598014e-05, loss:0.09835877, pMS_max:0.92528856, pMS_min:0.014477015, elapsed_time:0:07:42.933242
+
+Epoch:15/30: step:2300, lr:8.416805e-05, loss:0.09702627, pMS_max:0.9283574, pMS_min:0.013077468, elapsed_time:0:08:03.689222
+
+Epoch:15/30: step:2400, lr:7.333752e-05, loss:0.09665775, pMS_max:0.9270525, pMS_min:0.013322383, elapsed_time:0:08:24.134698
+
+Epoch:16/30: step:2500, lr:6.390065e-05, loss:0.09908408, pMS_max:0.9256643, pMS_min:0.013287842, elapsed_time:0:08:44.951621
+
+Epoch:17/30: step:2600, lr:5.567807e-05, loss:0.0956272, pMS_max:0.927336, pMS_min:0.012607157, elapsed_time:0:09:05.792716
+
+Epoch:17/30: step:2700, lr:4.851358e-05, loss:0.096709296, pMS_max:0.9266895, pMS_min:0.012242049, elapsed_time:0:09:25.936725
+
+Epoch:18/30: step:2800, lr:4.2270967e-05, loss:0.09644834, pMS_max:0.9269536, pMS_min:0.01225099, elapsed_time:0:09:46.631673
+
+Epoch:18/30: step:2900, lr:3.6831654e-05, loss:0.09502937, pMS_max:0.9266411, pMS_min:0.0117197335, elapsed_time:0:10:06.982149
+
+Epoch:19/30: step:3000, lr:3.209225e-05, loss:0.09580524, pMS_max:0.9270201, pMS_min:0.011636943, elapsed_time:0:10:29.757438
+
+Epoch:20/30: step:3100, lr:2.7962698e-05, loss:0.09425325, pMS_max:0.9276618, pMS_min:0.011320442, elapsed_time:0:10:51.620775
+
+Epoch:20/30: step:3200, lr:2.4364546e-05, loss:0.09528852, pMS_max:0.9274477, pMS_min:0.011466503, elapsed_time:0:11:11.489679
+
+Epoch:21/30: step:3300, lr:2.1229376e-05, loss:0.095004335, pMS_max:0.92701393, pMS_min:0.011402905, elapsed_time:0:11:32.620662
+
+Epoch:21/30: step:3400, lr:1.8497638e-05, loss:0.09541102, pMS_max:0.9271164, pMS_min:0.011313647, elapsed_time:0:11:52.778146
+
+Epoch:22/30: step:3500, lr:1.6117414e-05, loss:0.093682796, pMS_max:0.9272846, pMS_min:0.011323661, elapsed_time:0:12:13.295162
+
+Epoch:23/30: step:3600, lr:1.4043463e-05, loss:0.09524173, pMS_max:0.9273884, pMS_min:0.011444986, elapsed_time:0:12:33.989291
+
+Epoch:23/30: step:3700, lr:1.2236388e-05, loss:0.095195636, pMS_max:0.9275788, pMS_min:0.01132983, elapsed_time:0:12:53.863352
+
+Epoch:24/30: step:3800, lr:1.066184e-05, loss:0.09431078, pMS_max:0.92792964, pMS_min:0.01135689, elapsed_time:0:13:14.524243
+
+Epoch:25/30: step:3900, lr:9.289908e-06, loss:0.09352352, pMS_max:0.9277202, pMS_min:0.0114175975, elapsed_time:0:13:35.326316
+
+Epoch:25/30: step:4000, lr:8.094505e-06, loss:0.09550758, pMS_max:0.9277096, pMS_min:0.011415631, elapsed_time:0:13:55.694976
+
+Epoch:26/30: step:4100, lr:7.052926e-06, loss:0.09418499, pMS_max:0.927562, pMS_min:0.011260301, elapsed_time:0:14:16.485432
+
+Epoch:26/30: step:4200, lr:6.145375e-06, loss:0.09305961, pMS_max:0.9281533, pMS_min:0.011300772, elapsed_time:0:14:38.331882
+
+Epoch:27/30: step:4300, lr:5.354603e-06, loss:0.092527226, pMS_max:0.9281615, pMS_min:0.011250675, elapsed_time:0:14:59.245875
+
+Epoch:28/30: step:4400, lr:4.6655878e-06, loss:0.09474221, pMS_max:0.92773664, pMS_min:0.011426151, elapsed_time:0:15:19.982204
+
+Epoch:28/30: step:4500, lr:4.065231e-06, loss:0.09375736, pMS_max:0.92773616, pMS_min:0.011403829, elapsed_time:0:15:40.194875
+
+Epoch:29/30: step:4600, lr:3.54213e-06, loss:0.093173206, pMS_max:0.92778003, pMS_min:0.01140669, elapsed_time:0:16:00.833213
+
+Epoch:30/30: step:4700, lr:3.0863373e-06, loss:0.09529954, pMS_max:0.9277054, pMS_min:0.011308253, elapsed_time:0:16:21.422180
+
+Epoch:30/30: step:4800, lr:2.6891958e-06, loss:0.09263761, pMS_max:0.9277086, pMS_min:0.011314362, elapsed_time:0:16:41.620318
+
+Epoch:30/30: step:4860, lr:2.4758808e-06, loss:0.09506409, pMS_max:0.92766416, pMS_min:0.011268586, elapsed_time:0:16:53.653655
+

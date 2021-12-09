@@ -26,12 +26,12 @@ model_date = config.model_date
 pan_path = config.pan_path
 gt_path = config.gt_path
 
-EPOCHES = 100
+EPOCHES = 50
 BATCH_SIZE = 4
 patch_size = 264
 logging_period = 100
 LEARNING_RATE = 0.002
-DECAY_RATE = 0.9
+DECAY_RATE = 0.8
 ratio = 20
 
 # W0 = [0.35, 0.05, 0.35, 0.25]

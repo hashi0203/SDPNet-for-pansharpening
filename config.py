@@ -39,26 +39,45 @@ gt_path = 'GT-test.h5'
 pan_test_imgs_path = 'test_imgs/pan_test/'
 ms_test_imgs_path = 'test_imgs/ms_test/'
 
-# model_date = "1205-3"
-# MS2P = "4500"
-# P2MS = "4300"
-# SPAT = "3500"
-# SPEC = "5500"
+model_date = "1205-3"
+MS2P = "4500"
+P2MS = "4300"
+SPAT = "3500"
+SPEC = "5500"
 # MODEL = "7600"
+# MODEL = "8100"
+# MODEL = "5900"
+# MODEL = "2300"
+# MODEL = "1500"
+# MODEL = "1800"
+MODEL = "2300"
 
 # model_date = "1205-4"
 # MS2P = "8100"
 # P2MS = "7700"
 # SPAT = "7700"
 # SPEC = "7600"
-# MODEL = "7500"
+# # MODEL = "7500"
+# # MODEL = "8100"
+# # MODEL = "2000"
+# MODEL = "4000"
 
-model_date = "1206"
-MS2P = "11500"
-P2MS = "11400"
-SPAT = "11900"
-SPEC = "11000"
-MODEL = "0"
+# model_date = "1206"
+# MS2P = "11500"
+# P2MS = "11400"
+# SPAT = "11900"
+# SPEC = "11000"
+# # MODEL = "31300"
+# # MODEL = "12700"
+# # MODEL = "2000"
+# MODEL = "4000"
+
+# model_date = "1209"
+# MS2P = "4800"
+# P2MS = "4800"
+# SPAT = "3000"
+# SPEC = "5000"
+# MODEL = "4000"
 
 MS2P_MODEL_SAVEPATH = './MS2P_models/%s/%s/%s.ckpt' % (model_date, MS2P, MS2P)
 P2MS_MODEL_SAVEPATH = './P2MS_models/%s/%s/%s.ckpt' % (model_date, P2MS, P2MS)
@@ -69,4 +88,5 @@ SPAT_DIFF_SAVEPATH = './spat_diffs/spat_diff_%s.txt' % model_date
 SPEC_DIFF_SAVEPATH = './spec_diffs/spec_diff_%s.txt' % model_date
 
 MODEL_SAVE_PATH = './models/%s/%s/%s.ckpt' % (model_date, MODEL, MODEL)
-OUTPUT_PATH = './results/%s/%d-%d/' % (model_date, dr_test, off_test)
+OUTPUT_PATH = './results/%s/%d-%d-%s-round/' % (model_date, dr_test, off_test, MODEL)
+ZIP_PATH = OUTPUT_PATH + 'sdp-%s-%d-%d-%s-round.zip' % (model_date, dr_test, off_test, MODEL)

@@ -1,0 +1,379 @@
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+data shape: (1296, 264, 264, 5)
+Epoches: 50, Batch_size: 4
+Train images number 1296, Batches: 324.
+
+2021-12-09 04:14:29.358373: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-09 04:14:31.228278: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 78874 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:27:00.0, compute capability: 8.0
+2021-12-09 04:14:31.231384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 78874 MB memory:  -> device: 1, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:28:00.0, compute capability: 8.0
+2021-12-09 04:14:31.234351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 78874 MB memory:  -> device: 2, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:43:00.0, compute capability: 8.0
+2021-12-09 04:14:31.237330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 78874 MB memory:  -> device: 3, name: NVIDIA A100 80GB PCIe, pci bus id: 0000:44:00.0, compute capability: 8.0
+out shape: (4, 264, 264, 1)
+14
+100
+11
+75
+65
+0
+73
+24
+67
+58
+8
+83
+110
+45
+3
+49
+79
+31
+125
+20
+53
+120
+20
+7
+91
+71
+105
+101
+107
+72
+102
+115
+23
+32
+37
+96
+24
+89
+51
+3
+2021-12-09 04:14:38.049623: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8301
+Epoch: 1/50, Step: 100/324, Loss: 0.07425467, Lr: 0.0018668934, Time: 0:00:45.562848
+
+Epoch: 1/50, Step: 200/324, Loss: 0.06321269, Lr: 0.0017426455, Time: 0:01:18.405044
+
+Epoch: 1/50, Step: 300/324, Loss: 0.054477848, Lr: 0.0016266665, Time: 0:01:51.201090
+
+Epoch: 2/50, Step: 76/324, Loss: 0.052584864, Lr: 0.0015184064, Time: 0:02:24.679476
+
+Epoch: 2/50, Step: 176/324, Loss: 0.049028073, Lr: 0.0014173513, Time: 0:02:57.151307
+
+Epoch: 2/50, Step: 276/324, Loss: 0.047405522, Lr: 0.001323022, Time: 0:03:30.088426
+
+Epoch: 3/50, Step: 52/324, Loss: 0.046379533, Lr: 0.0012349703, Time: 0:04:03.952419
+
+Epoch: 3/50, Step: 152/324, Loss: 0.04458382, Lr: 0.0011527791, Time: 0:04:36.168218
+
+Epoch: 3/50, Step: 252/324, Loss: 0.042878635, Lr: 0.0010760576, Time: 0:05:08.900046
+
+Epoch: 4/50, Step: 28/324, Loss: 0.04097351, Lr: 0.0010044425, Time: 0:05:42.650988
+
+Epoch: 4/50, Step: 128/324, Loss: 0.039305203, Lr: 0.00093759346, Time: 0:06:16.055022
+
+Epoch: 4/50, Step: 228/324, Loss: 0.03881632, Lr: 0.00087519345, Time: 0:06:49.338920
+
+Epoch: 5/50, Step: 4/324, Loss: 0.03859151, Lr: 0.0008169463, Time: 0:07:22.665727
+
+Epoch: 5/50, Step: 104/324, Loss: 0.037541803, Lr: 0.00076257583, Time: 0:07:54.879318
+
+Epoch: 5/50, Step: 204/324, Loss: 0.037159868, Lr: 0.0007118239, Time: 0:08:27.879870
+
+Epoch: 5/50, Step: 304/324, Loss: 0.03557603, Lr: 0.00066444965, Time: 0:09:00.775621
+
+Epoch: 6/50, Step: 80/324, Loss: 0.03526453, Lr: 0.0006202283, Time: 0:09:34.470211
+
+Epoch: 6/50, Step: 180/324, Loss: 0.03613115, Lr: 0.00057895004, Time: 0:10:07.264198
+
+Epoch: 6/50, Step: 280/324, Loss: 0.035587147, Lr: 0.00054041896, Time: 0:10:39.986678
+
+Epoch: 7/50, Step: 56/324, Loss: 0.034590572, Lr: 0.0005044523, Time: 0:11:14.043040
+
+Epoch: 7/50, Step: 156/324, Loss: 0.033639632, Lr: 0.00047087928, Time: 0:11:47.537692
+
+Epoch: 7/50, Step: 256/324, Loss: 0.032818444, Lr: 0.00043954072, Time: 0:12:21.831508
+
+Epoch: 8/50, Step: 32/324, Loss: 0.03268598, Lr: 0.00041028784, Time: 0:12:55.694653
+
+Epoch: 8/50, Step: 132/324, Loss: 0.032224204, Lr: 0.00038298176, Time: 0:13:28.493349
+
+Epoch: 8/50, Step: 232/324, Loss: 0.031981837, Lr: 0.00035749306, Time: 0:14:01.711630
+
+Epoch: 9/50, Step: 8/324, Loss: 0.03095135, Lr: 0.00033370068, Time: 0:14:36.416113
+
+Epoch: 9/50, Step: 108/324, Loss: 0.031269766, Lr: 0.00031149184, Time: 0:15:09.172174
+
+Epoch: 9/50, Step: 208/324, Loss: 0.031086192, Lr: 0.00029076095, Time: 0:15:42.325797
+
+Epoch: 9/50, Step: 308/324, Loss: 0.030185401, Lr: 0.00027140987, Time: 0:16:14.943999
+
+Epoch: 10/50, Step: 84/324, Loss: 0.030265938, Lr: 0.0002533466, Time: 0:16:48.567408
+
+Epoch: 10/50, Step: 184/324, Loss: 0.030202486, Lr: 0.00023648552, Time: 0:17:21.344460
+
+Epoch: 10/50, Step: 284/324, Loss: 0.029648483, Lr: 0.00022074668, Time: 0:17:53.998829
+
+Epoch: 11/50, Step: 60/324, Loss: 0.029752418, Lr: 0.0002060552, Time: 0:18:27.819839
+
+Epoch: 11/50, Step: 160/324, Loss: 0.029806254, Lr: 0.00019234157, Time: 0:19:00.366748
+
+Epoch: 11/50, Step: 260/324, Loss: 0.028898513, Lr: 0.00017954061, Time: 0:19:33.125840
+
+Epoch: 12/50, Step: 36/324, Loss: 0.029060325, Lr: 0.00016759156, Time: 0:20:06.693548
+
+Epoch: 12/50, Step: 136/324, Loss: 0.02855343, Lr: 0.00015643777, Time: 0:20:39.439079
+
+Epoch: 12/50, Step: 236/324, Loss: 0.028575022, Lr: 0.0001460263, Time: 0:21:12.478021
+
+Epoch: 13/50, Step: 12/324, Loss: 0.028834205, Lr: 0.0001363078, Time: 0:21:47.375915
+
+Epoch: 13/50, Step: 112/324, Loss: 0.02806288, Lr: 0.00012723604, Time: 0:22:20.806329
+
+Epoch: 13/50, Step: 212/324, Loss: 0.028261993, Lr: 0.000118768054, Time: 0:22:53.817776
+
+Epoch: 13/50, Step: 312/324, Loss: 0.027532607, Lr: 0.00011086366, Time: 0:23:26.575762
+
+Epoch: 14/50, Step: 88/324, Loss: 0.027479056, Lr: 0.000103485305, Time: 0:24:00.678134
+
+Epoch: 14/50, Step: 188/324, Loss: 0.02738972, Lr: 9.6598014e-05, Time: 0:24:34.239350
+
+Epoch: 14/50, Step: 288/324, Loss: 0.027248908, Lr: 9.016908e-05, Time: 0:25:08.028090
+
+Epoch: 15/50, Step: 64/324, Loss: 0.02715002, Lr: 8.416805e-05, Time: 0:25:41.914391
+
+Epoch: 15/50, Step: 164/324, Loss: 0.02698747, Lr: 7.8566365e-05, Time: 0:26:14.649268
+
+Epoch: 15/50, Step: 264/324, Loss: 0.026906125, Lr: 7.333752e-05, Time: 0:26:47.841790
+
+Epoch: 16/50, Step: 40/324, Loss: 0.026969, Lr: 6.8456655e-05, Time: 0:27:22.018983
+
+Epoch: 16/50, Step: 140/324, Loss: 0.026591778, Lr: 6.390065e-05, Time: 0:27:54.919747
+
+Epoch: 16/50, Step: 240/324, Loss: 0.026619617, Lr: 5.9647842e-05, Time: 0:28:27.861615
+
+Epoch: 17/50, Step: 16/324, Loss: 0.026178988, Lr: 5.567807e-05, Time: 0:29:01.491281
+
+Epoch: 17/50, Step: 116/324, Loss: 0.02635039, Lr: 5.1972518e-05, Time: 0:29:34.521934
+
+Epoch: 17/50, Step: 216/324, Loss: 0.026380233, Lr: 4.851358e-05, Time: 0:30:07.029858
+
+Epoch: 17/50, Step: 316/324, Loss: 0.026261965, Lr: 4.528482e-05, Time: 0:30:39.197415
+
+Epoch: 18/50, Step: 92/324, Loss: 0.026359366, Lr: 4.2270967e-05, Time: 0:31:12.583451
+
+Epoch: 18/50, Step: 192/324, Loss: 0.02620489, Lr: 3.9457704e-05, Time: 0:31:45.818955
+
+Epoch: 18/50, Step: 292/324, Loss: 0.026363097, Lr: 3.6831654e-05, Time: 0:32:19.000301
+
+Epoch: 19/50, Step: 68/324, Loss: 0.02576173, Lr: 3.4380388e-05, Time: 0:32:52.624784
+
+Epoch: 19/50, Step: 168/324, Loss: 0.026321704, Lr: 3.209225e-05, Time: 0:33:25.443582
+
+Epoch: 19/50, Step: 268/324, Loss: 0.025978126, Lr: 2.9956414e-05, Time: 0:33:58.854123
+
+Epoch: 20/50, Step: 44/324, Loss: 0.025770742, Lr: 2.7962698e-05, Time: 0:34:32.994080
+
+Epoch: 20/50, Step: 144/324, Loss: 0.025945306, Lr: 2.6101694e-05, Time: 0:35:05.691188
+
+Epoch: 20/50, Step: 244/324, Loss: 0.025545966, Lr: 2.4364546e-05, Time: 0:35:38.704223
+
+Epoch: 21/50, Step: 20/324, Loss: 0.025044668, Lr: 2.2742992e-05, Time: 0:36:13.049813
+
+Epoch: 21/50, Step: 120/324, Loss: 0.025674265, Lr: 2.1229376e-05, Time: 0:36:46.102515
+
+Epoch: 21/50, Step: 220/324, Loss: 0.025352247, Lr: 1.9816496e-05, Time: 0:37:18.985508
+
+Epoch: 21/50, Step: 320/324, Loss: 0.026190696, Lr: 1.8497638e-05, Time: 0:37:52.051430
+
+Epoch: 22/50, Step: 96/324, Loss: 0.024966925, Lr: 1.7266557e-05, Time: 0:38:26.405384
+
+Epoch: 22/50, Step: 196/324, Loss: 0.024914948, Lr: 1.6117414e-05, Time: 0:38:59.707335
+
+Epoch: 22/50, Step: 296/324, Loss: 0.025369458, Lr: 1.5044743e-05, Time: 0:39:32.947416
+
+Epoch: 23/50, Step: 72/324, Loss: 0.025117666, Lr: 1.4043463e-05, Time: 0:40:06.795934
+
+Epoch: 23/50, Step: 172/324, Loss: 0.025285773, Lr: 1.3108828e-05, Time: 0:40:40.061555
+
+Epoch: 23/50, Step: 272/324, Loss: 0.025272895, Lr: 1.2236388e-05, Time: 0:41:12.806515
+
+Epoch: 24/50, Step: 48/324, Loss: 0.02550209, Lr: 1.1422021e-05, Time: 0:41:46.505814
+
+Epoch: 24/50, Step: 148/324, Loss: 0.02475006, Lr: 1.066184e-05, Time: 0:42:19.616082
+
+Epoch: 24/50, Step: 248/324, Loss: 0.024791442, Lr: 9.952261e-06, Time: 0:42:52.325808
+
+Epoch: 25/50, Step: 24/324, Loss: 0.024822019, Lr: 9.289908e-06, Time: 0:43:26.574957
+
+Epoch: 25/50, Step: 124/324, Loss: 0.024784477, Lr: 8.671629e-06, Time: 0:43:59.499626
+
+Epoch: 25/50, Step: 224/324, Loss: 0.024873188, Lr: 8.094505e-06, Time: 0:44:32.475176
+
+Epoch: 25/50, Step: 0/324, Loss: 0.024650125, Lr: 7.5557905e-06, Time: 0:45:05.190927
+
+Epoch: 26/50, Step: 100/324, Loss: 0.024932949, Lr: 7.052926e-06, Time: 0:45:39.090582
+
+Epoch: 26/50, Step: 200/324, Loss: 0.025010142, Lr: 6.5835297e-06, Time: 0:46:12.499672
+
+Epoch: 26/50, Step: 300/324, Loss: 0.024870249, Lr: 6.145375e-06, Time: 0:46:45.498464
+
+Epoch: 27/50, Step: 76/324, Loss: 0.024245236, Lr: 5.736379e-06, Time: 0:47:19.222857
+
+Epoch: 27/50, Step: 176/324, Loss: 0.025139358, Lr: 5.354603e-06, Time: 0:47:52.042558
+
+Epoch: 27/50, Step: 276/324, Loss: 0.024871487, Lr: 4.998236e-06, Time: 0:48:25.351281
+
+Epoch: 28/50, Step: 52/324, Loss: 0.025039, Lr: 4.6655878e-06, Time: 0:48:59.298481
+
+Epoch: 28/50, Step: 152/324, Loss: 0.024471626, Lr: 4.355078e-06, Time: 0:49:31.858533
+
+Epoch: 28/50, Step: 252/324, Loss: 0.024881031, Lr: 4.065231e-06, Time: 0:50:04.645043
+
+Epoch: 29/50, Step: 28/324, Loss: 0.025249206, Lr: 3.794677e-06, Time: 0:50:38.206580
+
+Epoch: 29/50, Step: 128/324, Loss: 0.024682729, Lr: 3.54213e-06, Time: 0:51:10.898858
+
+Epoch: 29/50, Step: 228/324, Loss: 0.024922604, Lr: 3.3063873e-06, Time: 0:51:43.424127
+
+Epoch: 30/50, Step: 4/324, Loss: 0.024839604, Lr: 3.0863373e-06, Time: 0:52:17.047842
+
+Epoch: 30/50, Step: 104/324, Loss: 0.025088567, Lr: 2.880932e-06, Time: 0:52:49.926083
+
+Epoch: 30/50, Step: 204/324, Loss: 0.02456636, Lr: 2.6891958e-06, Time: 0:53:23.214756
+
+Epoch: 30/50, Step: 304/324, Loss: 0.024129175, Lr: 2.5102204e-06, Time: 0:53:56.134491
+
+Epoch: 31/50, Step: 80/324, Loss: 0.024675883, Lr: 2.3431562e-06, Time: 0:54:29.810609
+
+Epoch: 31/50, Step: 180/324, Loss: 0.024534345, Lr: 2.1872122e-06, Time: 0:55:02.150086
+
+Epoch: 31/50, Step: 280/324, Loss: 0.024796654, Lr: 2.041646e-06, Time: 0:55:35.019109
+
+Epoch: 32/50, Step: 56/324, Loss: 0.024900472, Lr: 1.905767e-06, Time: 0:56:09.124972
+
+Epoch: 32/50, Step: 156/324, Loss: 0.024257878, Lr: 1.7789324e-06, Time: 0:56:41.696374
+
+Epoch: 32/50, Step: 256/324, Loss: 0.02439664, Lr: 1.6605388e-06, Time: 0:57:14.187112
+
+Epoch: 33/50, Step: 32/324, Loss: 0.024501693, Lr: 1.5500235e-06, Time: 0:57:47.967297
+
+Epoch: 33/50, Step: 132/324, Loss: 0.02452038, Lr: 1.4468652e-06, Time: 0:58:21.843681
+
+Epoch: 33/50, Step: 232/324, Loss: 0.023973864, Lr: 1.3505713e-06, Time: 0:58:54.931116
+
+Epoch: 34/50, Step: 8/324, Loss: 0.024852652, Lr: 1.2606855e-06, Time: 0:59:28.762648
+
+Epoch: 34/50, Step: 108/324, Loss: 0.02449359, Lr: 1.1767835e-06, Time: 1:00:01.543575
+
+Epoch: 34/50, Step: 208/324, Loss: 0.024470292, Lr: 1.0984646e-06, Time: 1:00:34.482551
+
+Epoch: 34/50, Step: 308/324, Loss: 0.023915641, Lr: 1.0253575e-06, Time: 1:01:06.994528
+
+Epoch: 35/50, Step: 84/324, Loss: 0.024340032, Lr: 9.571172e-07, Time: 1:01:40.906658
+
+Epoch: 35/50, Step: 184/324, Loss: 0.024566658, Lr: 8.9341734e-07, Time: 1:02:14.319265
+
+Epoch: 35/50, Step: 284/324, Loss: 0.024538737, Lr: 8.3395724e-07, Time: 1:02:48.435755
+
+Epoch: 36/50, Step: 60/324, Loss: 0.024065435, Lr: 7.784552e-07, Time: 1:03:22.896063
+
+Epoch: 36/50, Step: 160/324, Loss: 0.02408171, Lr: 7.2664596e-07, Time: 1:03:55.487256
+
+Epoch: 36/50, Step: 260/324, Loss: 0.024665091, Lr: 6.782851e-07, Time: 1:04:28.323084
+
+Epoch: 37/50, Step: 36/324, Loss: 0.024477078, Lr: 6.3314315e-07, Time: 1:05:01.725143
+
+Epoch: 37/50, Step: 136/324, Loss: 0.024174275, Lr: 5.9100563e-07, Time: 1:05:34.226365
+
+Epoch: 37/50, Step: 236/324, Loss: 0.024515742, Lr: 5.5167226e-07, Time: 1:06:06.929569
+
+Epoch: 38/50, Step: 12/324, Loss: 0.024036776, Lr: 5.149564e-07, Time: 1:06:41.086655
+
+Epoch: 38/50, Step: 112/324, Loss: 0.024127223, Lr: 4.8068443e-07, Time: 1:07:14.022684
+
+Epoch: 38/50, Step: 212/324, Loss: 0.024780072, Lr: 4.4869336e-07, Time: 1:07:47.027573
+
+Epoch: 38/50, Step: 312/324, Loss: 0.024695372, Lr: 4.1883112e-07, Time: 1:08:19.820126
+
+Epoch: 39/50, Step: 88/324, Loss: 0.024639867, Lr: 3.9095625e-07, Time: 1:08:53.679520
+
+Epoch: 39/50, Step: 188/324, Loss: 0.024900218, Lr: 3.649372e-07, Time: 1:09:26.008065
+
+Epoch: 39/50, Step: 288/324, Loss: 0.024252564, Lr: 3.4064922e-07, Time: 1:09:59.080033
+
+Epoch: 40/50, Step: 64/324, Loss: 0.02432539, Lr: 3.1797774e-07, Time: 1:10:34.231655
+
+Epoch: 40/50, Step: 164/324, Loss: 0.024133302, Lr: 2.9681559e-07, Time: 1:11:07.576057
+
+Epoch: 40/50, Step: 264/324, Loss: 0.023802293, Lr: 2.7706136e-07, Time: 1:11:40.766560
+
+Epoch: 41/50, Step: 40/324, Loss: 0.02412768, Lr: 2.5862187e-07, Time: 1:12:14.383962
+
+Epoch: 41/50, Step: 140/324, Loss: 0.024343714, Lr: 2.4140996e-07, Time: 1:12:47.087554
+
+Epoch: 41/50, Step: 240/324, Loss: 0.024867633, Lr: 2.2534319e-07, Time: 1:13:19.610441
+
+Epoch: 42/50, Step: 16/324, Loss: 0.024226286, Lr: 2.1034586e-07, Time: 1:13:53.777973
+
+Epoch: 42/50, Step: 116/324, Loss: 0.024453461, Lr: 1.9634675e-07, Time: 1:14:26.746285
+
+Epoch: 42/50, Step: 216/324, Loss: 0.024291368, Lr: 1.832791e-07, Time: 1:14:59.910818
+
+Epoch: 42/50, Step: 316/324, Loss: 0.024538472, Lr: 1.710813e-07, Time: 1:15:32.706281
+
+Epoch: 43/50, Step: 92/324, Loss: 0.024740241, Lr: 1.5969532e-07, Time: 1:16:06.159909
+
+Epoch: 43/50, Step: 192/324, Loss: 0.024442557, Lr: 1.4906698e-07, Time: 1:16:38.813536
+
+Epoch: 43/50, Step: 292/324, Loss: 0.024187043, Lr: 1.3914611e-07, Time: 1:17:11.146955
+
+Epoch: 44/50, Step: 68/324, Loss: 0.02395614, Lr: 1.298855e-07, Time: 1:17:44.763243
+
+Epoch: 44/50, Step: 168/324, Loss: 0.024123527, Lr: 1.2124111e-07, Time: 1:18:17.590364
+
+Epoch: 44/50, Step: 268/324, Loss: 0.023971684, Lr: 1.1317215e-07, Time: 1:18:50.274213
+
+Epoch: 45/50, Step: 44/324, Loss: 0.024199516, Lr: 1.05640204e-07, Time: 1:19:23.987436
+
+Epoch: 45/50, Step: 144/324, Loss: 0.023864742, Lr: 9.860943e-08, Time: 1:19:57.059585
+
+Epoch: 45/50, Step: 244/324, Loss: 0.024217375, Lr: 9.204666e-08, Time: 1:20:30.230233
+
+Epoch: 46/50, Step: 20/324, Loss: 0.023921527, Lr: 8.592069e-08, Time: 1:21:04.305945
+
+Epoch: 46/50, Step: 120/324, Loss: 0.024608143, Lr: 8.020239e-08, Time: 1:21:37.269033
+
+Epoch: 46/50, Step: 220/324, Loss: 0.024688864, Lr: 7.48646e-08, Time: 1:22:10.234885
+
+Epoch: 46/50, Step: 320/324, Loss: 0.024391545, Lr: 6.9882084e-08, Time: 1:22:43.063457
+
+Epoch: 47/50, Step: 96/324, Loss: 0.025152648, Lr: 6.523127e-08, Time: 1:23:16.722167
+
+Epoch: 47/50, Step: 196/324, Loss: 0.024179665, Lr: 6.0889874e-08, Time: 1:23:49.585497
+
+Epoch: 47/50, Step: 296/324, Loss: 0.024500407, Lr: 5.6837415e-08, Time: 1:24:22.258366
+
+Epoch: 48/50, Step: 72/324, Loss: 0.024487752, Lr: 5.305476e-08, Time: 1:24:55.826919
+
+Epoch: 48/50, Step: 172/324, Loss: 0.024320275, Lr: 4.9523752e-08, Time: 1:25:28.711851
+
+Epoch: 48/50, Step: 272/324, Loss: 0.024132073, Lr: 4.6227754e-08, Time: 1:26:01.460491
+
+Epoch: 49/50, Step: 48/324, Loss: 0.024975734, Lr: 4.315119e-08, Time: 1:26:35.591721
+
+Epoch: 49/50, Step: 148/324, Loss: 0.024315268, Lr: 4.0279314e-08, Time: 1:27:08.374612
+
+Epoch: 49/50, Step: 248/324, Loss: 0.02432349, Lr: 3.759857e-08, Time: 1:27:42.060056
+
+Epoch: 50/50, Step: 24/324, Loss: 0.024527814, Lr: 3.5096303e-08, Time: 1:28:16.586085
+
+Epoch: 50/50, Step: 124/324, Loss: 0.024484184, Lr: 3.2760507e-08, Time: 1:28:49.506527
+
+Epoch: 50/50, Step: 224/324, Loss: 0.024636578, Lr: 3.0580193e-08, Time: 1:29:22.486793
+
+Epoch: 50/50, Step: 0/324, Loss: 0.024596127, Lr: 2.8544987e-08, Time: 1:29:55.210348
+

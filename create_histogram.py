@@ -15,17 +15,12 @@ data_names = [Path("GF2_PMS1_E100.5_N37.2_20171013_L1A0002678101"),
               Path("GF2_PMS2_E100.7_N37.2_20171013_L1A0002672923"),
               Path("GF2_PMS2_E100.7_N37.4_20171013_L1A0002672921")]
 
-pan_meta = rasterio.open((data_dir / data_names[0]).files("*-PAN*.tiff")[0]).profile
 ms_meta = rasterio.open((data_dir / data_names[0]).files("*-MSS*.tiff")[0]).profile
-
-pan_path = 'PAN.h5'
-gt_path = 'GT.h5'
 
 def downsample_pan(img):
     height, width = img.shape
     return cv2.resize(img, (width // 4, height // 4))
 
-patch_size = 264
 train_pans = []
 train_mss = []
 
@@ -52,3 +47,35 @@ hist(train_pans, "train_pans.png")
 hist(train_mss, "train_mss.png")
 hist(test_pan, "test_pan.png")
 hist(test_ms, "test_ms.png")
+
+train_org = None
+test_org = None
+for data_name in data_names:
+    print("loading %s.." % data_name)
+    in_pan_path = (data_dir / data_name).files("*-PAN*.tiff")[0]
+    in_ms_path = (data_dir / data_name).files("*-MSS*.tiff")[0]
+
+    if train_org is None:
+        train_org = rasterio.open(in_pan_path).read(1).reshape(-1)
+    else:
+        train_org = np.concatenate([train_org, rasterio.open(in_pan_path).read(1).reshape(-1)])
+    with rasterio.open(in_ms_path) as src:
+        for c in range(ms_meta['count']):
+            train_org = np.concatenate([train_org, src.read(c+1).reshape(-1)])
+
+test_org = imread('test_imgs/pan_org/2.png').reshape(-1)
+with rasterio.open('test_imgs/ms_org/2.tif') as src:
+    for c in range(ms_meta['count']):
+        test_org = np.concatenate([test_org, src.read(c+1).reshape(-1)])
+
+def hist2(imgs, filename):
+    imgs = np.array(imgs).reshape(-1)
+    plt.figure()
+    weights = np.ones(len(imgs)) / len(imgs)
+    plt.hist(imgs, weights=weights)
+    plt.title('min: %d, max: %d, ave: %.2f, std: %.2f' % (np.min(imgs), np.max(imgs), np.mean(imgs), np.std(imgs)))
+    plt.savefig(filename)
+
+print("It may take long time...")
+hist2(train_org, "train_org.png")
+hist2(test_org, "test_org.png")
