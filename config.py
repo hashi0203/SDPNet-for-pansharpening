@@ -88,5 +88,5 @@ SPAT_DIFF_SAVEPATH = './spat_diffs/spat_diff_%s.txt' % model_date
 SPEC_DIFF_SAVEPATH = './spec_diffs/spec_diff_%s.txt' % model_date
 
 MODEL_SAVE_PATH = './models/%s/%s/%s.ckpt' % (model_date, MODEL, MODEL)
-OUTPUT_PATH = './results/%s/%d-%d-%s-round/' % (model_date, dr_test, off_test, MODEL)
-ZIP_PATH = OUTPUT_PATH + 'sdp-%s-%d-%d-%s-round.zip' % (model_date, dr_test, off_test, MODEL)
+OUTPUT_PATH = './results/%s/%d-%d-%s/' % (model_date, dr_test, off_test, MODEL)
+ZIP_PATH = OUTPUT_PATH + 'sdp-%s-%d-%d-%s.zip' % (model_date, dr_test, off_test, MODEL)

@@ -75,12 +75,13 @@ def main():
 
 			output = sess.run(X, feed_dict = {PAN: pan, MS: ms})[0]
 			print(output.shape)
-			output = np.where(output < 0, 0, output)
 
 			if not os.path.exists(output_path):
 				os.makedirs(output_path)
 			scio.savemat(output_path + str(i + 1) + '.mat', {'i': output})
-			output = np.round((((output + off_test) * p) * 2 + 1) // 2).astype('uint' + str(8 * (i+1)))
+			# output = np.round((((output + off_test) * p) * 2 + 1) // 2).astype('uint' + str(8 * (i+1)))
+			output = ((output + off_test) * p).astype('uint' + str(8 * (i+1)))
+			output = np.where(output < 0, 0, output)
 			for j, c in enumerate(["red", "green", "blue", "nir"]):
 				cv2.imwrite(output_path + str(i + 1) + '-' + c + '.tif', output[:, :, j])
 				cv2.imwrite(output_path + c + '.tif', output[:, :, j])
