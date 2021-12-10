@@ -50,7 +50,7 @@ SPEC = "5500"
 # MODEL = "2300"
 # MODEL = "1500"
 # MODEL = "1800"
-MODEL = "2300"
+MODEL = "2000"
 
 # model_date = "1205-4"
 # MS2P = "8100"
